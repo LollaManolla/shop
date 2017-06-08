@@ -1,0 +1,1200 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+	<!--Facebook share meta data-->
+	<meta name="description" content="Indelibl" />
+	<meta property="og:title" content="Indelibl" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.indelibl.co" />
+	<meta property="og:site_name" content="Indelibl" />
+	<meta property="og:image" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<!--Facebook share meta data end-->
+	<title>
+		Indelibl
+	</title>
+	<!--icon fonts -->
+	<link href="fonts/material/style.css" rel="stylesheet">
+	<link href="fonts/indelibl/style.css" rel="stylesheet">
+	<!--style-->
+	<link href="css/vendor-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--js-->
+	<script src="js/vendor.js"></script>
+	<script src="js/migrate.js"></script>
+	<script src="js/vendor-ui.js"></script>
+	<script src="js/vendor.touch-punch.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-offer">
+			<span>Get 10% off on all orders in Ghana and Nigeria.</span>
+		</div>
+		<header class="header-top">
+			<div class="content-wrapper clearfix">
+				<div class="left">
+					<a class="logo" href="">
+						<img src="images/logo2.png" alt="" />
+					</a>
+					<!-- currency dropdown -->
+					<div class="dropdown" id="chooseCurrency">
+						<aside class="drop-trigger icon-trigger" trigger="choose-currency">
+							<span>
+									GBP
+								</span>
+						</aside>
+						<aside class="drop-content" dropdown="choose-currency">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<span>GBP</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>EUR</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- language dropdown -->
+					<div class="dropdown">
+						<aside class="drop-trigger icon-trigger" trigger="choose-lang">
+							<img src="images/eng.jpg" alt="" />
+						</aside>
+						<aside class="drop-content" dropdown="choose-lang">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="images/eng.jpg" alt="" />
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="images/fre.jpg" alt="" />
+										<span>French</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- non-mobile search form -->
+					<div class="search" id="searchPc">
+						<input type="text" />
+						<button type="submit">
+								<i class="icon-search1"></i>
+							</button>
+					</div>
+				</div>
+				<!-- right header, user profile dropdown -->
+				<div class="right">
+					<ul class="user-options">
+						<li><a href="javascript:;">Brian</a></li>
+						<li class="dropdown">
+							<img src="images/morgan1.jpg" alt="" trigger="profileMenu" />
+							<div class="drop-content drop-right profile" dropdown="profileMenu">
+								<a href="javascript:;">My Profile</a>
+								<a href="javascript:;">My Indelibl</a>
+								<a href="javascript:;">Log out</a>
+							</div>
+						</li>
+						<!-- notifications popup -->
+						<li class="dropdown notifications-icon-wrapper">
+							<a href="javascript:;" data-popup="notifications">
+								<img class="notify-icon" src="images/icons/notification_red.png" alt="" />
+								<img class="notify-icon" src="images/icons/notification.png" alt="" style="display: none;" />
+							</a>
+						</li>
+						<!-- wishlist dropdown -->
+						<li class="dropdown">
+							<i class="icon-wishlist drop-trigger" trigger="wishlist"></i>
+							<div class="drop-content drop-right" dropdown="wishlist">
+								<ul class="header-subNav header-wishlist-nav js-headerSubmenu">
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na1b.jpg" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na6.png" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<a class="btn wide" href="javascript:;">View all</a>
+								</ul>
+							</div>
+						</li>
+						<!-- cart dropdown -->
+						<li class="dropdown">
+							<span class="cart-count">
+									5
+								</span>
+							<i class="icon-shopping-cart drop-trigger" trigger="cart"></i>
+							<div class="drop-content drop-right" dropdown="cart">
+								<div class="header-subNav header-cart-nav js-headerSubmenu">
+									<!-- if cart is NOT empty: -->
+									<span>
+											You have 5 items in your shopping cart
+										</span>
+									<span class="total">
+											Total: $567
+										</span>
+									<a class="btn wide" href="javascript:;">My cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- mobile navigation menu toggle burger -->
+				<div class="header_bottom_mob">
+					<div class="navigation_toggle link">
+						<svg viewBox="0 0 16 12" height="12" width="16" version="1.1">
+								<rect class="nav_svg" y="0" width="16" height="2"></rect>
+								<rect class="nav_svg" y="5" width="16" height="2"></rect>
+								<rect class="nav_svg" y="10" width="16" height="2"></rect>
+							</svg>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light mob_menu">
+						<div class="menu-collection">
+							<a href="javascript:;" class="menu-link">Original Art</a>
+							<a href="javascript:;" class="menu-link">Art Prints</a>
+							<a href="javascript:;" class="menu-link">Books</a>
+							<a href="javascript:;" class="menu-link">Phone Cases</a>
+							<a href="javascript:;" class="menu-link">T-Shirts</a>
+							<a href="javascript:;" class="menu-link">Pillows</a>
+							<a href="javascript:;" class="menu-link">Post Cards</a>
+							<a href="javascript:;" class="menu-link">Tote Bags</a>
+							<a href="javascript:;" class="menu-link">Mugs</a>
+							<a href="javascript:;" class="menu-link">Others</a>
+						</div>
+					</div>
+					<!-- mobile search form -->
+					<div class="search" id="searchMob_dashboard">
+						<input type="text" />
+						<button type="submit" class="search-button-mob">
+
+							</button>
+					</div>
+					<div class="navigation_toggle_dots">
+						<div class="menuDot"></div>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light dashboard_menu">
+						<div class="menu-collection dashboard_menu_collection">
+							<a href="javascript:;" class="menu-link">My profile</a>
+							<a href="javascript:;" class="menu-link">Add product</a>
+							<a href="javascript:;" class="menu-link">Supporters</a>
+							<a href="javascript:;" class="menu-link">Sales / Orders</a>
+							<a href="javascript:;" class="menu-link">Payments</a>
+							<a href="javascript:;" class="menu-link">Events</a>
+							<a href="javascript:;" class="menu-link">Referrals</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main menu -->
+		<section class="main-menu">
+			<div class="content-wrapper">
+				<ul>
+					<li>
+						<a href="javascript:;">Original Art</a>
+					</li>
+					<li>
+						<a href="javascript:;">Art Prints</a>
+					</li>
+					<li>
+						<a href="javascript:;">Books</a>
+					</li>
+					<li>
+						<a href="javascript:;">Phone Cases</a>
+					</li>
+					<li>
+						<a href="javascript:;">T-Shirts</a>
+					</li>
+					<li>
+						<a href="javascript:;">Pillows</a>
+					</li>
+					<li>
+						<a href="javascript:;">Post Cards</a>
+					</li>
+					<li>
+						<a href="javascript:;">Tote Bags</a>
+					</li>
+					<li>
+						<a href="javascript:;">Mugs</a>
+					</li>
+					<li>
+						<a href="javascript:;">Others</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- start user cover photo -->
+
+		<!-- cover picture -->
+		<div class="profile-cover-save dashboard">
+			<div class="profile-cover_inner-save" id="cover-image-preview">
+				<img id="cover-img-save" src="images/slider-1.jpg">
+			</div>
+		</div>
+
+		<!-- end user cover photo -->
+
+		<!-- start add art header -->
+		<section class="bg-lightest">
+			<div class="content-wrapper">
+
+				<div class="row">
+					<div class="profile_top addProd left">
+						<!-- user profile image and info -->
+						<div class="userprofile_img_wrapper">
+							<div class="userprofile_img" id="profile-image-preview"></div>
+						</div>
+						<div class="userprofile-info">
+							<ul>
+								<li>
+									<h5><b>Brian Williams</b></h5>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/artist.png"><span>Artist</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/country.png"><span>Ghana</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/birthday.png"><span>05.25.1973.</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/world-wide-web.png"><a href="javascript:;"><span>www.brianwilliams.com</span></a>
+								</li>
+							</ul>
+
+						</div>
+						<!-- end user profile image and info  -->
+					</div>
+				</div>
+			</div>
+			<hr class="profile-top-separator" />
+		</section>
+
+		<section class="bg-lightest artist-menu-wrapper">
+			<!-- artist side menu -->
+			<div class="artist_menu">
+				<ul>
+					<li triggerLink="profileLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/profile.png"></a>
+						<div class="userprofile-menu-popup myProfileLink" popLink="profileLink">
+							<a href="javascript:;" class="userprofile-menu-link">My profile</a>
+						</div>
+					</li>
+					<li triggerLink="addPLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/add_products.png"></a>
+						<div class="userprofile-menu-popup addProductLink" popLink="addPLink">
+							<a href="javascript:;" class="userprofile-menu-link">Add product</a>
+						</div>
+					</li>
+					<li triggerLink="suppLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/supporters.png"></a>
+						<div class="userprofile-menu-popup supportersLink" popLink="suppLink">
+							<a href="javascript:;" class="userprofile-menu-link">Supporters</a>
+						</div>
+					</li>
+					<li triggerLink="salesordersLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/Sales-Orders.png"></a>
+						<div class="userprofile-menu-popup soLink" popLink="salesordersLink">
+							<a href="javascript:;" class="userprofile-menu-link">Sales / Orders</a>
+						</div>
+					</li>
+					<li triggerLink="payLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/payments.png"></a>
+						<div class="userprofile-menu-popup paymentLink" popLink="payLink">
+							<a href="javascript:;" class="userprofile-menu-link">Payments</a>
+						</div>
+					</li>
+					<li triggerLink="eventLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/events.png"></a>
+						<div class="userprofile-menu-popup eventsLink" popLink="eventLink">
+							<a href="javascript:;" class="userprofile-menu-link">Events</a>
+						</div>
+					</li>
+					<li triggerLink="referLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/referrals.png"></a>
+						<div class="userprofile-menu-popup refersLink" popLink="referLink">
+							<a href="javascript:;" class="userprofile-menu-link">Referrals</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-wrapper padding-y">
+				<div class="ap_page_title">
+					<h3>
+						<b>
+							T-Shirts
+						</b>
+					</h3>
+				</div>
+				<a href="javascript:;" class="btn dark myProducts">
+						My products
+				</a>
+			</div>
+		</section>
+
+		<!-- end add art header -->
+
+		<section class="bg-lightest large-padding-top-y">
+			<div class="content-wrapper">
+			</div>
+		</section>
+
+			<!-- start original art main section -->
+
+		<section class="bg-lightest large-padding-bottom-y" id="art-templates">
+			<div class="content-wrapper add-art-wrapper phone-case-wrapper">
+				<div class="row" style="margin-left: 0;">
+
+					<div class="add-art-form-left shirt-form-left-ao white">
+						<div id="genders">
+							<p>
+								<b>
+									For whom
+								</b>
+							</p>
+							<div style="width: 100%; overflow: hidden;">
+									<input type="radio" name="gender" value="men" id="genderm" checked>
+									<label for="genderm">Men</label>
+							</div>
+							<div style="width: 100%; overflow: hidden; margin-bottom: 20px;">
+									<input type="radio" name="gender" value="women" id="genderw">
+									<label for="genderw">Women</label>
+							</div>
+						</div>
+
+							<div class="tote-icons-wrapper" id="shirt-icons-men">
+								<div class="shirt-wrapper shirt-front active" onclick="switch_front_back_men(this)">
+									<img src="images/icons/men-shirt-front.png" class="shirt-icon" id="shirt-men-front">
+									<span style="float: none;">Front</span>
+								</div>
+								<div class="shirt-wrapper shirt-back" onclick="switch_front_back_men(this)">
+									<img src="images/icons/men-shirt-back.png" class="shirt-icon" id="shirt-men-back">
+									<span style="float: none;">Back</span>
+								</div>
+							</div>
+
+
+							<div class="tote-icons-wrapper" id="shirt-icons-women" style="display: none;">
+								<div class="shirt-wrapper shirt-front active" onclick="switch_front_back_women(this)">
+									<img src="images/icons/women-shirt-front.png" class="shirt-icon" id="shirt-women-front">
+									<span style="float: none;">Front</span>
+								</div>
+								<div class="shirt-wrapper shirt-back" onclick="switch_front_back_women(this)">
+									<img src="images/icons/women-shirt-back.png" class="shirt-icon" id="shirt-women-back">
+									<span style="float: none;">Back</span>
+								</div>
+							</div>
+
+
+							<p>
+								<b>
+									Add tags
+								</b>
+							</p>
+							<input type="text" class="form-input tags-input" id="tags-box-shirt" name="tags-box-shirt" data-role="tagsinput">
+							<p style="color: #acacac; font-size: 0.75em;">
+								Separate tags with commas (,)
+								<br />
+								Maximum of 20 characters per tag.
+							</p>
+
+							<div id="men-shirt-bottom-front">
+								<label for="art-input-men-front" class="btn add-art-btn" id="add-art-btn-men-front">
+									Add art
+								</label>
+								<p style="color: #acacac; font-size: 0.75em;">
+									Max file size 10Mb.
+									<br />
+									PNG and JPG format only.
+								</p>
+								<input id="art-input-men-front" type="file" accept="image/*" style="display: none;"/>
+							</div>
+
+							<div id="men-shirt-bottom-back" style="display: none;">
+								<label for="art-input-men-back" class="btn add-art-btn" id="add-art-btn-men-back">
+									Add art
+								</label>
+								<p style="color: #acacac; font-size: 0.75em;">
+									Max file size 10Mb.
+									<br />
+									PNG and JPG format only.
+								</p>
+								<input id="art-input-men-back" type="file" accept="image/*" style="display: none;"/>
+							</div>
+							<div id="women-shirt-bottom-front" style="display: none;">
+								<label for="art-input-women-front" class="btn add-art-btn" id="add-art-btn-women-front">
+									Add art
+								</label>
+								<p style="color: #acacac; font-size: 0.75em;">
+									Max file size 10Mb.
+									<br />
+									PNG and JPG format only.
+								</p>
+								<input id="art-input-women-front" type="file" accept="image/*" style="display: none;"/>
+							</div>
+
+							<div id="women-shirt-bottom-back" style="display: none;">
+								<label for="art-input-women-back" class="btn add-art-btn" id="add-art-btn-women-back">
+									Add art
+								</label>
+								<p style="color: #acacac; font-size: 0.75em;">
+									Max file size 10Mb.
+									<br />
+									PNG and JPG format only.
+								</p>
+								<input id="art-input-women-back" type="file" accept="image/*" style="display: none;"/>
+							</div>
+						</div>
+
+
+
+
+					  <div class="add-art-main-wrapper white">
+							<!-- start wrapper for men shirts -->
+							<div id="men-templates-wrapper">
+								<!-- start men shirt - front -->
+								<div class="add-art-form-main men-shirt-art" id="men-shirt-front">
+									<div class="art-area men-shirt-area-ao">
+										<div class="shirt-outline-men-ao" id="shirt-outline-men-front">
+											<div id="printer_front_men" class="print">
+		                  </div>
+											<img src="images/allover-shirt-men-front.png" class="ao-shirt-men-bg" id="men-bg-front">
+											<img src="images/shirt-men-allover-printarea.png" class="shirt-men-allover-printarea" id="shirt-men-printarea-front" style="display: none;">
+
+										</div>
+									</div>
+
+										<div class="plus shirt-plus" id="plus-men-front"></div>
+										<div class="max-image-size-popup" id="max-image-size-men-front" style="display: none;">
+										<div class="xIcon" id="close-max-image-size-men-front"></div>
+											<span>Maximum image size.</span>
+										</div>
+										<div id="slider-front-men" class="add-product-slider shirt-slider"></div>
+										<div class="minus shirt-minus" id="minus-men-front"></div>
+										<div class="center-img-icon shirt-cii" id="center-image-men-front" triggerLink="center-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="center-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Center</a>
+											</div>
+										</div>
+										<div class="original-size shirt-ogs" id="max-size-men-front" triggerLink="og-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="og-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Original size</a>
+											</div>
+										</div>
+		                <div class="add-product-buttons-wrapper" id="add-product-buttons-men-front">
+		                  <button class="btn wide" style="color: #fff; background: #e74c3c;" id="download-shirt-men-front">
+		  									Download
+		  								</button>
+		  								<button class="btn wide" onclick="removeShirtArt_front_men()">
+		  									Remove art
+		  								</button>
+		                </div>
+								</div>
+								<!-- end men shirt - front -->
+								<!-- start men shirt - back -->
+								<div class="add-art-form-main men-shirt-art" id="men-shirt-back" style="display: none;">
+									<div class="art-area men-shirt-area-ao">
+										<div class="shirt-outline-men-ao" id="shirt-outline-men-back">
+											<div id="printer_back_men" class="print">
+		                  </div>
+											<img src="images/allover-shirt-men-back.png" class="ao-shirt-men-bg" id="men-bg-back">
+											<img src="images/shirt-men-allover-printarea.png" class="shirt-men-allover-printarea" id="shirt-men-printarea-back" style="display: none;">
+
+										</div>
+									</div>
+										<div class="plus shirt-plus" id="plus-men-back"></div>
+										<div class="max-image-size-popup" id="max-image-size-men-back" style="display: none;">
+										<div class="xIcon" id="close-max-image-size-men-back"></div>
+											<span>Maximum image size.</span>
+										</div>
+										<div id="slider-back-men" class="add-product-slider shirt-slider"></div>
+										<div class="minus shirt-minus" id="minus-men-back"></div>
+										<div class="center-img-icon shirt-cii" id="center-image-men-back" triggerLink="center-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="center-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Center</a>
+											</div>
+										</div>
+										<div class="original-size shirt-ogs" id="max-size-men-back" triggerLink="og-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="og-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Original size</a>
+											</div>
+										</div>
+
+		                <div class="add-product-buttons-wrapper" id="add-product-buttons-men-back">
+		                  <button class="btn wide" style="color: #fff; background: #e74c3c;" id="download-shirt-men-back">
+		  									Download
+		  								</button>
+		  								<button class="btn wide" onclick="removeShirtArt_back_men()">
+		  									Remove art
+		  								</button>
+		                </div>
+
+								</div>
+								<!-- end men shirt - back -->
+	            </div>
+							<!-- end wrapper for men shirts -->
+
+							<!-- start wrapper for women shirts -->
+							<div id="women-templates-wrapper" style="display: none;">
+								<!-- start women shirt - front -->
+								<div class="add-art-form-main women-shirt-art" id="women-shirt-front">
+									<div class="art-area women-shirt-area-ao">
+										<div class="shirt-outline-women-ao" id="shirt-outline-women-front">
+											<div id="printer_front_women" class="print">
+		                  </div>
+											<img src="images/allover-shirt-women-front.png" class="ao-shirt-women-bg" id="women-bg-front">
+											<img src="images/shirt-women-allover-printarea.png" class="shirt-women-allover-printarea" id="shirt-women-printarea-front" style="display: none;">
+
+										</div>
+									</div>
+										<div class="plus shirt-plus" id="plus-women-front"></div>
+										<div class="max-image-size-popup" id="max-image-size-women-front" style="display: none;">
+										<div class="xIcon" id="close-max-image-size-women-front"></div>
+											<span>Maximum image size.</span>
+										</div>
+										<div id="slider-front-women" class="add-product-slider shirt-slider"></div>
+										<div class="minus shirt-minus" id="minus-women-front"></div>
+										<div class="center-img-icon shirt-cii" id="center-image-women-front" triggerLink="center-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="center-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Center</a>
+											</div>
+										</div>
+										<div class="original-size shirt-ogs" id="max-size-women-front" triggerLink="og-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="og-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Original size</a>
+											</div>
+										</div>
+		                <div class="add-product-buttons-wrapper" id="add-product-buttons-women-front">
+		                  <button class="btn wide" style="color: #fff; background: #e74c3c;" id="download-shirt-women-front">
+		  									Download
+		  								</button>
+		  								<button class="btn wide" onclick="removeShirtArt_front_women()">
+		  									Remove art
+		  								</button>
+		                </div>
+								</div>
+								<!-- end women shirt - front -->
+								<!-- start women shirt - back -->
+								<div class="add-art-form-main women-shirt-art" id="women-shirt-back" >
+									<div class="art-area women-shirt-area-ao">
+										<div class="shirt-outline-women-ao" id="shirt-outline-women-back">
+											<div id="printer_back_women" class="print">
+		                  </div>
+											<img src="images/allover-shirt-women-back.png" class="ao-shirt-women-bg" id="women-bg-back">
+											<img src="images/shirt-women-allover-printarea.png" class="shirt-women-allover-printarea" id="shirt-women-printarea-back" style="display: none;">
+
+										</div>
+									</div>
+										<div class="plus shirt-plus" id="plus-women-back"></div>
+										<div class="max-image-size-popup" id="max-image-size-women-back" style="display: none;">
+										<div class="xIcon" id="close-max-image-size-women-back"></div>
+											<span>Maximum image size.</span>
+										</div>
+										<div id="slider-back-women" class="add-product-slider shirt-slider"></div>
+										<div class="minus shirt-minus" id="minus-women-back"></div>
+										<div class="center-img-icon shirt-cii" id="center-image-women-back" triggerLink="center-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="center-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Center</a>
+											</div>
+										</div>
+										<div class="original-size shirt-ogs" id="max-size-women-back" triggerLink="og-img-link">
+											<div class="userprofile-menu-popup add-image-popup" popLink="og-img-link">
+												<a href="javascript:;" class="userprofile-menu-link">Original size</a>
+											</div>
+										</div>
+		                <div class="add-product-buttons-wrapper" id="add-product-buttons-women-back">
+		                  <button class="btn wide" style="color: #fff; background: #e74c3c;" id="download-shirt-women-back">
+		  									Download
+		  								</button>
+		  								<button class="btn wide" onclick="removeShirtArt_back_women()">
+		  									Remove art
+		  								</button>
+		                </div>
+								</div>
+								<!-- end women shirt - back -->
+	            </div>
+							<!-- end wrapper for women shirts -->
+
+							<canvas id="cloner_front" style="display: none;"></canvas>
+							<canvas id="cloner_back" style="display: none;"></canvas>
+							<canvas id="cloner_final" style="display: none;"></canvas>
+							<canvas id="img-slice" style="display: none;"></canvas>
+							<img src="images/allover-shirt-men-front-mask1.png" class="ao-men-bg-mask" id="allover-shirt-men-front-mask" style="display: none;">
+							<img src="images/allover-shirt-men-back-mask1.png" class="ao-men-bg-mask" id="allover-shirt-men-back-mask" style="display: none;">
+							<img src="images/ao-men-front.png" class="ao-men-bg-mask" id="allover-shirt-men-front-backing" style="display: none;">
+							<img src="images/ao-men-back.png" class="ao-men-bg-mask" id="allover-shirt-men-back-backing" style="display: none;">
+							<img src="images/allover-shirt-women-front-mask1.png" class="ao-women-bg-mask" id="allover-shirt-women-front-mask" style="display: none;">
+							<img src="images/allover-shirt-women-back-mask1.png" class="ao-women-bg-mask" id="allover-shirt-women-back-mask" style="display: none;">
+							<img src="images/ao-women-front.png" class="ao-women-bg-mask" id="allover-shirt-women-front-backing" style="display: none;">
+							<img src="images/ao-women-back.png" class="ao-women-bg-mask" id="allover-shirt-women-back-backing" style="display: none;">
+							<img id="img-rotator" src="" style="display: none;">
+									<div class="submit_status">
+										<div class="progress-track"></div>
+									</div>
+								</div>
+								<div class="add-art-nav-buttons">
+									<a href="javascript:;" class="btn dark left">
+										Back
+									</a>
+									<button class="btn dark right">
+										Next
+									</button>
+								</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-lightest large-padding-bottom-y" id="add-art-not-avail">
+			<div class="row content-wrapper white">
+				<p class="large-padding-top-y large-padding-bottom-y">
+						Unfortunately, this feature is not available on your current device.
+				</p>
+			</div>
+		</section>
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="content-wrapper">
+				<div class="footer-top">
+					<div class="wrapper">
+						<h3>
+							Sign up for our newsletter and stay up to date for the latest on Indelibl!
+						</h3>
+					</div>
+
+					<div class="subscribe-cell-button-holder">
+						<button type="submit" class="btn wide" onclick="showSubscribeForm()" id="showSubscribeFormButton">
+									Subscribe
+							</button>
+					</div>
+
+					<div class="subscribe-form">
+						<div class="subscribe_container">
+							<div class="xIcon" id="hide-subscribe-form" onclick="hideSubscribeForm()"></div>
+							<input type="email" name="subscriberMail" placeholder="Email address" />
+							<div class="errorMsg">
+								<div class="errorIcon"></div>
+							</div>
+							<div class="form-item form-item_full">
+								<input type="radio" name="gender" value="male" id="ml"><label for="ml">Male</label>
+								<input type="radio" name="gender" value="female" id="fml"><label for="fml">Female</label>
+							</div>
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I accept the <a href="javascript:;">Privacy Policy</a></label>
+							</div>
+							<button type="submit" class="btn wide">
+										Subscribe
+								</button>
+						</div>
+						<!-- Pojavi se prouka kada korisnik posalje email za subscription -->
+						<!--
+							<div class="wrapper subscribe_thanks">
+								<h3>
+									Thank you for subscribing!
+								</h3>
+							</div>
+						-->
+					</div>
+
+				</div>
+				<hr class="separator-footer" />
+				<div class="footer-bottom">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<h4>
+									Company
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl Is</a>
+							</li>
+							<li>
+								<a href="javascript:;">Press</a>
+							</li>
+							<li>
+								<a href="javascript:;">Partnerships & Collaborations</a>
+							</li>
+							<li>
+								<a href="javascript:;">Careers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Contact Us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Legal
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Terms of Service</a>
+							</li>
+							<li>
+								<a href="javascript:;">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="javascript:;">Copyright Policy</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Support
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">For Sellers</a>
+							</li>
+							<li>
+								<a href="javascript:;">For Buyers</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQs</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Business
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Restaurants and Cafes</a>
+							</li>
+							<li>
+								<a href="javascript:;">Office Hire</a>
+							</li>
+							<li>
+								<a href="javascript:;">Interior Designers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Curate with Indelibl</a>
+							</li>
+							<li>
+								<a href="javascript:;">Affiliate Programme</a>
+							</li>
+							<li>
+								<a href="javascript:;">Invest in Indelibl</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Indelibl
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Galleries</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Artists</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Publishers</a>
+							</li>
+						</ul>
+						<div class="footer-right">
+							<h4>
+								Follow us
+							</h4>
+							<div class="footer-iconWrap">
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/facebook.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/twitter.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/insta.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					© 2016 Indelibl. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- notifications start -->
+	<div class="popup-wrapper" style="display: none;" data-popup-id="notifications">
+		<div class="popup-inner ie-popup notify-popup">
+			<div class="popup popup-notifications">
+				<div class="notifications-popup-header">
+					<h4>
+					<b>
+						Notifications
+					</b>
+				</h4>
+					<div class="xIcon" id="close-notifications"></div>
+				</div>
+				<ul class="notifications-list">
+					<li>
+						<div class="notification-text long-text">
+							<p>
+								<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-close">
+							<div class="xIcon"></div>
+						</div>
+					</li>
+					<li>
+						<div class="notification-text">
+							<p>
+								<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-buttons">
+							<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+							<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+							<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- notifications end -->
+
+	<!-- upload error start -->
+
+	<div class="popup-wrapper" id="size-error" style="display: none;">
+		<div class="popup-inner ie-popup error-popup">
+			<div class="error-popup-left">
+				<div class="errorIcon-large"></div>
+			</div>
+			<div class="error-popup-right">
+				<h5>
+					<b>Please correct following</b>
+				</h5>
+				<span>Selected file is too big. Please select file up to 10MB.</span>
+				<button class="btn clearBtn" onclick="hideSizeError()">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="popup-wrapper" id="ext-error" style="display: none;">
+		<div class="popup-inner ie-popup error-popup">
+			<div class="error-popup-left">
+				<div class="errorIcon-large"></div>
+			</div>
+			<div class="error-popup-right">
+				<h5>
+					<b>Please correct following</b>
+				</h5>
+				<span>Selected file is not supported. Please use JPG or PNG file.</span>
+				<button class="btn clearBtn" onclick="hideExtError()">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="popup-wrapper" id="process-loader" style="background-color: rgba(0, 0, 0, 0.8); display: none;">
+
+		<!-- loader for tshirt upload waiting -->
+
+		<div style="width: 800px; margin-left: auto; margin-right: auto; margin-top: 15%; text-align: center;">
+			<div class="loader-process">Loading...</div>
+			<p style="font-size: 20px; color: #d0cfcf; margin-bottom: 30px;" >
+				This may take a while....
+			</p>
+
+			<p style="font-size: 35px; color: #fff" id="loader-message">
+				Loading....
+			</p>
+		</div>
+	</div>
+
+	<!-- preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+		</div>
+	</div>
+
+	<!-- SEO -->
+	<h1 style="display:none;">INDELIBL</h1>
+	<h2 style="display:none;">INDELIBL</h2>
+	<!--Custom Scripts-->
+  <script src="js/tags-input.js">
+	</script>
+	<script src="js/general.js">
+	</script>
+	<script src="js/FileSaver.js">
+	</script>
+  <script src="js/addprod-shirt-men-ao.js">
+	</script>
+	<script src="js/addprod-shirt-women-ao.js">
+	</script>
+
+
+</body>
+
+</html>

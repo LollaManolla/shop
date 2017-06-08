@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+		<!--Facebook share meta data-->
+		<meta name="description" content="Indelibl"/>
+		<meta property="og:title" content="Indelibl"/>
+		<meta property="og:description" content=""/>
+		<meta property="og:url" content="www.indelibl.co"/>
+		<meta property="og:site_name" content="Indelibl"/>
+		<meta property="og:image" content=""/>
+		<meta property="og:locale" content="en_US"/>
+		<meta property="og:type" content="website"/>
+		<!--Facebook share meta data end-->
+		<title>
+			Indelibl
+		</title>
+		<!--icon fonts -->
+		<link href="fonts/material/style.css" rel="stylesheet">
+		<link href="fonts/indelibl/style.css" rel="stylesheet">
+		<!--style-->
+		<link href="css/vendor-ui.css" rel="stylesheet">
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.css" rel="stylesheet">
+		<link href="css/owl.transitions.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<!--js-->
+		<script src="js/vendor.js"></script>
+		<script src="js/migrate.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/imagesloaded.js"></script>
+	</head>
+	<body>
+		<div class="main-container grey">
+		<!-- start gallery application form main section -->
+		<section class="bg-lightest large-padding-y">
+			<div class="content-wrapper app_form white">
+				<div class="row" style="margin-left: 0;">
+					<div class="profile-form gallery_application">
+						<h2>
+							Application for Galleries &amp; Publishers
+						</h2>
+						<!-- organisation name -->
+						<div class="form-row appForm_row1">
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="orgName" class="form-label">
+										Name of Organisation *
+									</label>
+								</div>
+								<div class="form-item form-item_full organisation">
+									<input type="text" class="form-input" id="orgName" name="orgName" placeholder="Name of Organisation">
+									<div class="errorMsg">
+										<div class="errorIcon"></div>Please fill this field appropriately
+									</div>
+								</div>
+							</div>
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="profile_type" class="form-label">
+										Select
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="profile_type" name="profile_type" class="form-input">
+										<option value="Select Type" selected="true" disabled="disabled">Select Type</option>
+										<option value="Gallery">Gallery</option>
+										<option value="Publisher">Publisher</option>
+									</select>
+									<div class="errorMsg">
+										<div class="errorIcon"></div>Please fill this field appropriately
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row" style="margin-left: 0;">
+					<div class="profile-form gallery_application">
+						<h3>
+							<b>
+								Contact Details
+							</b>
+						</h3>
+						<!-- Contact person name -->
+						<div class="form-row">
+
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="firstName" class="form-label">
+											First name *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+									<input type="text" class="form-input" id="firstName" name="firstName" placeholder="First name">
+										<div class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="lastName" class="form-label">
+											Last name *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+										<input type="text" class="form-input" id="lastName" name="lastName" placeholder="Last name">
+										<div class="errorMsg" style="display: block;">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- country state -->
+						<div class="form-row">
+
+
+
+
+
+
+
+
+
+							<div class="form-item form-item_full">
+							<label class="form-label">
+								Upload your ID
+							</label>
+							</div>
+
+							<div class="form-item form-item_full">
+								<div class="userID_img" id="id-image-preview"></div>
+								<div class="id_select_button_wrapper">
+									<div class="id_upload_desc">
+										<span>
+											In order to verify your account, we need a digital
+											copy of your government issued ID. This will help
+											us ensure that you are who you say you are, and also
+											that payments are made to the rightful owner.
+										</span>
+									</div>
+									<label for="id-img-file-input" class="btn dark mobLeft">
+											Choose
+									</label>
+									<input id="id-img-file-input" type="file" accept="image/*" onchange="showMyID(this)"/>
+								</div>
+								<div class="form-item form-item_full">
+									<div class="errorMsg">
+										<div class="errorIcon"></div>Please select an image for your ID
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="profileCountry" class="form-label">
+											Country *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+										<select id="profileCountry" name="profileCountry" class="form-input">
+											<option value="Select Country" selected="true" disabled="disabled">Select Country</option>
+											<option value="Afghanistan">Afghanistan</option>
+											<option value="Albania">Albania</option>
+											<option value="Algeria">Algeria</option>
+											<option value="Andorra">Andorra</option>
+											<option value="Angola">Angola</option>
+											<option value="Anguilla">Anguilla</option>
+
+										</select>
+										<div class="errorMsg" style="display: block;">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="profileState" class="form-label">
+											State
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+										<select id="profileState" name="profileState" class="form-input">
+											<option value="Select State" selected="true" disabled="disabled">Select State</option>
+											<option value="State 1">State 1</option>
+											<option value="State 2">State 2</option>
+											<option value="State 3">State 3</option>
+											<option value="State 4">State 4</option>
+											<option value="State 5">State 5</option>
+											<option value="State 6">State 6</option>
+											<option value="State 7">State 7</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- address -->
+							<div class="form-row">
+								<div class="form-item form-item_full">
+									<label for="userStreet" class="form-label">
+										Address *
+									</label>
+								</div>
+								<div class="form-item form-item_half">
+									<input type="text" class="form-input" id="userStreet" name="userStreet" placeholder="Street">
+									<div class="errorMsg">
+										<div class="errorIcon"></div>Please fill this field appropriately
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_half">
+										<input type="text" class="form-input" id="StreetNo" name="StreetNo" placeholder="Number">
+										<div class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>　
+							</div>
+
+							<div class="form-row">
+								<div class="form-item form-item_full">
+									<label for="userCity" class="form-label">
+										City *
+									</label>
+								</div>
+								<div class="form-item form-item_half">
+									<input type="text" class="form-input" id="userCity" name="userCity" placeholder="City">
+									<div class="errorMsg">
+										<div class="errorIcon"></div>Please fill this field appropriately
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_half">
+										<input type="text" class="form-input" id="pCode" name="pCode" placeholder="Postcode">
+										<div class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>　
+							</div>
+
+
+
+
+
+
+
+
+						<!-- Email and website -->
+						<div class="form-row">
+
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="galleryEmail" class="form-label">
+											E-mail *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+									<input type="email" class="form-input" id="galleryEmail" name="galleryEmail" placeholder="Email">
+									<div class="errorMsg" style="display: block;">
+										<div class="errorIcon"></div>Please fill this field appropriately
+									</div>
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="galleryWebsite" class="form-label">
+											Website *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+										<input type="text" class="form-input" id="galleryWebsite" name="galleryWebsite" placeholder="Website">
+										<div class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Phone and skype -->
+						<div class="form-row">
+
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="galleryPhone" class="form-label">
+											Telephone number *
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+									<input type="text" class="form-input" id="galleryPhone" name="galleryPhone" placeholder="Phone">
+										<div class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+								<div class="form-item form-item_half">
+									<div class="form-item form-item_full">
+										<label for="skype" class="form-label">
+											Skype
+										</label>
+									</div>
+
+									<div class="form-item form-item_full">
+										<input type="text" class="form-input" id="skype" name="skype" placeholder="Skype">
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row" style="margin-left: 0;">
+					<div class="profile-form gallery_application">
+						<div class="form-row">
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I AGREE TO THE <a href="javascript:;">TERMS AND CONDITIONS</a></label>
+							</div>
+						</div>
+						<!-- Apply button -->
+						<div class="form-row">
+							<div class="form-item form-item_full button-row">
+								<button class="btn mid">Apply</button>
+							</div>
+						</div>
+					</div>
+					<!-- end profile form div -->
+				</div>
+				<!-- end row div that wraps profile form -->
+			</div>
+			<!-- end white wrapper div -->
+		</section>
+		<!-- end user profile form main section -->
+		<!-- end user profile form -->
+
+
+
+		<!-- after sending application -->
+		<!--
+			<div class="content-wrapper">
+			<div class="row" >
+				<img class="galleryApp_logo" src="images/logo2.png" alt=""/>
+				<div class="middle" id="followMsg">
+					<p>
+						Thank you for your application.
+					</p>
+					<p>
+						Further instructions have been sent to your email address.
+					</p>
+				</div>
+				<a href="index.html" class="btn wide galleryAppThanks">Return to Home page</a>
+			</div>
+		</div>
+		-->
+		<!-- end -->
+
+	</div>
+
+
+	<!--Custom Scripts-->
+	<script src="js/general.js">
+	</script>
+<!-- preloader -->
+  <div class="loader-mask">
+  	<div class="loader">
+		</div>
+  </div>
+<!-- SEO -->
+<h1 style="display:none;">INDELIBL</h1>
+<h2 style="display:none;">INDELIBL</h2>
+
+</body>
+
+</html>

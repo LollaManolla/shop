@@ -1,0 +1,1273 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+	<!--Facebook share meta data-->
+	<meta name="description" content="Indelibl" />
+	<meta property="og:title" content="Indelibl" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.indelibl.co" />
+	<meta property="og:site_name" content="Indelibl" />
+	<meta property="og:image" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<!--Facebook share meta data end-->
+	<title>
+		Indelibl
+	</title>
+	<!--icon fonts -->
+	<link href="fonts/material/style.css" rel="stylesheet">
+	<link href="fonts/indelibl/style.css" rel="stylesheet">
+	<!--style-->
+	<link href="css/vendor-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--js-->
+	<script src="js/vendor.js"></script>
+	<script src="js/migrate.js"></script>
+	<script src="js/vendor-ui.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-offer">
+			<span>Get 10% off on all orders in Ghana and Nigeria.</span>
+		</div>
+		<header class="header-top">
+			<div class="content-wrapper clearfix">
+				<div class="left">
+					<a class="logo" href="">
+						<img src="images/logo2.png" alt="" />
+					</a>
+					<!-- currency dropdown -->
+					<div class="dropdown" id="chooseCurrency">
+						<aside class="drop-trigger icon-trigger" trigger="choose-currency">
+							<span>
+									GBP
+								</span>
+						</aside>
+						<aside class="drop-content" dropdown="choose-currency">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<span>GBP</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>EUR</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- language dropdown -->
+					<div class="dropdown">
+						<aside class="drop-trigger icon-trigger" trigger="choose-lang">
+							<img src="images/eng.jpg" alt="" />
+						</aside>
+						<aside class="drop-content" dropdown="choose-lang">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="images/eng.jpg" alt="" />
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="images/fre.jpg" alt="" />
+										<span>French</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- non-mobile search form -->
+					<div class="search" id="searchPc">
+						<input type="text" /><!--
+  					--><select id="searches" name="searches" class="search-selector">
+							<option value="Product">Product</option>
+							<option value="Artist">Artist</option>
+							<option value="Publishers">Publisher</option>
+							<option value="Gallery">Gallery</option>
+							<option value="Author">Author</option>
+							<option value="Event">Event</option>
+						</select><!--
+  					--><button type="submit">
+								<i class="icon-search1"></i>
+							</button>
+					</div>
+				</div>
+				<!-- right header, user profile dropdown -->
+				<div class="right">
+					<ul class="user-options">
+						<li>
+							<a href="javascript:;" data-popup="registration" data-tab="login">Login / Register</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" data-popup="registration" data-tab="login">
+								<img src="images/icons/profile_placeholder.png" alt="" />
+							</a>
+						</li>
+
+
+						<!-- html for logged in user header
+							<li><a href="#">Brian Williams</a></li>
+							<li class="dropdown">
+								<img src="images/morgan1.jpg" alt="" trigger="profileMenu"/>
+								<div class="drop-content drop-right profile" dropdown="profileMenu">
+									<a href="">My Profile</a>
+									<a href="">My Indelibl</a>
+									<a href="">Log out</a>
+								</div>
+							</li>
+							-->
+
+						<!-- wishlist dropdown -->
+						<li class="dropdown">
+							<i class="icon-wishlist drop-trigger" trigger="wishlist"></i>
+							<div class="drop-content drop-right" dropdown="wishlist">
+								<ul class="header-subNav header-wishlist-nav js-headerSubmenu">
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na1b.jpg" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na6.png" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<a class="btn wide" href="javascript:;">View all</a>
+								</ul>
+							</div>
+						</li>
+						<!-- cart dropdown -->
+						<li class="dropdown">
+							<span class="cart-count">
+									5
+								</span>
+							<i class="icon-shopping-cart drop-trigger" trigger="cart"></i>
+							<div class="drop-content drop-right" dropdown="cart">
+								<div class="header-subNav header-cart-nav js-headerSubmenu">
+									<!-- if cart is NOT empty: -->
+									<span>
+											You have 5 items in your shopping cart
+										</span>
+									<span class="total">
+											Total: $567
+										</span>
+									<a class="btn wide" href="javascript:;">My cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- mobile navigation menu toggle burger -->
+				<div class="header_bottom_mob">
+					<div class="navigation_toggle link">
+						<svg viewBox="0 0 16 12" height="12" width="16" version="1.1">
+								<rect class="nav_svg" y="0" width="16" height="2"></rect>
+								<rect class="nav_svg" y="5" width="16" height="2"></rect>
+								<rect class="nav_svg" y="10" width="16" height="2"></rect>
+							</svg>
+					</div>
+					<!-- mobile menu -->
+					<menu class="menu clearfix bg-light mob_menu">
+						<div class="menu-collection">
+							<a href="javascript:;" class="menu-link">Original Art</a>
+							<a href="javascript:;" class="menu-link">Art Prints</a>
+							<a href="javascript:;" class="menu-link">Books</a>
+							<a href="javascript:;" class="menu-link">Phone Cases</a>
+							<a href="javascript:;" class="menu-link">T-Shirts</a>
+							<a href="javascript:;" class="menu-link">Pillows</a>
+							<a href="javascript:;" class="menu-link">Post Cards</a>
+							<a href="javascript:;" class="menu-link">Tote Bags</a>
+							<a href="javascript:;" class="menu-link">Mugs</a>
+							<a href="javascript:;" class="menu-link">Others</a>
+						</div>
+					</menu>
+					<!-- mobile search form -->
+					<div class="search" id="searchMob">
+						<input type="text" />
+						<select id="searches_mob" name="searches_mob" class="search-selector">
+							<option value="Product">Product</option>
+							<option value="Artist">Artist</option>
+							<option value="Publisher">Publisher</option>
+							<option value="Gallery">Gallery</option>
+							<option value="Author">Author</option>
+							<option value="Event">Event</option>
+						</select>
+						<button type="submit" class="search-button-mob">
+
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main menu -->
+		<section class="main-menu">
+			<div class="content-wrapper">
+				<ul>
+					<li>
+						<a href="javascript:;">Original Art</a>
+					</li>
+					<li>
+						<a href="javascript:;">Art Prints</a>
+					</li>
+					<li>
+						<a href="javascript:;">Books</a>
+					</li>
+					<li>
+						<a href="javascript:;">Phone Cases</a>
+					</li>
+					<li>
+						<a href="javascript:;">T-Shirts</a>
+					</li>
+					<li>
+						<a href="javascript:;">Pillows</a>
+					</li>
+					<li>
+						<a href="javascript:;">Post Cards</a>
+					</li>
+					<li>
+						<a href="javascript:;">Tote Bags</a>
+					</li>
+					<li>
+						<a href="javascript:;">Mugs</a>
+					</li>
+					<li>
+						<a href="javascript:;">Others</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- start main slider -->
+		<section id="header-slide" class="owl-carousel owl-theme">
+			<div class="slide" bg-img>
+				<img class="hidden-img" src="images/slider-2.jpg" alt="" />
+				<div class="content-wrapper">
+					<h1>
+							Artists
+						</h1>
+					<button class="btn wide" data-popup="registration">
+							Join now!
+						</button>
+				</div>
+			</div>
+			<div class="slide" bg-img>
+				<img class="hidden-img" src="images/slider-1.jpg" alt="" />
+				<div class="content-wrapper">
+					<h1>
+							Galleries
+						</h1>
+					<a class="btn wide" href="gallery-application.html">
+							Apply now!
+						</a>
+				</div>
+			</div>
+			<div class="slide" bg-img>
+				<img class="hidden-img" src="images/slider-3.jpg" alt="" />
+			</div>
+		</section>
+		<!-- end main slider -->
+		<!-- start DIAA -->
+		<section>
+			<div class="content-wrapper">
+				<div class="row padding-y" id="DIIA_row">
+					<div class="column-4 box-icons">
+						<i class="icon-discover"></i>
+						<h5>
+								<b>
+									Discover
+								</b>
+							</h5>
+						<p>
+							Art from emerging and established artists
+						</p>
+					</div>
+					<div class="column-4 box-icons">
+						<i class="icon-idea"></i>
+						<h5>
+								<b>
+									Inspire
+								</b>
+							</h5>
+						<p>
+							Be inspired by our wide range of art products
+						</p>
+					</div>
+					<div class="column-4 box-icons">
+						<i class="icon-interact"></i>
+						<h5>
+								<b>
+									Interact
+								</b>
+							</h5>
+						<p>
+							With our community through events and forums
+						</p>
+					</div>
+					<div class="column-4 box-icons">
+						<i class="icon-ArtWithPurpose"></i>
+						<h5>
+								<b>
+									Art With Purpose
+								</b>
+							</h5>
+						<p>
+							Every purchase on Indelibl goes towards the development of young creatives in Africa
+							<a href="javascript:;">Find out more</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end DIAA -->
+		<!-- start New arrivals, galleries and artists section -->
+		<section class="bg-lightest large-padding-y">
+			<div class="content-wrapper">
+				<!--Start New Arrivals-->
+				<h2 class="large-padding-y" style="padding-top: 20px;">
+						<b>
+							New Arrivals
+						</b>
+					</h2>
+				<div class="row" id="newArrivals">
+					<div class="column-4 box-product2 shirt-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+							</div>
+						</a>
+						<div class="desc2">
+							<h5>Fox</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">T-shirt</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+						</div>
+					</div>
+					<div class="column-4 box-product2 tote-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Tote bag</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+
+					</div>
+					<div class="column-4 box-product2 phone-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Phone case</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+					<div class="column-4 box-product2 art-print-bp">
+						<a href="javascript:;">
+							<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+								<img class="art-print-product-home" src="images/bp7.jpg">
+
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Art print</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+					<div class="column-4 box-product2 og-art-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp8.jpg") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Original art</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+					<div class="column-4 box-product2 book-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp5.jpg") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Book</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+					<div class="column-4 box-product2 mug-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp9.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of arthjjhkjhjjjjjjjjjjjjjjjjjj</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Mug</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+					<div class="column-4 box-product2 card-bp">
+						<a href="javascript:;">
+							<div class="product-img2" style='background: url("images/bp6.jpg") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+							</div>
+						</a>
+						<div class="desc2">
+
+							<h5>Name of art</h5>
+							<p class="price2">$25</p>
+							<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Card</a></span> by</p>
+							<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+						</div>
+					</div>
+
+					<!--
+						<div class="column-4 box-product2 pillow-bp">
+							<a href="javascript:;">
+								<div class="product-img2" style='background: url("images/bp9.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+								</div>
+							</a>
+								<div class="desc2">
+
+									<h5>Name of arthjjhkjhjjjjjjjjjjjjjjjjjj</h5>
+									<p class="price2">$25</p>
+									<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Pillow</a></span> by</p><p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+								</div>
+						</div>
+
+						<div class="column-4 box-product2 other-bp">
+							<a href="javascript:;">
+								<div class="product-img2" style='background: url("images/bp9.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+								</div>
+							</a>
+								<div class="desc2">
+
+									<h5>Name of arthjjhkjhjjjjjjjjjjjjjjjjjj</h5>
+									<p class="price2">$25</p>
+									<p class="product-desc-bottom"><span style="display: inline-block;"><a href="javascript:;" style="color: #acacac;">Other</a></span> by</p><p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+								</div>
+						</div>
+						-->
+
+				</div>
+				<div class="large-padding-y">
+					<a class="btn wide" href="javascript:;">Load more</a>
+				</div>
+				<!-- show this div if no new arrivals present -->
+				<!--
+					<div class="row" id="emptyArrivals">
+						<h3>
+								There are currently no new arrivals.
+						</h3>
+					</div>
+				-->
+				<hr class="separator" />
+				<!-- start Galleries-->
+				<h2 class="large-padding-y">
+						<b>
+							Events &amp; Galleries
+						</b>
+					</h2>
+				<div class="row" id="galleriesRow">
+					<div class="column-2 box-gallery">
+						<div class="product-img" bg-img>
+							<img src="images/gallery1.png" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Pace Print sdfsdfsdfsdfsdfsfsdfsdf</a>
+									</b>
+								</h4>
+							<h5>
+									Bangalasjdjshdksjhsakjhskjhdkjsad
+								</h5>
+							<a href="javascript:;" class="btn dark">Follow</a>
+						</div>
+					</div>
+					<div class="column-2 box-gallery">
+						<div class="product-img" bg-img>
+							<img src="images/gallery2.png" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Williem Siegal</a>
+									</b>
+								</h4>
+							<h5>
+									Santa Fe
+								</h5>
+							<a href="javascript:;" class="btn dark">Follow</a>
+						</div>
+					</div>
+				</div>
+				<div class="large-padding-y">
+					<a class="btn wide" id="egBtn" href="javascript:;">Browse more Events &amp; Galleries</a>
+				</div>
+				<!-- show this div if no galleries present -->
+				<!--
+					<div class="row" id="emptyGalleries">
+						<h3>
+								There are currently no galleries or events.
+						</h3>
+					</div>
+				-->
+				<hr class="separator" />
+				<!-- start Galleries-->
+				<h2 class="large-padding-y">
+						<b>
+							Events
+						</b>
+					</h2>
+				<div class="row" id="eventsRow">
+					<div class="column-2 box-gallery">
+						<div class="product-img" bg-img>
+							<img src="images/gallery1.png" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Pace Print sdfsdfsdfsdfsdfsfsdfsdf</a>
+									</b>
+								</h4>
+							<h5>
+									Bangalasjdjshdksjhsakjhskjhdkjsad
+								</h5>
+							<p class="event-date">
+								01.14.2017 - 01.16.2017
+							</p>
+							<a href="javascript:;" class="btn dark">Subscribe</a>
+						</div>
+					</div>
+					<div class="column-2 box-gallery">
+						<div class="product-img" bg-img>
+							<img src="images/gallery2.png" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Williem Siegal</a>
+									</b>
+								</h4>
+							<h5>
+									Santa Fe
+								</h5>
+							<p class="event-date">
+								01.14.2017 - 01.16.2017
+							</p>
+							<a href="javascript:;" class="btn dark">Subscribe</a>
+						</div>
+					</div>
+				</div>
+				<div class="large-padding-y">
+					<a class="btn wide" id="egBtn" href="javascript:;">Browse more Events &amp; Galleries</a>
+				</div>
+				<!-- show this div if no galleries present -->
+				<!--
+					<div class="row" id="emptyGalleries">
+						<h3>
+								There are currently no galleries or events.
+						</h3>
+					</div>
+				-->
+				<hr class="separator" />
+				<!--start Artists-->
+				<h2 class="large-padding-y">
+						<b>
+							Recently Joined Artists
+						</b>
+					</h2>
+				<div class="row" id="recentArtists">
+					<div class="column-4 box-artist">
+						<div class="artist-img" bg-img>
+							<img src="images/liam1.jpg" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Liam Nelsonhfggfdjhjgdjsdgfdfgdfhgfhf</a>
+									</b>
+								</h4>
+							<h5>
+									Photographer
+								</h5>
+							<a href="javascript:;" class="btn">Follow</a>
+							<p>
+								Lorem ipsum dolor sit amet, fhskdfhskdjfhksdjhfkjsdhfkdshfkshjfksdhfdkdsjhfjskdkconsectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit
+							</p>
+							<a href="javascript:;" class="arrow-link">Read more
+									<i class="material-arrow_forward"></i>
+								</a>
+						</div>
+					</div>
+					<div class="column-4 box-artist">
+						<div class="artist-img" bg-img>
+							<img src="images/morgan1.jpg" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Morgan Freeman</a>
+									</b>
+								</h4>
+							<h5>
+									Sculptor
+								</h5>
+							<a href="javascript:;" class="btn">Follow</a>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+								viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit
+								ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet.
+								Donec mollis hendrerit
+							</p>
+							<a href="javascript:;" class="arrow-link">Read more
+									<i class="material-arrow_forward"></i>
+								</a>
+						</div>
+					</div>
+					<div class="column-4 box-artist">
+						<div class="artist-img" bg-img>
+							<img src="images/denzel1.jpg" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Denzel Washington</a>
+									</b>
+								</h4>
+							<h5>
+									Painter
+								</h5>
+							<a href="javascript:;" class="btn">Follow</a>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit
+							</p>
+							<a href="javascript:;" class="arrow-link">Read more
+									<i class="material-arrow_forward"></i>
+								</a>
+						</div>
+					</div>
+					<div class="column-4 box-artist">
+						<div class="artist-img" bg-img>
+							<img src="images/kanye1.jpg" alt="" class="hidden-img" />
+						</div>
+						<div class="desc">
+							<h4>
+									<b>
+										<a href="javascript:;">Kanye West</a>
+									</b>
+								</h4>
+							<h5>
+									Artist
+								</h5>
+							<a href="javascript:;" class="btn">Follow</a>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra nibh sed ante luctus, ac tristique velit ultrices. Suspendisse at nibh et turpis interdum laoreet. Donec mollis hendrerit
+							</p>
+							<a href="javascript:;" class="arrow-link">Read more
+									<i class="material-arrow_forward"></i>
+								</a>
+						</div>
+					</div>
+				</div>
+				<div class="large-padding-y">
+					<a class="btn wide" href="javascript:;">Browse more Artists</a>
+				</div>
+				<!-- show this div if no new artists present -->
+				<!--
+					<div class="row" id="emptyArtists">
+						<h3>
+								There are currently no new artists.
+						</h3>
+					</div>
+				-->
+
+
+			</div>
+			<!-- end content wrapper -->
+		</section>
+		<!-- end New arrivals, galleries and artists section -->
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="content-wrapper">
+				<div class="footer-top">
+					<div class="wrapper">
+						<h3>
+								Sign up for our newsletter and stay up to date for the latest on Indelibl!
+							</h3>
+					</div>
+
+					<div class="subscribe-cell-button-holder">
+						<button type="submit" class="btn wide" onclick="showSubscribeForm()" id="showSubscribeFormButton">
+										Subscribe
+								</button>
+					</div>
+
+
+					<div class="subscribe-form">
+						<div class="subscribe_container">
+							<div class="xIcon" id="hide-subscribe-form" onclick="hideSubscribeForm()"></div>
+							<input type="email" name="subscriberMail" placeholder="Email address" />
+							<div class="errorMsg">
+								<div class="errorIcon"></div>
+							</div>
+							<div class="form-item form-item_full">
+								<input type="radio" name="gender" value="male" id="ml"><label for="ml">Male</label>
+								<input type="radio" name="gender" value="female" id="fml"><label for="fml">Female</label>
+							</div>
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I accept the <a href="javascript:;">Privacy Policy</a></label>
+							</div>
+							<button type="submit" class="btn wide">
+											Subscribe
+									</button>
+						</div>
+						<!-- Pojavi se prouka kada korisnik posalje email za subscription -->
+						<!--
+								<div class="wrapper subscribe_thanks">
+									<h3>
+										Thank you for subscribing!
+									</h3>
+								</div>
+							-->
+					</div>
+
+				</div>
+				<hr class="separator-footer" />
+				<div class="footer-bottom">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<h4>
+										Company
+									</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl Is</a>
+							</li>
+							<li>
+								<a href="javascript:;">Press</a>
+							</li>
+							<li>
+								<a href="javascript:;">Partnerships &amp; Collaborations</a>
+							</li>
+							<li>
+								<a href="javascript:;">Careers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Contact Us
+									</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+										Legal
+									</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Terms of Service</a>
+							</li>
+							<li>
+								<a href="javascript:;">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="javascript:;">Copyright Policy</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+										Support
+									</h4>
+							</li>
+							<li>
+								<a href="javascript:;">For Sellers</a>
+							</li>
+							<li>
+								<a href="javascript:;">For Buyers</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQs</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+										Business
+									</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Restaurants and Cafes</a>
+							</li>
+							<li>
+								<a href="javascript:;">Office Hire</a>
+							</li>
+							<li>
+								<a href="javascript:;">Interior Designers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Curate with Indelibl</a>
+							</li>
+							<li>
+								<a href="javascript:;">Affiliate Programme</a>
+							</li>
+							<li>
+								<a href="javascript:;">Invest in Indelibl</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+										Indelibl
+									</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Galleries</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Artists</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Publishers</a>
+							</li>
+						</ul>
+						<div class="footer-right">
+							<h4>
+									Follow us
+								</h4>
+							<div class="footer-iconWrap">
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/facebook.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/twitter.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/insta.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					© 2016 Indelibl. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- registration start -->
+	<div class="popup-wrapper" style="display: none;" data-popup-id="registration">
+		<div class="popup-inner registration-popup ie-popup">
+			<div class="popup popup-registration">
+				<div class="xIcon" id="closeLoginPopup"></div>
+				<div class="popup-registration-header">
+					<button class="active" data-tab="login">
+							Log in
+						</button>
+					<span>
+							or
+						</span>
+					<button data-tab="registerSelect">
+							Register
+						</button>
+				</div>
+				<div class="popup-registration-content">
+					<div class="popup-registration_login" data-tab-id="login">
+						<div class="popup-registration_signup">
+							<div class="top login-top" style="padding-bottom: 0;">
+								<a href="javascript:;" class="facebook">
+									<i></i><img class="login-popup-button-icon" src="images/fb-logo.png">Log In with Facebook</a>
+								<a href="javascript:;" class="googleplus">
+									<i></i><img class="login-popup-button-icon" src="images/gp-logo.png">Log In with Google+</a>
+									<div class="errorMsg">
+										<div class="errorIcon"></div>You are not registered
+									</div>
+							</div>
+						</div>
+						<div class="middle">
+							<span>
+									or
+								</span>
+						</div>
+						<div class="bottom form">
+							<div id="loginForm" name="loginForm">
+								<div class="form-row">
+									<div class="form-item form-item_full">
+										<label for="usernamelogin" class="form-label">
+												Username or Email
+											</label>
+											<br />
+										<input type="text" class="form-input" id="usernamelogin" name="usernamelogin">
+										<div id="error0" class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-item form-item_full">
+										<label for="passwordlogin" class="form-label">
+												Password
+											</label>
+										<br />
+										<input type="passwordlogin" class="form-input" id="passwordlogin" name="passwordlogin">
+										<div id="error1" class="errorMsg">
+											<div class="errorIcon"></div>Please fill this field appropriately
+										</div>
+									</div>
+								</div>
+								<a href="forgot-pass.html">Forgot your password?</a>
+								<br />
+								<button class="btn" type="submit">
+										Log in
+									</button>
+							</div>
+						</div>
+					</div>
+					<div class="popup-registration_signup-selector" data-tab-id="registerSelect" style="display: none;">
+						<h2 class="large-padding-y">
+								<b>
+									Are you
+								</b>
+							</h2>
+						<div class="large-padding-y">
+							<button data-tab="register" class="btn wide" id="supportButton">
+									Supporter
+								</button>
+						</div>
+						<h4>
+								<b>
+									OR
+								</b>
+							</h4>
+						<div class="large-padding-y">
+							<button data-tab="register" class="btn wide" id="artistButton">
+									Artist
+								</button>
+						</div>
+					</div>
+					<div class="popup-registration_signup" data-tab-id="register" style="display: none;">
+						<div class="popup-registration_signup">
+							<div class="top login-top" style="padding-bottom: 0;">
+								<a href="javascript:;" class="facebook">
+									<i></i><img class="login-popup-button-icon" src="images/fb-logo.png">Register with Facebook</a>
+								<a href="javascript:;" class="googleplus">
+									<i></i><img class="login-popup-button-icon" src="images/gp-logo.png">Register with Google+</a>
+							</div>
+						</div>
+						<div class="middle">
+							<span>
+									or
+								</span>
+						</div>
+						<div class="bottom form">
+							<div id="registerForm" name="registerForm" class="profile-form gallery_application">
+								<!-- Contact person name -->
+								<div class="form-row" id="regFLName">
+
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="firstName" class="form-label">
+																First name *
+															</label>
+										</div>
+
+										<div class="form-item form-item_full">
+											<input type="text" class="form-input" id="firstName" name="firstName" placeholder="First name">
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="lastName" class="form-label">
+																Last name *
+															</label>
+										</div>
+
+										<div class="form-item form-item_full">
+											<input type="text" class="form-input" id="lastName" name="lastName" placeholder="Last name">
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row" id="regCountryState">
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="profileCountry" class="form-label">
+																Country *
+															</label>
+										</div>
+
+										<div class="form-item form-item_full">
+											<select id="profileCountry" name="profileCountry" class="form-input">
+																<option value="Select Country" selected="true" disabled="disabled">Select Country</option>
+																<option value="Afghanistan">Afghanistan</option>
+																<option value="Albania">Albania</option>
+																<option value="Algeria">Algeria</option>
+																<option value="Andorra">Andorra</option>
+																<option value="Angola">Angola</option>
+																<option value="Anguilla">Anguilla</option>
+															</select>
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="profileState" class="form-label">
+																State
+															</label>
+										</div>
+
+										<div class="form-item form-item_full">
+											<select id="profileState" name="profileState" class="form-input">
+																<option value="Select State" selected="true" disabled="disabled">Select State</option>
+																<option value="State 1">State 1</option>
+																<option value="State 2">State 2</option>
+																<option value="State 3">State 3</option>
+																<option value="State 4">State 4</option>
+																<option value="State 5">State 5</option>
+																<option value="State 6">State 6</option>
+																<option value="State 7">State 7</option>
+															</select>
+										</div>
+									</div>
+								</div>
+								<!-- Email and website -->
+								<div class="form-row">
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="regEmail" class="form-label">
+																E-mail *
+															</label>
+										</div>
+										<div class="form-item form-item_full">
+											<input type="email" class="form-input" id="regEmail" name="regEmail" placeholder="Email">
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+									<div class="form-item form-item_half" id="regPhoneSkype">
+										<div class="form-item form-item_half">
+											<div class="form-item form-item_full">
+												<label for="galleryPhone" class="form-label">
+																	Telephone number *
+																</label>
+											</div>
+											<div class="form-item form-item_full">
+												<input type="text" class="form-input" id="galleryPhone" name="galleryPhone" placeholder="Phone">
+												<div class="errorMsg">
+													<div class="errorIcon"></div>Please fill this field appropriately
+												</div>
+											</div>
+										</div>
+										<div class="form-item form-item_half">
+											<div class="form-item form-item_full">
+												<label for="skype" class="form-label">
+																	Skype
+																</label>
+											</div>
+											<div class="form-item form-item_full">
+												<input type="text" class="form-input" id="skype" name="skype" placeholder="Skype">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-item form-item_half" id="regUsername">
+										<div class="form-item form-item_full">
+											<label for="reg-userName" class="form-label">
+																	Username *
+																</label>
+										</div>
+										<div class="form-item form-item_full">
+											<input type="text" class="form-input" id="reg-userName" name="reg-userName">
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item form-item_half" id="regPassword">
+										<div class="form-item form-item_full">
+											<label for="reg-pass" class="form-label">
+																	Password *
+																</label>
+										</div>
+										<div class="form-item form-item_full">
+											<input type="password" class="form-input" id="reg-pass" name="reg-pass">
+											<div class="errorMsg">
+												<div class="errorIcon"></div>Please fill this field appropriately
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row" id="artistProfession">
+									<div class="form-item form-item_half">
+										<div class="form-item form-item_full">
+											<label for="professionList" class="form-label">
+															Profession
+														</label>
+										</div>
+										<div class="form-item form-item_full">
+											<select name="professionList" class="form-input">
+															<option value="painter">
+																Painter
+															</option>
+															<option value="sculptor">
+																Sculptor
+															</option>
+															<option value="photographer">
+																Photographer
+															</option>
+															<option value="artist">
+																Artist
+															</option>
+														</select>
+										</div>
+									</div>
+								</div>
+								<!-- id photo upload -->
+								<div class="form-row" id="regId">
+									<div class="form-item form-item_half" style="padding-right: 0;">
+										<div class="form-item form-item_full">
+											<label class="form-label">
+													Upload your ID
+												</label>
+										</div>
+										<div class="form-item form-item_full" style="padding-right: 0;">
+											<div class="userID_img" id="id-image-preview"></div>
+											<div class="id_select_button_wrapper">
+												<div class="id_upload_desc">
+													<span>
+																In order to verify your account, we need a digital
+																copy of your government issued ID. This will help
+																us ensure that you are who you say you are, and also
+																that payments are made to the rightful owner.
+															</span>
+												</div>
+												<label for="id-img-file-input" class="btn dark mobLeft">
+																Choose
+														</label>
+												<input id="id-img-file-input" type="file" accept="image/*" onchange="showMyID(this)" />
+											</div>
+											<div class="form-item form-item_full">
+												<div class="errorMsg">
+													<div class="errorIcon"></div>Please select an image for your ID
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="registerForm-bottom">
+									<span style="font-size: 0.9em;">
+										<b>
+											BY&nbsp;REGISETRING, YOU ACCEPT THE TERMS OF OUR
+											<a href="javascript:;">PRIVACY POLICY</a>
+										</b>
+									</span>
+									<br />
+									<br />
+									<button class="btn" type="submit">
+										Register
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- registration end -->
+
+		<!--Custom Scripts-->
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/general.js"></script>
+
+		<!-- preloader -->
+		<div class="loader-mask">
+			<div class="loader">
+			</div>
+		</div>
+
+		<!-- SEO -->
+		<h1 style="display:none;">INDELIBL</h1>
+		<h2 style="display:none;">INDELIBL</h2>
+
+</body>
+
+</html>

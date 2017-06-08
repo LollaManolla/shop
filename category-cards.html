@@ -1,0 +1,1391 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+	<!--Facebook share meta data-->
+	<meta name="description" content="Indelibl" />
+	<meta property="og:title" content="Indelibl" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.indelibl.co" />
+	<meta property="og:site_name" content="Indelibl" />
+	<meta property="og:image" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<!--Facebook share meta data end-->
+	<title>
+		Indelibl
+	</title>
+	<!--icon fonts -->
+	<link href="fonts/material/style.css" rel="stylesheet">
+	<link href="fonts/indelibl/style.css" rel="stylesheet">
+	<!--style-->
+	<link href="css/vendor-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--js-->
+	<script src="js/vendor.js"></script>
+	<script src="js/migrate.js"></script>
+	<script src="js/vendor-ui.js"></script>
+	<script src="js/vendor.touch-punch.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-offer">
+			<span>Get 10% off on all orders in Ghana and Nigeria.</span>
+		</div>
+		<header class="header-top">
+			<div class="content-wrapper clearfix">
+				<div class="left">
+					<a class="logo" href="">
+						<img src="images/logo2.png" alt="" />
+					</a>
+					<!-- currency dropdown -->
+					<div class="dropdown" id="chooseCurrency">
+						<aside class="drop-trigger icon-trigger" trigger="choose-currency">
+							<span>
+									GBP
+								</span>
+						</aside>
+						<aside class="drop-content" dropdown="choose-currency">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<span>GBP</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>EUR</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- language dropdown -->
+					<div class="dropdown">
+						<aside class="drop-trigger icon-trigger" trigger="choose-lang">
+							<img src="images/eng.jpg" alt="" />
+						</aside>
+						<aside class="drop-content" dropdown="choose-lang">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="images/eng.jpg" alt="" />
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="images/fre.jpg" alt="" />
+										<span>French</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- non-mobile search form -->
+					<div class="search" id="searchPc">
+						<input type="text" />
+						<button type="submit">
+								<i class="icon-search1"></i>
+							</button>
+					</div>
+				</div>
+				<!-- right header, user profile dropdown -->
+				<div class="right">
+					<ul class="user-options">
+						<li><a href="javascript:;">Brian</a></li>
+						<li class="dropdown">
+							<img src="images/morgan1.jpg" alt="" trigger="profileMenu" />
+							<div class="drop-content drop-right profile" dropdown="profileMenu">
+								<a href="javascript:;">My Profile</a>
+								<a href="javascript:;">My Indelibl</a>
+								<a href="javascript:;">Log out</a>
+							</div>
+						</li>
+						<!-- notifications popup -->
+						<li class="dropdown notifications-icon-wrapper">
+							<a href="javascript:;" data-popup="notifications">
+								<img class="notify-icon" src="images/icons/notification_red.png" alt="" />
+								<img class="notify-icon" src="images/icons/notification.png" alt="" style="display: none;" />
+							</a>
+						</li>
+						<!-- wishlist dropdown -->
+						<li class="dropdown">
+							<i class="icon-wishlist drop-trigger" trigger="wishlist"></i>
+							<div class="drop-content drop-right" dropdown="wishlist">
+								<ul class="header-subNav header-wishlist-nav js-headerSubmenu">
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na1b.jpg" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na6.png" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<a class="btn wide" href="javascript:;">View all</a>
+								</ul>
+							</div>
+						</li>
+						<!-- cart dropdown -->
+						<li class="dropdown">
+							<span class="cart-count">
+									5
+								</span>
+							<i class="icon-shopping-cart drop-trigger" trigger="cart"></i>
+							<div class="drop-content drop-right" dropdown="cart">
+								<div class="header-subNav header-cart-nav js-headerSubmenu">
+									<!-- if cart is NOT empty: -->
+									<span>
+											You have 5 items in your shopping cart
+										</span>
+									<span class="total">
+											Total: $567
+										</span>
+									<a class="btn wide" href="javascript:;">My cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- mobile navigation menu toggle burger -->
+				<div class="header_bottom_mob">
+					<div class="navigation_toggle link">
+						<svg viewBox="0 0 16 12" height="12" width="16" version="1.1">
+								<rect class="nav_svg" y="0" width="16" height="2"></rect>
+								<rect class="nav_svg" y="5" width="16" height="2"></rect>
+								<rect class="nav_svg" y="10" width="16" height="2"></rect>
+							</svg>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light mob_menu">
+						<div class="menu-collection">
+							<a href="javascript:;" class="menu-link">Original Art</a>
+							<a href="javascript:;" class="menu-link">Art Prints</a>
+							<a href="javascript:;" class="menu-link">Books</a>
+							<a href="javascript:;" class="menu-link">Phone Cases</a>
+							<a href="javascript:;" class="menu-link">T-Shirts</a>
+							<a href="javascript:;" class="menu-link">Pillows</a>
+							<a href="javascript:;" class="menu-link">Post Cards</a>
+							<a href="javascript:;" class="menu-link">Tote Bags</a>
+							<a href="javascript:;" class="menu-link">Mugs</a>
+							<a href="javascript:;" class="menu-link">Others</a>
+						</div>
+					</div>
+					<!-- mobile search form -->
+					<div class="search" id="searchMob">
+						<input type="text" />
+						<button type="submit" class="search-button-mob">
+
+							</button>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!-- main menu -->
+		<section class="main-menu">
+			<div class="content-wrapper">
+				<ul>
+					<li>
+						<a href="javascript:;">Original Art</a>
+					</li>
+					<li>
+						<a href="javascript:;">Art Prints</a>
+					</li>
+					<li>
+						<a href="javascript:;">Books</a>
+					</li>
+					<li>
+						<a href="javascript:;">Phone Cases</a>
+					</li>
+					<li>
+						<a href="javascript:;">T-Shirts</a>
+					</li>
+					<li>
+						<a href="javascript:;">Pillows</a>
+					</li>
+					<li>
+						<a href="javascript:;">Post Cards</a>
+					</li>
+					<li>
+						<a href="javascript:;">Tote Bags</a>
+					</li>
+					<li>
+						<a href="javascript:;">Mugs</a>
+					</li>
+					<li>
+						<a href="javascript:;">Others</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- start user cover photo -->
+
+		<!-- cover picture -->
+		<div class="profile-cover-save dashboard">
+
+			<div class="profile-cover_inner-save" id="cover-image-preview" style='background: url("images/cards-cat.jpg") no-repeat center center / cover;'>
+
+
+				<div style="height: 100%; width: 100%; background: #000; position: absolute; top: 0; opacity: 0.5;">
+
+				</div>
+				<div style="width: 500px; position: absolute; left: 50%; margin-left: -250px;">
+					<h1 class="category_header">
+						Cards
+					</h1>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- end user cover photo -->
+
+
+
+		<section class="bg-lightest large-padding-top-y">
+			<div class="content-wrapper">
+			</div>
+		</section>
+
+			<!-- start original art main section -->
+
+		<section class="bg-lightest large-padding-bottom-y">
+			<div class="content-wrapper add-art-wrapper">
+				<div class="row" style="margin-left: 0;">
+
+					<div class="add-art-form-left white" style="min-height: auto;">
+						<div style="width: 100%; overflow: hidden; position: relative;">
+							<p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px;">
+								<b>
+									Filter by
+								</b>
+							</p>
+							<div class="toggleFilterPanel">
+							</div>
+							<div class="toggleFilterPanelUp">
+							</div>
+						</div>
+						<div style="width: 100%; overflow: hidden; position: relative;" id="og_art_filter_wrapper">
+							<p>
+								<b>
+									Select model
+								</b>
+							</p>
+							<div style="width: 100%; overflow: hidden;">
+								<input type="radio" name="cardtype" value="all" id="allc" checked><label for="allc">All</label>
+							</div>
+							<div style="width: 100%; overflow: hidden;">
+								<input type="radio" name="cardtype" value="postcard" id="postc"><label for="postc">Post cards</label>
+							</div>
+							<div style="width: 100%; overflow: hidden;">
+								<input type="radio" name="cardtype" value="greeting" id="greetc"><label for="greetc">Greeting cards</label>
+							</div>
+							<hr class="separator-thin"/>
+							<p>
+								<b>
+									Subject
+								</b>
+							</p>
+							<select id="product-subject" name="product-subject" class="form-input">
+								<option value="Select" selected="true" disabled="disabled">Select</option>
+								<option value="Culture">Culture</option>
+								<option value="Feminism">Feminism</option>
+								<option value="Travel">Travel</option>
+							</select>
+							<hr class="separator-thin"/>
+							<p>
+								<b>
+									Color
+								</b>
+							</p>
+							<div class="color-select-box-wrapper" style="width: 100%; height: auto; margin-bottom: 20px;" id="color-filter">
+								<div class="color-select-box2" style="background: repeating-linear-gradient( 135deg, #fff, #fff 7px, #F44336 9px, #F44336 12px );">
+								</div>
+								<div class="color-select-box2" style="background-color: #fff;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #000;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #949494;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #e7e70e;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #ffcc99;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #f26522;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #754c24;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #c8ab53;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #0abc0a;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #5aa294;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #29cccc;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #5393c9;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #1616d3;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #ca67ea;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #662d91;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #ea94bf;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #fc1cff;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #f87d74;" >
+								</div>
+								<div class="color-select-box2" style="background-color: #e41515;" >
+								</div>
+							</div>
+							<hr class="separator-thin"/>
+							<p>
+								<b>
+									Tags
+								</b>
+							</p>
+
+							<div class="search search-artist">
+								<input type="text" />
+								<button type="submit">
+									<i class="icon-search1"></i>
+								</button>
+							</div>
+							<hr class="separator-thin"/>
+							<button class="btn blackWhite" style="margin-top: 15px; min-width: 100px; margin-bottom: 30px;">Reset All</button>
+							<div class="toggleFilterPanelUp" style="bottom: 0px; top: auto;">
+							</div>
+						</div>
+					</div>
+
+					<div class="add-art-main-wrapper product-cat-wrapper">
+						<div class="row view-current-events" style="margin-left: 0;" id="view-products-select">
+							<div class="row view-current-events-scroll" style="padding-top: 0; margin-left: 0;" id="view-my-products">
+
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  										<img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+								<div class="column-3 box-product3 card-bp">
+									<div class="my-product-cat-buttons-wrapper">
+										<button class="product-wishlist-btn" onclick="addProductToWishlist(this)">
+										</button>
+										<button class="product-cart-btn" onclick="addProductToCart(this)">
+										</button>
+									</div>
+									<div class="wishlist-msg" style="display: none;">
+										This item has been added to your wishlist.
+									</div>
+									<div class="cart-msg" style="display: none;">
+										This item has been added to your shopping cart.
+									</div>
+									<div class="cart-msg-already-added" style="display: none;">
+										This item is already in your shopping cart.
+									</div>
+									<a href="javascript:;">
+										<div class="product-img2 my-prod-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+  <img class="cat-product-img" src="images/bp6.jpg">
+										</div>
+									</a>
+										<div class="desc2" style="padding: 0 10px;">
+											<div style="width: 100%; display: block; overflow: hidden;">
+												<h5 style="float: left; margin: 5px 0; text-transform: uppercase; line-height: 20px;">Name of art</h5>
+												<p class="price-ogart-cat">$25</p>
+											</div>
+											<a href="javascript:;"><p class="product-cat-artist-name">By Ann Kournikova</p></a>
+										</div>
+								</div>
+
+
+							</div>
+
+						</div>
+						<div class="down-arrow" style="bottom: -5px;"></div>
+						<div class="row" id="no-category-items" style="display:none;" style="margin-left: 0; margin-top: 10%;">
+							<h3>
+									There are no products found for this category.
+							</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="content-wrapper">
+				<div class="footer-top">
+					<div class="wrapper">
+						<h3>
+							Sign up for our newsletter and stay up to date for the latest on Indelibl!
+						</h3>
+					</div>
+
+					<div class="subscribe-cell-button-holder">
+						<button type="submit" class="btn wide" onclick="showSubscribeForm()" id="showSubscribeFormButton">
+									Subscribe
+							</button>
+					</div>
+
+					<div class="subscribe-form">
+						<div class="subscribe_container">
+							<div class="xIcon" id="hide-subscribe-form" onclick="hideSubscribeForm()"></div>
+							<input type="email" name="subscriberMail" placeholder="Email address" />
+							<div class="errorMsg">
+								<div class="errorIcon"></div>
+							</div>
+							<div class="form-item form-item_full">
+								<input type="radio" name="gender" value="male" id="ml"><label for="ml">Male</label>
+								<input type="radio" name="gender" value="female" id="fml"><label for="fml">Female</label>
+							</div>
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I accept the <a href="javascript:;">Privacy Policy</a></label>
+							</div>
+							<button type="submit" class="btn wide">
+										Subscribe
+								</button>
+						</div>
+						<!-- Pojavi se prouka kada korisnik posalje email za subscription -->
+						<!--
+							<div class="wrapper subscribe_thanks">
+								<h3>
+									Thank you for subscribing!
+								</h3>
+							</div>
+						-->
+					</div>
+
+				</div>
+				<hr class="separator-footer" />
+				<div class="footer-bottom">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<h4>
+									Company
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl Is</a>
+							</li>
+							<li>
+								<a href="javascript:;">Press</a>
+							</li>
+							<li>
+								<a href="javascript:;">Partnerships & Collaborations</a>
+							</li>
+							<li>
+								<a href="javascript:;">Careers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Contact Us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Legal
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Terms of Service</a>
+							</li>
+							<li>
+								<a href="javascript:;">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="javascript:;">Copyright Policy</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Support
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">For Sellers</a>
+							</li>
+							<li>
+								<a href="javascript:;">For Buyers</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQs</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Business
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Restaurants and Cafes</a>
+							</li>
+							<li>
+								<a href="javascript:;">Office Hire</a>
+							</li>
+							<li>
+								<a href="javascript:;">Interior Designers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Curate with Indelibl</a>
+							</li>
+							<li>
+								<a href="javascript:;">Affiliate Programme</a>
+							</li>
+							<li>
+								<a href="javascript:;">Invest in Indelibl</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Indelibl
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Galleries</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Artists</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Publishers</a>
+							</li>
+						</ul>
+						<div class="footer-right">
+							<h4>
+								Follow us
+							</h4>
+							<div class="footer-iconWrap">
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/facebook.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/twitter.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/insta.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					© 2016 Indelibl. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- notifications start -->
+	<div class="popup-wrapper" style="display: none;" data-popup-id="notifications">
+		<div class="popup-inner ie-popup notify-popup">
+			<div class="popup popup-notifications">
+				<div class="notifications-popup-header">
+					<h4>
+					<b>
+						Notifications
+					</b>
+				</h4>
+					<div class="xIcon" id="close-notifications"></div>
+				</div>
+				<ul class="notifications-list">
+					<li>
+						<div class="notification-text long-text">
+							<p>
+								<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-close">
+							<div class="xIcon"></div>
+						</div>
+					</li>
+					<li>
+						<div class="notification-text">
+							<p>
+								<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-buttons">
+							<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+							<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+							<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- notifications end -->
+
+
+	<!-- preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+		</div>
+	</div>
+
+	<!-- SEO -->
+	<h1 style="display:none;">INDELIBL</h1>
+	<h2 style="display:none;">INDELIBL</h2>
+	<!--Custom Scripts-->
+	<script src="js/general.js">
+	</script>
+
+</body>
+
+</html>

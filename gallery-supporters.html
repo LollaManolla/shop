@@ -1,0 +1,2311 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+	<!--Facebook share meta data-->
+	<meta name="description" content="Indelibl" />
+	<meta property="og:title" content="Indelibl" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.indelibl.co" />
+	<meta property="og:site_name" content="Indelibl" />
+	<meta property="og:image" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<!--Facebook share meta data end-->
+	<title>
+		Indelibl
+	</title>
+	<!--icon fonts -->
+	<link href="fonts/material/style.css" rel="stylesheet">
+	<link href="fonts/indelibl/style.css" rel="stylesheet">
+	<!--style-->
+	<link href="css/vendor-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/worldmap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--js-->
+	<script src="js/vendor.js"></script>
+	<script src="js/migrate.js"></script>
+	<script src="js/vendor-ui.js"></script>
+	<script src="js/vendor.touch-punch.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-offer">
+			<span>Get 10% off on all orders in Ghana and Nigeria.</span>
+		</div>
+		<header class="header-top">
+			<div class="content-wrapper clearfix">
+				<div class="left">
+					<a class="logo" href="">
+						<img src="images/logo2.png" alt="" />
+					</a>
+					<!-- currency dropdown -->
+					<div class="dropdown" id="chooseCurrency">
+						<aside class="drop-trigger icon-trigger" trigger="choose-currency">
+							<span>
+									GBP
+								</span>
+						</aside>
+						<aside class="drop-content" dropdown="choose-currency">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<span>GBP</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>EUR</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- language dropdown -->
+					<div class="dropdown">
+						<aside class="drop-trigger icon-trigger" trigger="choose-lang">
+							<img src="images/eng.jpg" alt="" />
+						</aside>
+						<aside class="drop-content" dropdown="choose-lang">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="images/eng.jpg" alt="" />
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="images/fre.jpg" alt="" />
+										<span>French</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- non-mobile search form -->
+					<div class="search" id="searchPc">
+						<input type="text" />
+						<button type="submit">
+								<i class="icon-search1"></i>
+							</button>
+					</div>
+				</div>
+				<!-- right header, user profile dropdown -->
+				<div class="right">
+					<ul class="user-options">
+						<li><a href="javascript:;">Brian</a></li>
+						<li class="dropdown">
+							<img src="images/morgan1.jpg" alt="" trigger="profileMenu" />
+							<div class="drop-content drop-right profile" dropdown="profileMenu">
+								<a href="javascript:;">My Profile</a>
+								<a href="javascript:;">My Indelibl</a>
+								<a href="javascript:;">Log out</a>
+							</div>
+						</li>
+						<!-- notifications popup -->
+						<li class="dropdown notifications-icon-wrapper">
+							<a href="javascript:;" data-popup="notifications">
+								<img class="notify-icon" src="images/icons/notification_red.png" alt="" />
+								<img class="notify-icon" src="images/icons/notification.png" alt="" style="display: none;" />
+							</a>
+						</li>
+						<!-- wishlist dropdown -->
+						<li class="dropdown">
+							<i class="icon-wishlist drop-trigger" trigger="wishlist"></i>
+							<div class="drop-content drop-right" dropdown="wishlist">
+								<ul class="header-subNav header-wishlist-nav js-headerSubmenu">
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na1b.jpg" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na6.png" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<a class="btn wide" href="javascript:;">View all</a>
+								</ul>
+							</div>
+						</li>
+						<!-- cart dropdown -->
+						<li class="dropdown">
+							<span class="cart-count">
+									5
+								</span>
+							<i class="icon-shopping-cart drop-trigger" trigger="cart"></i>
+							<div class="drop-content drop-right" dropdown="cart">
+								<div class="header-subNav header-cart-nav js-headerSubmenu">
+									<!-- if cart is NOT empty: -->
+									<span>
+											You have 5 items in your shopping cart
+										</span>
+									<span class="total">
+											Total: $567
+										</span>
+									<a class="btn wide" href="javascript:;">My cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- mobile navigation menu toggle burger -->
+				<div class="header_bottom_mob">
+					<div class="navigation_toggle link">
+						<svg viewBox="0 0 16 12" height="12" width="16" version="1.1">
+								<rect class="nav_svg" y="0" width="16" height="2"></rect>
+								<rect class="nav_svg" y="5" width="16" height="2"></rect>
+								<rect class="nav_svg" y="10" width="16" height="2"></rect>
+							</svg>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light mob_menu">
+						<div class="menu-collection">
+							<a href="javascript:;" class="menu-link">Original Art</a>
+							<a href="javascript:;" class="menu-link">Art Prints</a>
+							<a href="javascript:;" class="menu-link">Books</a>
+							<a href="javascript:;" class="menu-link">Phone Cases</a>
+							<a href="javascript:;" class="menu-link">T-Shirts</a>
+							<a href="javascript:;" class="menu-link">Pillows</a>
+							<a href="javascript:;" class="menu-link">Post Cards</a>
+							<a href="javascript:;" class="menu-link">Tote Bags</a>
+							<a href="javascript:;" class="menu-link">Mugs</a>
+							<a href="javascript:;" class="menu-link">Others</a>
+						</div>
+					</div>
+					<!-- mobile search form -->
+					<div class="search" id="searchMob_dashboard">
+						<input type="text" />
+						<button type="submit" class="search-button-mob">
+
+							</button>
+					</div>
+					<div class="navigation_toggle_dots">
+						<div class="menuDot"></div>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light dashboard_menu">
+						<div class="menu-collection dashboard_menu_collection">
+							<a href="javascript:;" class="menu-link">My profile</a>
+							<a href="javascript:;" class="menu-link">Add art</a>
+							<a href="javascript:;" class="menu-link">Supporters</a>
+							<a href="javascript:;" class="menu-link">Artists</a>
+							<a href="javascript:;" class="menu-link">Sales / Orders</a>
+							<a href="javascript:;" class="menu-link">Payments</a>
+							<a href="javascript:;" class="menu-link">Events</a>
+							<a href="javascript:;" class="menu-link">Referrals</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main menu -->
+		<section class="main-menu">
+			<div class="content-wrapper">
+				<ul>
+					<li>
+						<a href="javascript:;">Original Art</a>
+					</li>
+					<li>
+						<a href="javascript:;">Art Prints</a>
+					</li>
+					<li>
+						<a href="javascript:;">Books</a>
+					</li>
+					<li>
+						<a href="javascript:;">Phone Cases</a>
+					</li>
+					<li>
+						<a href="javascript:;">T-Shirts</a>
+					</li>
+					<li>
+						<a href="javascript:;">Pillows</a>
+					</li>
+					<li>
+						<a href="javascript:;">Post Cards</a>
+					</li>
+					<li>
+						<a href="javascript:;">Tote Bags</a>
+					</li>
+					<li>
+						<a href="javascript:;">Mugs</a>
+					</li>
+					<li>
+						<a href="javascript:;">Others</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- start user cover photo -->
+
+		<!-- cover picture -->
+		<div class="profile-cover-save dashboard">
+			<div class="profile-cover_inner-save" id="cover-image-preview">
+				<img id="cover-img-save" src="images/slider-1.jpg">
+			</div>
+		</div>
+
+		<!-- end user cover photo -->
+
+		<!-- start followers header -->
+		<section class="bg-lightest">
+			<div class="content-wrapper">
+
+				<div class="row">
+					<div class="profile_top profileHome left">
+						<!-- user profile image and info -->
+						<div class="userprofile_img_wrapper">
+							<div class="userprofile_img" id="profile-image-preview"></div>
+						</div>
+						<div class="userprofile-info">
+							<ul>
+								<li>
+									<h5><b>Jessica Silverman Gallery</b></h5>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/world-wide-web.png"><a href="javascript:;"><span>www.jessicasilvermangallery.com</span></a>
+								</li>
+							</ul>
+
+
+						</div>
+						<!-- end user profile image and info  -->
+					</div>
+				</div>
+			</div>
+			<hr class="profile-top-separator" />
+		</section>
+
+		<section class="bg-lightest artist-menu-wrapper">
+			<!-- gallery side menu -->
+			<div class="artist_menu">
+				<ul>
+					<li triggerLink="profileLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/profile.png"></a>
+						<div class="userprofile-menu-popup myProfileLink" popLink="profileLink">
+							<a href="javascript:;" class="userprofile-menu-link">My profile</a>
+						</div>
+					</li>
+					<li triggerLink="addPLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/add_products.png"></a>
+						<div class="userprofile-menu-popup addProductLink" popLink="addPLink">
+							<a href="javascript:;" class="userprofile-menu-link">Add art</a>
+						</div>
+					</li>
+					<li triggerLink="suppLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/supporters.png"></a>
+						<div class="userprofile-menu-popup supportersLink" popLink="suppLink">
+							<a href="javascript:;" class="userprofile-menu-link">Supporters</a>
+						</div>
+					</li>
+					<li triggerLink="artistsLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/brush.png"></a>
+						<div class="userprofile-menu-popup artistsLink" popLink="artistsLink">
+							<a href="javascript:;" class="userprofile-menu-link">Artists</a>
+						</div>
+					</li>
+					<li triggerLink="salesordersLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/Sales-Orders.png"></a>
+						<div class="userprofile-menu-popup soLink" popLink="salesordersLink">
+							<a href="javascript:;" class="userprofile-menu-link">Sales / Orders</a>
+						</div>
+					</li>
+					<li triggerLink="payLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/payments.png"></a>
+						<div class="userprofile-menu-popup paymentLink" popLink="payLink">
+							<a href="javascript:;" class="userprofile-menu-link">Payments</a>
+						</div>
+					</li>
+					<li triggerLink="eventLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/events.png"></a>
+						<div class="userprofile-menu-popup eventsLink" popLink="eventLink">
+							<a href="javascript:;" class="userprofile-menu-link">Events</a>
+						</div>
+					</li>
+					<li triggerLink="referLink">
+						<a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/referrals.png"></a>
+						<div class="userprofile-menu-popup refersLink" popLink="referLink">
+							<a href="javascript:;" class="userprofile-menu-link">Referrals</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- end followers header -->
+		<section class="bg-lightest view-events-header">
+			<div class="content-wrapper large-padding-y">
+				<h2>
+					<b>
+						Supporters
+					</b>
+				</h2>
+			</div>
+		</section>
+		<!-- start artist events main section -->
+		<section class="bg-lightest large-padding-bottom-y">
+			<div class="content-wrapper white follows-wrapper">
+
+				<div class="filter_follows">
+					<label for="select-supporters-view" class="form-label">
+						View
+					</label>
+					<select id="select-supporters-view" name="select-product-type" class="form-input" onchange="changeSupportersView(this)">
+						<option value="Supporters">Supporters</option>
+						<option value="Graphs">Graphs</option>
+					</select>
+				</div>
+
+				<div class="view-follow-supporters">
+					<!-- display subscribers  -->
+					<div class="row view-follows">
+						<div class="row view-follows-scroll">
+							<div class="follow-item-col" id="supp_1" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_2" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_3" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_4" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Barry Smith</a>
+									</b>
+								</h4>
+								<h5>
+									Artist
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_5" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_6" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_7" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_8" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_9" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_10" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_11" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_12" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_13" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_14" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_15" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_16" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_17" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_18" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_19" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_20" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_21" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_23" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+							<div class="follow-item-col" id="supp_24" onclick="showSupInfo(this)">
+								<a href="javascript:;">
+									<div class="artist-img" style='background: url("images/liam1.jpg") no-repeat center center / cover;'>
+									</div>
+								</a>
+								<h4>
+									<b>
+										<a href="javascript:;">Liam Nelson</a>
+									</b>
+								</h4>
+								<h5>
+									Photographer
+								</h5>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_1">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelsonnbnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_2">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_3">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<p style="margin-bottom: 15px; margin-top: 0; font-weight: bold;">There were no recent purchases from this customer.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_4">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_5">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_6">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_7">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-wrapper clear-supp-desc-wrapper" style="display: none;">
+						<div class="supporter-box" id="suppbox_8">
+							<div class="xIcon" onclick="hideSuppBox(this)"></div>
+							<div class="suppbox-inner" style="overflow: hidden; ">
+								<div class="sb-left">
+									<p>Name:</p>
+									<p>Country:</p>
+									<p>Age:</p>
+									<p>Date joined:</p>
+									<p>Account holder:</p>
+									<p>Average spend:</p>
+									<p>Recent purchases:</p>
+								</div>
+								<div class="sb-right">
+									<a href="javascript:;"><p>Liam Nelson</p></a>
+									<p>Netherlands</p>
+									<p>32</p>
+									<p>October 12, 2016</p>
+									<p>Yes</p>
+									<p>&pound;124</p>
+
+								</div>
+							</div>
+
+							<div class="suppbox-inner bottom-si" style="overflow: hidden; ">
+								<div class="column-4 box-product2 shirt-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp1.png") no-repeat center center / 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+										<h5>Fox</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+									</div>
+								</div>
+								<div class="column-4 box-product2 tote-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp2.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+
+								</div>
+								<div class="column-4 box-product2 phone-bp">
+									<a href="javascript:;">
+										<div class="product-img2" style='background: url("images/bp3.png") no-repeat center center / auto 70%, linear-gradient( #eeebeb, #f9f9f9);'>
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+								<div class="column-4 box-product2 art-print-bp">
+									<a href="javascript:;">
+										<div class="product-img2 art-print-img" style='background: linear-gradient( #eeebeb, #f9f9f9);'>
+											<img class="art-print-product-home" src="images/bp7.jpg">
+
+										</div>
+									</a>
+									<div class="desc2">
+
+										<h5>Name of art</h5>
+										<p class="price2">$25</p>
+										<p class="product-desc-bottom">by</p>
+										<p class="small-link"><a href="javascript:;">Kanye Westfjksdfhjskdfhksdhfksdhfksdjfhkjsdfhksdjfhjkdsfhksjdfhksdjfhksdhfk</a></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="down-arrow"></div>
+
+
+					<div class="row" style="display:none;">
+						<h3>
+								You do not have any followers.
+						</h3>
+					</div>
+				</div>
+				<div class="row view-follow-graphs">
+					<div class="profile-form supp-g-form" style="margin-left: 0; margin-top: 0;">
+						<h3 style="padding-top: 0;">
+							<b>
+								Supporters over time
+							</b>
+						</h3>
+
+						<div class="form-row">
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="graphsYear" class="form-label">
+										Year
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="graphsYear" name="graphsYear" class="form-input">
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="graphsQ" class="form-label">
+										Quarter
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="graphsSuppTimeQ" name="graphsSuppTimeQ" class="form-input" onchange="changeSuppTimeQuarter()">
+										<option value="Q1">Q1</option>
+										<option value="Q2">Q2</option>
+										<option value="Q3">Q3</option>
+										<option value="Q4">Q4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- supporters over time -->
+					<div style="width: 100%; display: block; overflow: hidden;" id="q1">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								January
+							</li>
+							<li class="year-quarter-box quarter-head">
+								February
+							</li>
+							<li class="year-quarter-box quarter-head">
+								March
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="q2">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								April
+							</li>
+							<li class="year-quarter-box quarter-head">
+								May
+							</li>
+							<li class="year-quarter-box quarter-head">
+								June
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="q3">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								July
+							</li>
+							<li class="year-quarter-box quarter-head">
+								August
+							</li>
+							<li class="year-quarter-box quarter-head">
+								September
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="q4">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								October
+							</li>
+							<li class="year-quarter-box quarter-head">
+								November
+							</li>
+							<li class="year-quarter-box quarter-head">
+								December
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<hr class="separator">
+
+
+					<div class="profile-form supp-g-form" style="margin-left: 0;">
+						<h3 style="padding-top: 0;">
+							<b>
+								Profile views
+							</b>
+						</h3>
+
+						<div class="form-row">
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="suppViewsYear" class="form-label">
+										Year
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="suppViewsYear" name="suppViewsYear" class="form-input">
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="suppViewsQ" class="form-label">
+										Quarter
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="suppViewsQ" name="suppViewsQ" class="form-input" onchange="changeSuppViewQuarter()">
+										<option value="Q1">Q1</option>
+										<option value="Q2">Q2</option>
+										<option value="Q3">Q3</option>
+										<option value="Q4">Q4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- supporters over time -->
+					<div style="width: 100%; display: block; overflow: hidden;" id="qv1">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								January
+							</li>
+							<li class="year-quarter-box quarter-head">
+								February
+							</li>
+							<li class="year-quarter-box quarter-head">
+								March
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv2">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								April
+							</li>
+							<li class="year-quarter-box quarter-head">
+								May
+							</li>
+							<li class="year-quarter-box quarter-head">
+								June
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv3">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								July
+							</li>
+							<li class="year-quarter-box quarter-head">
+								August
+							</li>
+							<li class="year-quarter-box quarter-head">
+								September
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv4">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								October
+							</li>
+							<li class="year-quarter-box quarter-head">
+								November
+							</li>
+							<li class="year-quarter-box quarter-head">
+								December
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">56</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">42</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">89</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">156</p>
+							</li>
+						</ul>
+					</div>
+					<hr class="separator">
+
+					<div class="profile-form supp-g-form" style="margin-left: 0; float: none;">
+						<h3 style="padding-top: 0;">
+							<b>
+								Top countries
+							</b>
+						</h3>
+						<div id="world-map"></div>
+						<div class="top-count-list">
+							<ul id="topCountryList">
+								
+							</ul>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<hr class="separator">
+					<div class="profile-form supp-g-form" style="margin-left: 0;">
+						<h3 style="padding-top: 0;">
+							<b>
+								Average spend
+							</b>
+						</h3>
+
+						<div class="form-row">
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="suppSpendYear" class="form-label">
+										Year
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="suppSpendYear" name="suppSpendYear" class="form-input">
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-item form-item_half">
+								<div class="form-item form-item_full">
+									<label for="suppSpendQ" class="form-label">
+										Quarter
+									</label>
+								</div>
+								<div class="form-item form-item_full">
+									<select id="suppSpendQ" name="suppSpendQ" class="form-input" onchange="changeSuppSpendQuarter()">
+										<option value="Q1">Q1</option>
+										<option value="Q2">Q2</option>
+										<option value="Q3">Q3</option>
+										<option value="Q4">Q4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- supporters spend -->
+					<div style="width: 100%; display: block; overflow: hidden;" id="qs1">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								January
+							</li>
+							<li class="year-quarter-box quarter-head">
+								February
+							</li>
+							<li class="year-quarter-box quarter-head">
+								March
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;156</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;142</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;189</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;556</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qs2">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								April
+							</li>
+							<li class="year-quarter-box quarter-head">
+								May
+							</li>
+							<li class="year-quarter-box quarter-head">
+								June
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;156</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;142</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;189</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;556</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qs3">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								July
+							</li>
+							<li class="year-quarter-box quarter-head">
+								August
+							</li>
+							<li class="year-quarter-box quarter-head">
+								September
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;156</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;142</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;1112389</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;1112889</p>
+							</li>
+						</ul>
+					</div>
+					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qs4">
+						<ul class="qboxwrap">
+							<li class="year-quarter-box quarter-head">
+								October
+							</li>
+							<li class="year-quarter-box quarter-head">
+								November
+							</li>
+							<li class="year-quarter-box quarter-head">
+								December
+							</li>
+							<li class="year-quarter-box quarter-head">
+								Total
+							</li>
+						</ul>
+						<ul class="qboxwrap">
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;156</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;142</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;189</p>
+							</li>
+							<li class="year-quarter-box">
+								<p class="qnum">&pound;556</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<!-- end white wrapper div -->
+		</section>
+
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="content-wrapper">
+				<div class="footer-top">
+					<div class="wrapper">
+						<h3>
+							Sign up for our newsletter and stay up to date for the latest on Indelibl!
+						</h3>
+					</div>
+
+					<div class="subscribe-cell-button-holder">
+						<button type="submit" class="btn wide" onclick="showSubscribeForm()" id="showSubscribeFormButton">
+									Subscribe
+							</button>
+					</div>
+
+					<div class="subscribe-form">
+						<div class="subscribe_container">
+							<div class="xIcon" id="hide-subscribe-form" onclick="hideSubscribeForm()"></div>
+							<input type="email" name="subscriberMail" placeholder="Email address" />
+							<div class="errorMsg">
+								<div class="errorIcon"></div>
+							</div>
+							<div class="form-item form-item_full">
+								<input type="radio" name="gender" value="male" id="ml"><label for="ml">Male</label>
+								<input type="radio" name="gender" value="female" id="fml"><label for="fml">Female</label>
+							</div>
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I accept the <a href="javascript:;">Privacy Policy</a></label>
+							</div>
+							<button type="submit" class="btn wide">
+										Subscribe
+								</button>
+						</div>
+						<!-- Pojavi se prouka kada korisnik posalje email za subscription -->
+						<!--
+							<div class="wrapper subscribe_thanks">
+								<h3>
+									Thank you for subscribing!
+								</h3>
+							</div>
+						-->
+					</div>
+
+				</div>
+				<hr class="separator-footer" />
+				<div class="footer-bottom">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<h4>
+									Company
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl Is</a>
+							</li>
+							<li>
+								<a href="javascript:;">Press</a>
+							</li>
+							<li>
+								<a href="javascript:;">Partnerships & Collaborations</a>
+							</li>
+							<li>
+								<a href="javascript:;">Careers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Contact Us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Legal
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Terms of Service</a>
+							</li>
+							<li>
+								<a href="javascript:;">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="javascript:;">Copyright Policy</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Support
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">For Sellers</a>
+							</li>
+							<li>
+								<a href="javascript:;">For Buyers</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQs</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Business
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Restaurants and Cafes</a>
+							</li>
+							<li>
+								<a href="javascript:;">Office Hire</a>
+							</li>
+							<li>
+								<a href="javascript:;">Interior Designers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Curate with Indelibl</a>
+							</li>
+							<li>
+								<a href="javascript:;">Affiliate Programme</a>
+							</li>
+							<li>
+								<a href="javascript:;">Invest in Indelibl</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Indelibl
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Galleries</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Artists</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Publishers</a>
+							</li>
+						</ul>
+						<div class="footer-right">
+							<h4>
+								Follow us
+							</h4>
+							<div class="footer-iconWrap">
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/facebook.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/twitter.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/insta.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					© 2016 Indelibl. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- notifications start -->
+	<div class="popup-wrapper" style="display: none;" data-popup-id="notifications">
+		<div class="popup-inner ie-popup notify-popup">
+			<div class="popup popup-notifications">
+				<div class="notifications-popup-header">
+					<h4>
+					<b>
+						Notifications
+					</b>
+				</h4>
+					<div class="xIcon" id="close-notifications"></div>
+				</div>
+				<ul class="notifications-list">
+					<li>
+						<div class="notification-text long-text">
+							<p>
+								<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-close">
+							<div class="xIcon"></div>
+						</div>
+					</li>
+					<li>
+						<div class="notification-text">
+							<p>
+								<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-buttons">
+							<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+							<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+							<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- notifications end -->
+
+	<!-- preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+		</div>
+	</div>
+
+	<!-- SEO -->
+	<h1 style="display:none;">INDELIBL</h1>
+	<h2 style="display:none;">INDELIBL</h2>
+	<!--Custom Scripts-->
+
+	<script src="js/worldmap.min.js"></script>
+	<script src="js/worldmap-mill.js"></script>
+	<script src="js/general.js"></script>
+
+
+</body>
+
+</html>

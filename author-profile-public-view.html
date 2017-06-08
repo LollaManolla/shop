@@ -1,0 +1,999 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=1200, user-scalable=yes, user-scalable=1" />
+		-->
+	<!--Facebook share meta data-->
+	<meta name="description" content="Indelibl" />
+	<meta property="og:title" content="Indelibl" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.indelibl.co" />
+	<meta property="og:site_name" content="Indelibl" />
+	<meta property="og:image" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<!--Facebook share meta data end-->
+	<title>
+		Indelibl
+	</title>
+	<!--icon fonts -->
+	<link href="fonts/material/style.css" rel="stylesheet">
+	<link href="fonts/indelibl/style.css" rel="stylesheet">
+	<!--style-->
+	<link href="css/vendor-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--js-->
+	<script src="js/vendor.js"></script>
+	<script src="js/migrate.js"></script>
+	<script src="js/vendor-ui.js"></script>
+	<script src="js/vendor.touch-punch.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-offer">
+			<span>Get 10% off on all orders in Ghana and Nigeria.</span>
+		</div>
+		<header class="header-top">
+			<div class="content-wrapper clearfix">
+				<div class="left">
+					<a class="logo" href="">
+						<img src="images/logo2.png" alt="" />
+					</a>
+					<!-- currency dropdown -->
+					<div class="dropdown" id="chooseCurrency">
+						<aside class="drop-trigger icon-trigger" trigger="choose-currency">
+							<span>
+									GBP
+								</span>
+						</aside>
+						<aside class="drop-content" dropdown="choose-currency">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<span>GBP</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>EUR</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- language dropdown -->
+					<div class="dropdown">
+						<aside class="drop-trigger icon-trigger" trigger="choose-lang">
+							<img src="images/eng.jpg" alt="" />
+						</aside>
+						<aside class="drop-content" dropdown="choose-lang">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="images/eng.jpg" alt="" />
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="images/fre.jpg" alt="" />
+										<span>French</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+					<!-- non-mobile search form -->
+					<div class="search" id="searchPc">
+						<input type="text" />
+						<button type="submit">
+								<i class="icon-search1"></i>
+							</button>
+					</div>
+				</div>
+				<!-- right header, user profile dropdown -->
+				<div class="right">
+					<ul class="user-options">
+						<li><a href="javascript:;">Brian</a></li>
+						<li class="dropdown">
+							<img src="images/morgan1.jpg" alt="" trigger="profileMenu" />
+							<div class="drop-content drop-right profile" dropdown="profileMenu">
+								<a href="javascript:;">My Profile</a>
+								<a href="javascript:;">My Indelibl</a>
+								<a href="javascript:;">Log out</a>
+							</div>
+						</li>
+						<!-- notifications popup -->
+						<li class="dropdown notifications-icon-wrapper">
+							<a href="javascript:;" data-popup="notifications">
+								<img class="notify-icon" src="images/icons/notification_red.png" alt="" />
+								<img class="notify-icon" src="images/icons/notification.png" alt="" style="display: none;" />
+							</a>
+						</li>
+						<!-- wishlist dropdown -->
+						<li class="dropdown">
+							<i class="icon-wishlist drop-trigger" trigger="wishlist"></i>
+							<div class="drop-content drop-right" dropdown="wishlist">
+								<ul class="header-subNav header-wishlist-nav js-headerSubmenu">
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na1b.jpg" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<li>
+										<div class="header-wishlist-navLeft">
+											<img src="images/na6.png" alt="">
+										</div>
+										<div class="xIcon"></div>
+										<div class="header-wishlist-navRight">
+											<span>
+													Artist name
+												</span>
+											<span>
+													ITEM NAME
+												</span>
+											<span>
+													&pound;50.00
+												</span>
+										</div>
+									</li>
+									<hr class="separator" />
+									<a class="btn wide" href="javascript:;">View all</a>
+								</ul>
+							</div>
+						</li>
+						<!-- cart dropdown -->
+						<li class="dropdown">
+							<span class="cart-count">
+									5
+								</span>
+							<i class="icon-shopping-cart drop-trigger" trigger="cart"></i>
+							<div class="drop-content drop-right" dropdown="cart">
+								<div class="header-subNav header-cart-nav js-headerSubmenu">
+									<!-- if cart is NOT empty: -->
+									<span>
+											You have 5 items in your shopping cart
+										</span>
+									<span class="total">
+											Total: $567
+										</span>
+									<a class="btn wide" href="javascript:;">My cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- mobile navigation menu toggle burger -->
+				<div class="header_bottom_mob">
+					<div class="navigation_toggle link">
+						<svg viewBox="0 0 16 12" height="12" width="16" version="1.1">
+								<rect class="nav_svg" y="0" width="16" height="2"></rect>
+								<rect class="nav_svg" y="5" width="16" height="2"></rect>
+								<rect class="nav_svg" y="10" width="16" height="2"></rect>
+							</svg>
+					</div>
+					<!-- mobile menu -->
+					<div class="menu clearfix bg-light mob_menu">
+						<div class="menu-collection">
+							<a href="javascript:;" class="menu-link">Original Art</a>
+							<a href="javascript:;" class="menu-link">Art Prints</a>
+							<a href="javascript:;" class="menu-link">Books</a>
+							<a href="javascript:;" class="menu-link">Phone Cases</a>
+							<a href="javascript:;" class="menu-link">T-Shirts</a>
+							<a href="javascript:;" class="menu-link">Pillows</a>
+							<a href="javascript:;" class="menu-link">Post Cards</a>
+							<a href="javascript:;" class="menu-link">Tote Bags</a>
+							<a href="javascript:;" class="menu-link">Mugs</a>
+							<a href="javascript:;" class="menu-link">Others</a>
+						</div>
+					</div>
+					<!-- mobile search form -->
+					<div class="search" id="searchMob">
+						<input type="text" />
+						<button type="submit" class="search-button-mob">
+
+							</button>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!-- main menu -->
+		<section class="main-menu">
+			<div class="content-wrapper">
+				<ul>
+					<li>
+						<a href="javascript:;">Original Art</a>
+					</li>
+					<li>
+						<a href="javascript:;">Art Prints</a>
+					</li>
+					<li>
+						<a href="javascript:;">Books</a>
+					</li>
+					<li>
+						<a href="javascript:;">Phone Cases</a>
+					</li>
+					<li>
+						<a href="javascript:;">T-Shirts</a>
+					</li>
+					<li>
+						<a href="javascript:;">Pillows</a>
+					</li>
+					<li>
+						<a href="javascript:;">Post Cards</a>
+					</li>
+					<li>
+						<a href="javascript:;">Tote Bags</a>
+					</li>
+					<li>
+						<a href="javascript:;">Mugs</a>
+					</li>
+					<li>
+						<a href="javascript:;">Others</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- start user cover photo -->
+
+		<!-- cover picture -->
+		<div class="profile-cover-save dashboard">
+			<div class="profile-cover_inner-save" id="cover-image-preview">
+				<img id="cover-img-save" src="images/slider-1.jpg">
+			</div>
+		</div>
+
+		<!-- end user cover photo -->
+
+		<!-- start add products header -->
+		<section class="bg-lightest">
+			<div class="content-wrapper">
+
+				<div class="row">
+					<div class="profile_top profileHome left">
+						<!-- user profile image -->
+						<div class="userprofile_img_wrapper">
+							<div class="userprofile_img" id="profile-image-preview"></div>
+						</div>
+						<div class="userprofile-info">
+							<ul>
+								<li>
+									<h5><b>Brian Williams</b></h5>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/artist.png"><span>Author</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/country.png"><span>Ghana</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/birthday.png"><span>05.25.1973.</span>
+								</li>
+								<li>
+									<img class="userprofile-info-icon" src="images/icons/world-wide-web.png"><a href="javascript:;"><span>www.brianwilliams.com</span></a>
+								</li>
+							</ul>
+
+						</div>
+						<!-- end user profile image  -->
+					</div>
+
+				</div>
+			</div>
+			<hr class="profile-top-separator" />
+		</section>
+
+
+		<!-- end author profile  header -->
+		<section class="bg-lightest">
+			<div class="content-wrapper">
+				<div class="row" id="ptb-row">
+
+					<div class="header-soc-icons">
+						<ul>
+							<li>
+								<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/facebook.png" alt=""></a>
+							</li>
+							<li>
+								<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/twitter.png" alt=""></a>
+							</li>
+							<li>
+								<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/insta.png" alt=""></a>
+							</li>
+							<li>
+								<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:;" class="icon headerSoc-icon" trigger="share"><img src="images/icons/share.png" alt="">
+									<div class="share-content drop-right profile" dropdown="share">
+										Share via
+										<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/fb-share.png" alt=""></a>
+										<a href="javascript:;" class="icon headerSoc-icon"><img src="images/icons/twit-share.png" alt=""></a>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- start author profile main section -->
+		<section class="bg-lightest">
+			<div class="content-wrapper white about">
+				<div class="row" id="profile-about-row">
+					<div class="profile-about">
+						<h3>
+							<b>
+								About Brian Williams
+							</b>
+						</h3>
+						<div class="follow_Btn_Wrapper">
+							<!-- follow / unfollow buttons -->
+							<button type="submit" class="btn followBtn" style="display: none;">
+									Follow
+							</button>
+							<button type="submit" class="btn clearBtn followBtn" style="border: 1px solid #e74c3c;">
+									Unfollow
+							</button>
+						</div>
+						<p>
+							All work sold comes with a Certificate of Authenticity and customers also receive postal/ package refunds if I have been able to send the item/s bought cheaper as a tracked item. I utilise a variety of postal services and always think of the customer
+							to keep prices as low as I can. More information can be sought direct from me. Do feel free to contact me with any queries/ concerns/ information.
+						</p>
+						<p>
+							My work explores Poetics, Ecological Feminism and Pilgrimage utilising drawing, painting, printing, installation and sculpture. Through creating dynamic sets of layered, diaphanous, repeating patterns of line, colour, form and rhythm, I explore layered
+							imagery as a metaphor for travel, pilgrimage and the archaeology of time. The methods I utilise investigate my physical engagement with various realities, mapping and gathering research exploring patterns inspired from Nature, History, Culture
+							and Behaviour. My research explores landscape through extracting soil bacteria, collected during my journeys. These mile-markers reveal hidden bacterial worlds; explore the micro and macro, diversity and inter-cultural exchange through aestheticism
+							and cultural identity. Moments of memory and intervention of the artist explore patterns from archaeology of time. Overall my work explores the Human Condition. I hope you enjoy looking at the work and it is a pleasure to share my work with you.
+						</p>
+						<p>
+							Thank you.
+						</p>
+						<a href="javascript:;" class="arrow-link">Read more
+								<i class="material-arrow_forward"></i>
+							</a>
+
+					</div>
+
+
+				</div>
+
+			</div>
+			<!-- end white wrapper div -->
+		</section>
+		<section class="bg-lightest large-padding-y">
+			<div class="content-wrapper">
+				<!--Start Products-->
+				<h2 class="large-padding-y">
+					<b>
+						Books
+					</b>
+				</h2>
+				<div class="row author_books_wrapper" >
+
+					<div class="author_book" style='background: url("images/c1.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c2.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c3.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c4.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c5.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c6.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c7.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c8.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c9.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+					<div class="author_book" style='background: url("images/c10.jpg") no-repeat center center / cover;'>
+						<a href="javascript:;"><div style="width: 100%; height: 100%;"></div></a>
+					</div>
+				</div>
+				<div class="large-padding-y">
+					<a class="btn wide" href="javascript:;">View all</a>
+				</div>
+				<!-- show this div if no products present -->
+
+				<div class="row" id="empty_books" style="display:none;">
+					<h3>
+							Brian Williams currently has no books.
+					</h3>
+				</div>
+
+				<hr class="separator" />
+				<!-- start profile events-->
+				<h2 class="large-padding-y">
+					<b>
+						Events
+					</b>
+				</h2>
+				<div class="row" id="profile_events">
+					<div class="column-4 profile-event">
+						<a href="javascript:;">
+							<div class="product-img" style='background: url("images/na1b.jpg") no-repeat center center / cover;'>
+							</div>
+							<div class="event-desc">
+								<p><b>Greene Naftali Gallery</b></p>
+								<p>Katja Novitskova: Approximation (Storm Time)</p>
+								<p>Nov 18, 2016–Jan 7, 2017</p>
+							</div>
+						</a>
+					</div>
+					<div class="column-4 profile-event">
+						<a href="javascript:;">
+							<div class="product-img" style='background: url("images/pic3.jpg") no-repeat center center / cover;'>
+							</div>
+							<div class="event-desc">
+								<p><b>Gerald Peters Gallery, NY</b></p>
+								<p>Masterworks of American Art</p>
+								<p>Nov 14, 2016–Jan 6, 2017</p>
+							</div>
+						</a>
+					</div>
+					<div class="column-4 profile-event">
+						<a href="javascript:;">
+							<div class="product-img" style='background: url("images/pic1.jpg") no-repeat center center / cover;'>
+							</div>
+							<div class="event-desc">
+								<p><b>Senior &amp Shopmaker Gallery</b></p>
+								<p>Polly Apfelbaum: Atomic Mystic Portraits</p>
+								<p>Nov 18, 2016–Jan 7, 2017</p>
+							</div>
+						</a>
+					</div>
+					<div class="column-4 profile-event">
+						<a href="javascript:;">
+							<div class="product-img" style='background: url("images/pic2.jpg") no-repeat center center / cover;'>
+							</div>
+							<div class="event-desc">
+								<p><b>Marlborough Gallery</b></p>
+								<p>Davina Semo: FUBAR</p>
+								<p>Nov 18, 2016–Jan 7, 2017</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="large-padding-y">
+					<a class="btn wide" href="javascript:;">View all</a>
+				</div>
+				<!-- show this div if no events present -->
+
+				<div class="row" id="emptyEvents" style="display:none;">
+					<h3>
+							Brian Williams currently has no upcoming events.
+					</h3>
+				</div>
+
+				<hr class="separator" />
+				<!--start publisher-->
+				<h2 class="large-padding-y">
+					<b>
+						My publisher
+					</b>
+				</h2>
+				<div class="row publisher-row">
+					<div class="profile-myGallery">
+						<div class="gallery-img" style='background: url("images/pub.jpg") no-repeat center center / cover;'>
+						</div>
+						<div class="gallery-desc">
+							<h5>
+								<b>
+									<a href="javascript:;">Blake publishing</a>
+								</b>
+							</h5>
+
+							<p>
+								Blake publishing, founded in 2008, is known for discovering emergent, concept-driven artists and bringing them to an international audience. <a href="javascript:;">Read more</a>
+							</p>
+							<div class="gallery-desc-divider">
+								<hr class="separator" />
+							</div>
+							<p>
+								Blake Publishing
+								<br/> 495 Ellis Street, San Francisco, CA 94102, US
+								<br/> Tel: (415) 255-9508
+							</p>
+							<div class="followBtnLower_wrapper">
+								<button class="btn clearBtn followBtnLower">Follow</button>
+								<!-- if already following gallery -->
+								<button class="btn clearBtn followBtnLower" style="display:none;">Unfollow</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- show this button link if more than three publishers present -->
+				<div class="large-padding-y large-padding-top-y" style="display: none;">
+					<a class="btn wide" href="javascript:;">View all</a>
+				</div>
+
+				<!-- show this div if no publisher present -->
+
+				<div class="row" id="emptyGallery" style="display:none;">
+					<h3>
+							Brian Williams is not currently associated with any galleries.
+					</h3>
+				</div>
+
+			</div>
+			<!-- end content wrapper -->
+		</section>
+		<!-- end  -->
+		<!-- end author profile main section -->
+
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="content-wrapper">
+				<div class="footer-top">
+					<div class="wrapper">
+						<h3>
+							Sign up for our newsletter and stay up to date for the latest on Indelibl!
+						</h3>
+					</div>
+
+					<div class="subscribe-cell-button-holder">
+						<button type="submit" class="btn wide" onclick="showSubscribeForm()" id="showSubscribeFormButton">
+									Subscribe
+							</button>
+					</div>
+
+
+					<div class="subscribe-form">
+						<div class="subscribe_container">
+							<div class="xIcon" id="hide-subscribe-form" onclick="hideSubscribeForm()"></div>
+							<input type="email" name="subscriberMail" placeholder="Email address" />
+							<div class="errorMsg">
+								<div class="errorIcon"></div>
+							</div>
+							<div class="form-item form-item_full">
+								<input type="radio" name="gender" value="male" id="ml"><label for="ml">Male</label>
+								<input type="radio" name="gender" value="female" id="fml"><label for="fml">Female</label>
+							</div>
+							<div class="checkBox_privacy_container">
+								<input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="ppCheck">
+								<label for="ppCheck">I accept the <a href="javascript:;">Privacy Policy</a></label>
+							</div>
+							<button type="submit" class="btn wide">
+										Subscribe
+								</button>
+						</div>
+						<!-- Pojavi se prouka kada korisnik posalje email za subscription -->
+						<!--
+							<div class="wrapper subscribe_thanks">
+								<h3>
+									Thank you for subscribing!
+								</h3>
+							</div>
+						-->
+					</div>
+
+				</div>
+				<hr class="separator-footer" />
+				<div class="footer-bottom">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<h4>
+									Company
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl Is</a>
+							</li>
+							<li>
+								<a href="javascript:;">Press</a>
+							</li>
+							<li>
+								<a href="javascript:;">Partnerships & Collaborations</a>
+							</li>
+							<li>
+								<a href="javascript:;">Careers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Contact Us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Legal
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Terms of Service</a>
+							</li>
+							<li>
+								<a href="javascript:;">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="javascript:;">Copyright Policy</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Support
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">For Sellers</a>
+							</li>
+							<li>
+								<a href="javascript:;">For Buyers</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQs</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Business
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Restaurants and Cafes</a>
+							</li>
+							<li>
+								<a href="javascript:;">Office Hire</a>
+							</li>
+							<li>
+								<a href="javascript:;">Interior Designers</a>
+							</li>
+							<li>
+								<a href="javascript:;">Curate with Indelibl</a>
+							</li>
+							<li>
+								<a href="javascript:;">Affiliate Programme</a>
+							</li>
+							<li>
+								<a href="javascript:;">Invest in Indelibl</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>
+									Indelibl
+								</h4>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Galleries</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Artists</a>
+							</li>
+							<li>
+								<a href="javascript:;">Indelibl For Publishers</a>
+							</li>
+						</ul>
+						<div class="footer-right">
+							<h4>
+								Follow us
+							</h4>
+							<div class="footer-iconWrap">
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/facebook.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/twitter.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/insta.png" alt=""></a>
+								<a href="javascript:;" class="icon footer-icon"><img src="images/icons/pinterest.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					© 2016 Indelibl. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- notifications start -->
+	<div class="popup-wrapper" style="display: none;" data-popup-id="notifications">
+		<div class="popup-inner ie-popup notify-popup">
+			<div class="popup popup-notifications">
+				<div class="notifications-popup-header">
+					<h4>
+					<b>
+						Notifications
+					</b>
+				</h4>
+					<div class="xIcon" id="close-notifications"></div>
+				</div>
+				<ul class="notifications-list">
+					<li>
+						<div class="notification-text long-text">
+							<p>
+								<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-close">
+							<div class="xIcon"></div>
+						</div>
+					</li>
+					<li>
+						<div class="notification-text">
+							<p>
+								<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+							</p>
+						</div>
+						<div class="notification-buttons">
+							<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+							<a href="javascript:;">Julia</a> subscribed to your event <a href="javascript:;">Let's Dance</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+							<a href="javascript:;">Jeffrey</a> has invited you to his event <a href="javascript:;">A Night to Remember</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Jeffrey</a> has started following you - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Pace Gallery</a> accepted your invitation to synchornize profiles - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have 5 new subscriptions to your event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						<a href="javascript:;">Kanye</a> declined your invitation to the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text long-text">
+						<p>
+						You have been removed from the event <a href="javascript:;">Joe Party</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+				<li>
+					<div class="notification-text">
+						<p>
+						<a href="javascript:;">Retro Gallery</a> has invited you to the event <a href="javascript:;">Retro Sale</a> - <span class="notification-date">Nov 12, 2017</span>
+						</p>
+					</div>
+					<div class="notification-buttons">
+						<button class="btn">Accept</a>
+						<button class="btn clearBtn">Decline</a>
+					</div>
+					<div class="notification-close">
+						<div class="xIcon"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- notifications end -->
+
+	<!-- preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+		</div>
+	</div>
+
+	<!-- SEO -->
+	<h1 style="display:none;">INDELIBL</h1>
+	<h2 style="display:none;">INDELIBL</h2>
+	<!--Custom Scripts-->
+
+
+	<script src="js/general.js">
+	</script>
+
+</body>
+
+</html>
