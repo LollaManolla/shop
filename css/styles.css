@@ -628,14 +628,14 @@ h6 a:hover {
     background-color: #e74c3c
 }
 
-.main-container {
+/*.main-container {
     overflow-x: hidden;
     height: 100vh;
 }
 
 .main-container.grey {
     background: #f5f5f1;
-}
+}*/
 
 .content-wrapper {
     max-width: 1302px;
@@ -1351,6 +1351,7 @@ ripple.ripple::after {
     color: #e74c3c
 }
 
+
 .slider {
     width: 100%;
     position: relative;
@@ -1384,25 +1385,25 @@ ripple.ripple::after {
     opacity: 0.3
 }
 
-.slide .content-wrapper {
+/*.slide .content-wrapper {
     height: 100%;
     top: -14px;
     position: relative
-}
+}*/
 
-.slide>* {
+.slide > * {
     position: relative;
     z-index: 1
 }
 
-.slide h1 {
+/*.slide h1 {
     font-weight: 600;
     line-height: 0.89em;
     font-size: 4.8em;
     margin: 0.3em 0;
     letter-spacing: -0.01em;
     padding: 3em 0
-}
+}*/
 
 .slide .btn {
     position: absolute;
@@ -1471,6 +1472,8 @@ ripple.ripple::after {
 .slider .owl-item.active>*:nth-child(6) {
     transition-delay: 1.5s
 }
+
+
 
 .box-icons i {
     font-size: 4em;
@@ -8133,7 +8136,7 @@ label {
 .tw1 .form-item_full {
   padding-right: 0;
   margin-bottom: 12px;
-  
+
 }
 .tw1 .form-item_third {
   padding-right: 0;
@@ -9071,7 +9074,7 @@ input#ccSpinner {
   background: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  
+
 }
 .ig-follow {
 	font-weight: bold;
@@ -9231,7 +9234,7 @@ input#ccSpinner {
 	width: 20px;
     height: 20px;
 	margin-top: 0;
-	
+
 }
 .saveTitle {
 	float: none;
@@ -9706,7 +9709,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
 
 /***************/
-
+/*
 @media screen and (min-width: 1200px) {
      ::-webkit-scrollbar {
         height: 10px;
@@ -9720,7 +9723,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
      ::-webkit-scrollbar-corner {
         background: #000000
     }
-}
+}*/
 
 
 /* Large Devices, Wide Screens */
@@ -11088,7 +11091,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     .tw1 {
       width: 95%;
     }
-    
+
     .tw3 {
       width: 5%;
     }
@@ -11110,7 +11113,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	.tw1 .form-item_half {
 	  width: 80%;
 	}
-	
+
 	.press-sep {
 		width: 31.5%;
 
@@ -11179,10 +11182,10 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   }
 
   .grid-element-ig{
-  
+
    width: 160px;
    height: 160px;
- 
+
  }
 	 .ig-head-inner {
 	  width: 560px;
@@ -11222,15 +11225,15 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		line-height: 26px;
 	}
 	.product-title-edit {
-		
+
 		max-width: 310px;
 	}
 	.box-product3 .overlay_product_delete h4, .box-product3 .overlay_product_delete h5 {
-		width: auto; 
-		max-width: 100%; 
+		width: auto;
+		max-width: 100%;
 	}
 	.pdb-right .product-edit-btn {
-		
+
 		margin-top: 10px;
 		vertical-align: top;
 	}
@@ -11268,7 +11271,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
 /* Medium Devices, Desktops
     @media screen and (max-width : 992px) {*/
-
+/*
 @media only screen and (min-width: 510px) and (max-width: 999px) {
     body {
         font-size: 12px;
@@ -11618,7 +11621,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
         max-width: 100%;
         min-width: 100%;
         padding: 20px 0px 30px;
-		width: 
+		width:
     }
     .footer-bottom ul {
         float: left;
@@ -11808,9 +11811,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     }
     .profile-cover_inner {
         margin-top: 2px;
-    }
+    }*/
     /* ----------------------- user profile page styles ---------------------------------*/
-    .profile-cover_wrapper {
+    /*.profile-cover_wrapper {
         margin-top: 30px;
     }
     #cover-img-save {
@@ -12141,9 +12144,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     }
     .form-item-email-prefs {
         width: 530px;
-    }
+    }*/
     /***************** add products pages **************/
-    .profile_top.addProd {
+    /*.profile_top.addProd {
         height: 90px;
     }
     .userprofile-info {
@@ -13193,7 +13196,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   }
   .cart-items-col1 h5 {
     width: 145px;
-  }
+  }*/
   /*
   .tw1 {
     width: 252px;
@@ -13211,7 +13214,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     width: 30px;
   }
   */
-  .bbkfq {
+  /*.bbkfq {
     margin-left: 8%;
   }
   .profile-form.checkout-ship-info {
@@ -13445,7 +13448,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     width: 35%;
   }
 
-	
+
     .tw1 {
       width: 92%;
     }
@@ -13645,7 +13648,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     margin-bottom: 30px;
   }
   .privPolicy {
-    
+
     margin-left: 10px;
   }
   .foot-indeliblis .column-4.box-icons {
@@ -13659,7 +13662,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		margin-top: 6%;
 		width: 80%;
 		padding: 0;
-   
+
 	}
 	.grid-container-ig {
 		overflow: hidden;
@@ -13687,7 +13690,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	  background: #fff;
 	  border-top-left-radius: 5px;
 	  border-top-right-radius: 5px;
-	  
+
 	}
 	.ig-follow {
 		font-weight: bold;
@@ -13741,7 +13744,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		top: 5%;
 
 		margin-left: -40%;
-		
+
 	}
 	.shipmtd-box input[type="radio"] {
 		float: left;
@@ -13805,19 +13808,19 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	.og-cart .tw1 .cart-prod-desc .small-link {
 		max-width: 150px;
 		width: 150px;
-		
+
 	}
 	.og-cart .tw1 .cart-prod-desc {
 		width: 80%;
 		float: left;
 		padding-bottom: 10px;
 	}
-}
+}*/
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 320px) and (max-width: 509px) {
+/*@media only screen and (min-width: 320px) and (max-width: 509px) {
     body {
         font-size: 12px;
         overflow-y: visible;
@@ -14268,9 +14271,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     }
     .dropdown .drop-content ul li a>* {
         color: #313b46;
-    }
+    }*/
     /*  popup styling for regular mobiles  */
-    .popup-registration-content .top a {
+    /*.popup-registration-content .top a {
         display: block;
         width: 100%;
         text-decoration: none;
@@ -14342,9 +14345,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     }
     .profile-cover_inner {
         margin-top: 2px;
-    }
+    }*/
     /* ----------------------- user profile page styles ---------------------------------*/
-    .profile-cover_wrapper {
+    /*.profile-cover_wrapper {
         margin-top: 30px;
     }
     #cover-img-save {
@@ -14686,9 +14689,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     .email-prefs-col-2 input[type="radio"], .email-prefs-col-3 input[type="radio"], .email-prefs-col-4 input[type="radio"], .email-prefs-col-5 input[type="radio"] {
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    /***************** add products pages **************/
-    .profile_top.addProd {
+    }*/
+    /*add products pages **************/
+    /*.profile_top.addProd {
         height: 90px;
     }
     .userprofile-info {
@@ -14988,12 +14991,12 @@ li.ui-timepicker-selected .ui-timepicker-duration,
       max-width: 280px;
       word-wrap: break-word;
       width: 100%;
-      white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
-      white-space: -pre-wrap;      /* Opera 4-6 */
-      white-space: -o-pre-wrap;    /* Opera 7 */
-      white-space: pre-wrap;       /* css-3 */
-      word-wrap: break-word;       /* Internet Explorer 5.5+ */
-      white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+      white-space: -moz-pre-wrap !important;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      white-space: -webkit-pre-wrap;
       white-space: normal;
     }
     .choose-event-photo img {
@@ -15904,23 +15907,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     .cart-items-col1 h5 {
       margin-bottom: 4px;
     }
-    /*
-    .tw1 {
-      width: 63px;
-    }
-    .tw2 {
-      width: 72px;
-    }
-    .tw3 {
-      width: 42px;
-    }
-    .tw4 {
-      width: 72px;
-    }
-    .tw5 {
-      width: 32px;
-    }
-    */
     .product-desc-bottom {
       margin-bottom: 0;
 	  margin-right: 3px;
@@ -16413,7 +16399,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     margin-bottom: 30px;
   }
   .privPolicy {
-    
+
     float: none;
 	text-align: center;
 	margin-bottom: 7px;
@@ -16431,7 +16417,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		margin: 0 0 20px 0;
 	}
 	.instagram-wrapper {
-  
+
    width: 100%;
    padding: 0;
    margin-top: 12%;
@@ -16462,7 +16448,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	  background: #fff;
 	  border-top-left-radius: 5px;
 	  border-top-right-radius: 5px;
-	  
+
 	}
 	.ig-follow {
 		font-weight: bold;
@@ -16516,7 +16502,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		top: 3%;
 
 		margin-left: -48%;
-		
+
 	}
 	.shipmtd-box input[type="radio"] {
 		float: left;
@@ -16539,9 +16525,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		padding-top: 10px;
 	}
 	.mc-shiptgle {
-		
+
 		margin-left: 0;
-		
+
 	}
 	.card-shipmtd-box {
 		width: 86%;
@@ -16564,9 +16550,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		display: none;
 	}
 	.product-title-edit {
-		
+
 		max-width: 220px;
-		
+
 	}
 	.og-cart .cart-items-col1 .product-img2.my-prod-img {
 		width: 60px;
@@ -16583,7 +16569,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 		float: left;
 	}
 	.pricehoard {
-		
+
 		width: 100%;
 		height: 40px;
 		margin-bottom: 20px;
@@ -16604,10 +16590,10 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	.myp-print-head {
 		display: none;
 	}
-	
-}
 
-/* Custom, iPhone Retina */
+}*/
+
+/* Custom, iPhone Retina
 
 @media only screen and (min-width: 320px) and (max-width: 350px) {
     .main-container {
@@ -16665,3 +16651,4 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     }
 
 }
+*/

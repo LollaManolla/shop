@@ -1,0 +1,43 @@
+//we will put here temp bp mixin and breakpoints
+// this should be in folder liek mixin and then settings in folder like settings.breaktpoints
+
+
+// EXAMPLE
+//   @include breakpoint (phone) {
+//       width: 40%;
+//   }
+//
+
+// @mixin breakpoint($point) {
+// 	@if $point  == large {
+// 		@media (min-width: $toDesktop) and (max-width: $desktop)								{ @content; }
+// 	}
+// 	@else if $point == medium {
+// 		@media (min-width: $510) and (max-width: $999)							{ @content; }
+// 	}
+// 	@else if $point == xsmall {
+// 		@media (min-width: $small) and (max-width: $medium)								{ @content; }
+// 	}
+// 	 @else if $point == customRetina {
+//         @media(min-width: $xsmall) and (max-width: $small)	                             { @content; }
+//     }
+//     @else if $point == devices {
+//          @media (max-width: $xsmall )                              { @content; }
+//      }
+// }
+//
+//
+// //VARIABLE
+//
+// $desktop: 1600px;
+// $toDesktop: 1000px;
+// $999: 999px;
+// $509:510px;
+// $medium: 509px;
+// $small: 350px;
+// $xsmall: 320;
+
+// @media only screen and (min-width: 1000px) and (max-width: 1600px) { 2  Large Devices, Wide Screens
+//   @media only screen and (min-width: 510px) and (max-width: 999px) {3 Medium Devices, Desktops
+//     @media only screen and (min-width: 320px) and (max-width: 509px) { 4 /* Extra Small Devices, Phones */
+//       @media only screen and (min-width: 320px) and (max-width: 350px) { 5  /* Custom, iPhone Retina */

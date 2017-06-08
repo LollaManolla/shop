@@ -1,0 +1,15 @@
+//some hack from file
+@media screen and (min-width: 1200px) {
+     ::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+        background: #f5f5f1
+    }
+     ::-webkit-scrollbar-thumb {
+        background: #a6a6a6;
+        -webkit-border-radius: 10px
+    }
+     ::-webkit-scrollbar-corner {
+        background: #000000
+    }
+}
