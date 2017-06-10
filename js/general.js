@@ -2940,19 +2940,19 @@ var showShipOptions = function(e) {
 var selectShipOption = function(e) {
 	var id = e.id;
     id = id.replace("slcship_", "");
-	
+
 	var shipBtn = $("#shipbutt_" + id);
 	shipBtn.parent().find('.selected-shipping').remove();
 	var options = $(e).parent().parent().find("input[name*='ship']:checked");
-	
-	options.each(function(){   
-		
+
+	options.each(function(){
+
 		var valsplit = $(this).val().split(' - ');
 		console.log(valsplit);
 		shipBtn.parent().prepend('<p class="selected-shipping" style="float: left;"><b>' + valsplit[0] + '</b> - ' + valsplit[1] + '</p>');
-		
+
      });
-    shipBtn.html("Change");  
+    shipBtn.html("Change");
 	shipBtn.removeClass("bfr-tgle");
 	$(e).parent().parent().hide();
     $(e).parent().parent().parent().hide();
@@ -2962,7 +2962,7 @@ var selectShipOption = function(e) {
     }
 }
 
-var hideShipbox = function(e) {   
+var hideShipbox = function(e) {
     $(e).parent().hide();
     $(e).parent().parent().hide();
     $('body').css('overflow', 'auto');
@@ -3048,3 +3048,13 @@ var openLightBoxMyInd = function(e) {
 var reorderProduct = function(e) {
     $(e).parent().parent().find('.cart-msg').fadeIn().delay(2000).fadeOut();
 };
+
+// ---------- convert link to iframe
+  $(function() {
+    $('.page-footer__faq .right .fullArticle .article-video a').each(function() {
+      var yt_url = this.href,
+      yt_id = yt_url.split('?v=')[1],
+      yt_title = $(this).text();
+      $(this).replaceWith('<iframe allowfullscreen class="youtube-frame" src="https://www.youtube.com/embed/' + yt_id + ' "></iframe>');
+    });
+  });

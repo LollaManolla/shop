@@ -4,12 +4,17 @@
 @import "settings/settings.wrappers";
 
 
+//components
+@import "components/popup/component.popup";
+
+//pages
 @import "pages/page.home";
+@import "pages/page.footer";
 
-
-
+//responsive
 @import "responsive/responsive.first";
 @import "responsive/responsive.second";
 @import "responsive/responsive.third";
 @import "responsive/responsive.four";
 @import "responsive/responsive.five";
+ 

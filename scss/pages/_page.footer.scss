@@ -1,0 +1,301 @@
+//page footer
+
+
+
+.page-footer {
+  //faq page only styles
+  &__faq {
+    .content-wrapper {
+      @media only screen and (max-width: 999px) {
+        padding-top: 1em;
+      }
+    }
+    #footer-company-menu {
+      padding-left: 24rem;
+      padding-top: 4rem;
+      display: block;
+      @media only screen and (max-width: 1600px) {
+        padding-left: 16rem;
+        padding-top: 2rem;
+      }
+      @media only screen and (max-width: 999px)  {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+      }
+      li {
+        margin: 0 0.6rem;
+
+        @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+          margin: 0 0.2rem;
+        }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          display: block;
+          font-size: 1.2em;
+          line-height: 2;
+          margin: 0;
+        }
+        @media only screen and (max-width: 509px) {
+          display: block;
+          font-size: 1.18em;
+          line-height: 2;
+          margin: 0;
+        }
+        a {
+          font-weight: normal;
+          &.active {
+            color: #e74c3c;
+          }
+          &:hover {
+            color: #e74c3c;
+          }
+        }
+      }
+    }
+    .right {
+      width: 70%;
+      text-align: left;
+      min-height: 600px;
+      margin-top: 0;
+      @media only screen and (min-width:510px) and (max-width:999px) {
+        float: none;
+        margin-bottom: 2em;
+        min-height: 300px;
+        padding: 2em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media only screen and (max-width:509px) {
+        float: none;
+        margin-bottom: 2em;
+        min-height: 300px;
+        padding: 2em;
+        width: 100%;
+      }
+      h1 {
+        font-size: 1.9em;
+        @media only screen and (min-width:510px) and (max-width:999px) {
+          font-size: 2.3em;
+        }
+        @media only screen and (min-width:510px) {
+          font-size: 2.2em;
+        }
+      }
+      .list-file {
+        > li {
+          display: block;
+          line-height: normal;
+          padding: 0.5em 0 0.5em 1.3em;
+          position: relative;
+          @media only screen and (min-width:510px) and (max-width:999px) {
+            font-size: 1.7em;
+          }
+          @media only screen and (max-width:509px) {
+            font-size: 1.6em;
+          }
+
+          &:before {
+            background: transparent url("../images/icons/file.png") repeat scroll 0 0 / cover ;
+            bottom: 0;
+            content: "";
+            height: 1em;
+            left: 0;
+            position: absolute;
+            top: 0.65em;
+            width: 1em;
+          }
+        }
+      }
+
+      .fullArticle,
+      .fullArticle p,
+      .fullArticle ul,
+      .fullArticle ol,
+      .fullArticle li,
+      .fullArticle div,
+      .fullArticle blockquote,
+      .fullArticle dd,
+      .fullArticle table {
+        color: #15212f;
+        font-size: 14px;
+        line-height: 1.55em;
+        margin-bottom: 1.5em;
+        @media only screen and (min-width: 509px) and (max-width: 999px) {
+          font-size: 15px;
+        }
+        @media only screen and (max-width: 509px) {
+          font-size: 16px;
+        }
+        .title {
+          margin: 0 30px 0.5em 0;
+          color: #222;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 1.2em;
+          @media only screen and (min-width: 509px) and (max-width: 999px) {
+            font-size: 28px;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 25px;
+          }
+        }
+        .article-image {
+          display: block;
+          max-width: 80%;
+          margin: 2em 0;
+        }
+        h3 {
+          @media only screen and  (max-width: 999px) {
+
+            margin: 2em 0;
+          }
+        }
+        ul {
+          display: block;
+          list-style-type: disc;
+          margin-bottom: 1em;
+          margin-top: 1em;
+          padding-left: 40px;
+          li {
+            margin-bottom: 10px;
+            ul {
+              list-style-type: circle;
+            }
+          }
+        }
+        strong {
+          color: #494949;
+          font-weight: bold;
+        }
+      }
+      .fullArticle .article-video {
+        position:relative;
+        padding-bottom:50%;
+        padding-top:30px;
+        height:0;
+        overflow:hidden;
+        margin: 0;
+        width: 80%;
+        iframe,
+        object,
+        embed,
+        .youtube-box {
+          position:absolute;
+          top:0;
+          left:0;
+          width:100% !important;
+          height:100% !important;
+          right: 0;
+          bottom: 0;
+        }
+        .youtube-box {
+          background-size: 100% 100%;
+        }
+
+      }
+    }
+    .left {
+      width: 28%;
+      text-align: left;
+      @media only screen and (min-width:510px) and (max-width:999px) {
+        min-height: 200px;
+        width: 90%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media only screen and (max-width:509px) {
+        min-height:200px;
+        width: 100%;
+        float: none;
+      }
+      .search {
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          font-size: 1.4em;
+        }
+        @media only screen and (max-width: 509px) {
+          font-size: 1.3em;
+        }
+        input {
+          background-color: #fff;
+          border-radius: 0.4em;
+          float: none;
+          height: auto;
+          line-height: 2.3;
+          width: 100%;
+          min-width: 50%;
+          padding-right: 0;
+          position: relative;
+        }
+        button {
+          border: medium none;
+          float: none;
+          height: 2.3em;
+          line-height: normal;
+          padding: 0;
+          position: absolute;
+          right: 2.1em;
+          width: auto;
+          background: none;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            height: 2.1em;
+            right: 0;
+            top: -0.5em;
+            width: 2.6em;
+          }
+
+          @media only screen and (max-width: 509px) {
+            height: 2em;
+            right: 0;
+            top: -0.4em;
+            width: 2.5em;
+          }
+          i {
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              font-size: 2.1em;
+            }
+            @media only screen and (max-width: 509px) {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+      .sidebar-list {
+        margin-top: 1.8em;
+        h2 {
+          font-size: 1.25em;
+          margin-bottom: 1.3em;
+          text-transform: uppercase;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            font-size: 1.37em;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 1.35em;
+          }
+        }
+        ul > li {
+          display: block;
+          line-height: 1.8;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            font-size: 1.2em;
+            line-height: 2.3;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 1.18em;
+            line-height: 2.2;
+          }
+          > a, a:visited, a:focus {
+            color: #2d2d2d;
+            &:hover  {
+              color: #e74c3c;
+            }
+          }
+          &.active a {
+            color: #e74c3c;
+          }
+        }
+      }
+    }
+  }
+}
