@@ -269,4 +269,109 @@
       }
     }
   }
+  //partnershio page only
+  &__partnership {
+    padding: 2em;
+    text-align: left;
+    .column-3{
+      @media only screen and  (max-width:999px) {
+       margin:0;
+      }
+    }
+    p {
+    @media only screen and  (max-width:598px) {
+     font-size: 1.3em;
+    }
+  }
+    .intro {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0;
+      padding: 2em 0.22em;
+      text-align: center;
+      @media only screen and (min-width:599px) and (max-width: 999px) {
+       font-size: 1.38em;
+      }
+      @media only screen and  (max-width:598px) {
+       font-size: 1.3em;
+        padding: 1em 0.22em 3em;
+      }
+    }
+    h3 {
+      border-bottom: 1px solid #c6c6c6;
+      padding-bottom: 1.6em;
+    }
+    h4 {
+      font-size: 1.3em;
+       font-weight: 700;
+       line-height: 1.1em;
+       margin-bottom: 1em;
+       @media only screen and  (max-width:598px) {
+        font-size: 1.3em;
+       }
+    }
+    .partner-logo {
+      position: relative;
+      display: inline-block;
+      float: left;
+      margin-bottom: 2.2em;
+      .svg-icon {
+        display: inline-block;
+        fill: currentcolor;
+        stroke: currentcolor;
+        stroke-width: 0;
+        vertical-align: middle;
+        height: 40px;
+        width: 89px;
+        position: relative;
+        @media only screen and (min-width:599px) and (max-width: 999px) {
+          height: 48px;
+  width: 118px;
+        }
+
+        @media only screen and  (max-width:598px) {
+          height: 48px;
+  width: 118px;
+        }
+
+      }
+      .logo {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .partner-link {
+      display: inline-block;
+      float: left;
+      clear: both;
+       margin-bottom: 1.2em;
+       @media only screen and (min-width:599px) and (max-width: 999px) {
+        font-size: 1.2em;
+       }
+       @media only screen and  (max-width:598px) {
+  font-size: 1.3em;
+       }
+    }
+    .partner-info {
+      clear: both;
+      max-height: 268px;
+ overflow: hidden;
+
+       @media only screen and (min-width:599px) and (max-width: 999px) {
+        font-size: 1.2em;
+       }
+       @media only screen and  (max-width:598px) {
+  font-size: 1.3em;
+       }
+    }
+    .separator {
+      height: 1px;
+   margin-bottom: 3em;
+    }
+  }
 }
