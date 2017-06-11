@@ -165,144 +165,38 @@
       top: 0.65em;
       width: 1em; }
   .page-footer__faq .right .fullArticle,
-  .page-footer__faq .right .fullArticle p,
-  .page-footer__faq .right .fullArticle ul,
-  .page-footer__faq .right .fullArticle ol,
-  .page-footer__faq .right .fullArticle li,
-  .page-footer__faq .right .fullArticle div,
-  .page-footer__faq .right .fullArticle blockquote,
-  .page-footer__faq .right .fullArticle dd,
-  .page-footer__faq .right .fullArticle table {
+  .page-footer__faq .right .fullArticle p {
     color: #15212f;
     font-size: 14px;
     line-height: 1.55em;
     margin-bottom: 1.5em; }
     @media only screen and (min-width: 509px) and (max-width: 999px) {
       .page-footer__faq .right .fullArticle,
-      .page-footer__faq .right .fullArticle p,
-      .page-footer__faq .right .fullArticle ul,
-      .page-footer__faq .right .fullArticle ol,
-      .page-footer__faq .right .fullArticle li,
-      .page-footer__faq .right .fullArticle div,
-      .page-footer__faq .right .fullArticle blockquote,
-      .page-footer__faq .right .fullArticle dd,
-      .page-footer__faq .right .fullArticle table {
+      .page-footer__faq .right .fullArticle p {
         font-size: 15px; } }
     @media only screen and (max-width: 509px) {
       .page-footer__faq .right .fullArticle,
-      .page-footer__faq .right .fullArticle p,
-      .page-footer__faq .right .fullArticle ul,
-      .page-footer__faq .right .fullArticle ol,
-      .page-footer__faq .right .fullArticle li,
-      .page-footer__faq .right .fullArticle div,
-      .page-footer__faq .right .fullArticle blockquote,
-      .page-footer__faq .right .fullArticle dd,
-      .page-footer__faq .right .fullArticle table {
+      .page-footer__faq .right .fullArticle p {
         font-size: 16px; } }
     .page-footer__faq .right .fullArticle .title,
-    .page-footer__faq .right .fullArticle p .title,
-    .page-footer__faq .right .fullArticle ul .title,
-    .page-footer__faq .right .fullArticle ol .title,
-    .page-footer__faq .right .fullArticle li .title,
-    .page-footer__faq .right .fullArticle div .title,
-    .page-footer__faq .right .fullArticle blockquote .title,
-    .page-footer__faq .right .fullArticle dd .title,
-    .page-footer__faq .right .fullArticle table .title {
-      margin: 0 30px 0.5em 0;
+    .page-footer__faq .right .fullArticle p .title {
+      margin: 0 30px 0 0;
       color: #222;
       font-size: 30px;
       font-weight: 400;
       line-height: 1.2em; }
       @media only screen and (min-width: 509px) and (max-width: 999px) {
         .page-footer__faq .right .fullArticle .title,
-        .page-footer__faq .right .fullArticle p .title,
-        .page-footer__faq .right .fullArticle ul .title,
-        .page-footer__faq .right .fullArticle ol .title,
-        .page-footer__faq .right .fullArticle li .title,
-        .page-footer__faq .right .fullArticle div .title,
-        .page-footer__faq .right .fullArticle blockquote .title,
-        .page-footer__faq .right .fullArticle dd .title,
-        .page-footer__faq .right .fullArticle table .title {
+        .page-footer__faq .right .fullArticle p .title {
           font-size: 28px; } }
       @media only screen and (max-width: 509px) {
         .page-footer__faq .right .fullArticle .title,
-        .page-footer__faq .right .fullArticle p .title,
-        .page-footer__faq .right .fullArticle ul .title,
-        .page-footer__faq .right .fullArticle ol .title,
-        .page-footer__faq .right .fullArticle li .title,
-        .page-footer__faq .right .fullArticle div .title,
-        .page-footer__faq .right .fullArticle blockquote .title,
-        .page-footer__faq .right .fullArticle dd .title,
-        .page-footer__faq .right .fullArticle table .title {
+        .page-footer__faq .right .fullArticle p .title {
           font-size: 25px; } }
-    .page-footer__faq .right .fullArticle .article-image,
-    .page-footer__faq .right .fullArticle p .article-image,
-    .page-footer__faq .right .fullArticle ul .article-image,
-    .page-footer__faq .right .fullArticle ol .article-image,
-    .page-footer__faq .right .fullArticle li .article-image,
-    .page-footer__faq .right .fullArticle div .article-image,
-    .page-footer__faq .right .fullArticle blockquote .article-image,
-    .page-footer__faq .right .fullArticle dd .article-image,
-    .page-footer__faq .right .fullArticle table .article-image {
-      display: block;
-      max-width: 80%;
-      margin: 2em 0; }
-    @media only screen and (max-width: 999px) {
-      .page-footer__faq .right .fullArticle h3,
-      .page-footer__faq .right .fullArticle p h3,
-      .page-footer__faq .right .fullArticle ul h3,
-      .page-footer__faq .right .fullArticle ol h3,
-      .page-footer__faq .right .fullArticle li h3,
-      .page-footer__faq .right .fullArticle div h3,
-      .page-footer__faq .right .fullArticle blockquote h3,
-      .page-footer__faq .right .fullArticle dd h3,
-      .page-footer__faq .right .fullArticle table h3 {
-        margin: 2em 0; } }
-    .page-footer__faq .right .fullArticle ul,
-    .page-footer__faq .right .fullArticle p ul,
-    .page-footer__faq .right .fullArticle ul ul,
-    .page-footer__faq .right .fullArticle ol ul,
-    .page-footer__faq .right .fullArticle li ul,
-    .page-footer__faq .right .fullArticle div ul,
-    .page-footer__faq .right .fullArticle blockquote ul,
-    .page-footer__faq .right .fullArticle dd ul,
-    .page-footer__faq .right .fullArticle table ul {
-      display: block;
-      list-style-type: disc;
-      margin-bottom: 1em;
-      margin-top: 1em;
-      padding-left: 40px; }
-      .page-footer__faq .right .fullArticle ul li,
-      .page-footer__faq .right .fullArticle p ul li,
-      .page-footer__faq .right .fullArticle ul ul li,
-      .page-footer__faq .right .fullArticle ol ul li,
-      .page-footer__faq .right .fullArticle li ul li,
-      .page-footer__faq .right .fullArticle div ul li,
-      .page-footer__faq .right .fullArticle blockquote ul li,
-      .page-footer__faq .right .fullArticle dd ul li,
-      .page-footer__faq .right .fullArticle table ul li {
-        margin-bottom: 10px; }
-        .page-footer__faq .right .fullArticle ul li ul,
-        .page-footer__faq .right .fullArticle p ul li ul,
-        .page-footer__faq .right .fullArticle ul ul li ul,
-        .page-footer__faq .right .fullArticle ol ul li ul,
-        .page-footer__faq .right .fullArticle li ul li ul,
-        .page-footer__faq .right .fullArticle div ul li ul,
-        .page-footer__faq .right .fullArticle blockquote ul li ul,
-        .page-footer__faq .right .fullArticle dd ul li ul,
-        .page-footer__faq .right .fullArticle table ul li ul {
-          list-style-type: circle; }
-    .page-footer__faq .right .fullArticle strong,
-    .page-footer__faq .right .fullArticle p strong,
-    .page-footer__faq .right .fullArticle ul strong,
-    .page-footer__faq .right .fullArticle ol strong,
-    .page-footer__faq .right .fullArticle li strong,
-    .page-footer__faq .right .fullArticle div strong,
-    .page-footer__faq .right .fullArticle blockquote strong,
-    .page-footer__faq .right .fullArticle dd strong,
-    .page-footer__faq .right .fullArticle table strong {
-      color: #494949;
-      font-weight: bold; }
+  .page-footer__faq .right .fullArticle .article-image {
+    display: block;
+    max-width: 80%;
+    margin: 2em 0; }
   .page-footer__faq .right .fullArticle .article-video {
     position: relative;
     padding-bottom: 50%;
@@ -362,9 +256,10 @@
     line-height: normal;
     padding: 0;
     position: absolute;
-    right: 2.1em;
+    right: 1em;
     width: auto;
-    background: none; }
+    background: none;
+    top: 0; }
     @media only screen and (min-width: 510px) and (max-width: 999px) {
       .page-footer__faq .left .search button {
         height: 2.1em;
