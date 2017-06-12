@@ -215,7 +215,7 @@
   background: transparent url("../images/icons/file.png") repeat scroll 0 0/cover;
   bottom: 0;
   content: "";
-  height: 1em;
+  height: 1.02em;
   left: 0;
   position: absolute;
   top: 0.65em;
@@ -302,10 +302,19 @@
     margin-right: auto;
   }
 }
-@media only screen and (max-width: 509px) {
+@media only screen and (min-width: 375px) and (max-width: 509px) {
   .page-footer__faq .left {
     min-height: 200px;
     width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .page-footer__faq .left {
+    min-height: 200px;
+    width: 90%;
+    margin: 0 auto;
     float: none;
   }
 }
@@ -415,13 +424,43 @@
 .page-footer__faq .left .sidebar-list ul > li.active a {
   color: #e74c3c;
 }
+.page-footer__faq.faq--search-results h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+.page-footer__faq.faq--search-results h1 span {
+  position: relative;
+}
+.page-footer__faq.faq--search-results h1 span:before {
+  content: open-quote;
+}
+.page-footer__faq.faq--search-results h1 span:after {
+  content: close-quote;
+}
+.page-footer__faq.faq--search-results .note-result {
+  color: #969494;
+  margin: 0 0 2.1em;
+}
+.page-footer__faq.faq--search-results .note-result span {
+  margin-right: 0.15em;
+}
 .page-footer__partnership {
   padding: 2em;
   text-align: left;
 }
+.page-footer__partnership .col {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  padding: 0 2em 0 0;
+  margin-bottom: 3em;
+}
 @media only screen and (max-width: 999px) {
-  .page-footer__partnership .column-3 {
-    margin: 0;
+  .page-footer__partnership .col {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 599px) and (max-width: 999px) {

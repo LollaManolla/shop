@@ -104,7 +104,7 @@
             background: transparent url("../images/icons/file.png") repeat scroll 0 0 / cover;
             bottom: 0;
             content: "";
-            height: 1em;
+            height: 1.02em;
             left: 0;
             position: absolute;
             top: 0.65em;
@@ -185,9 +185,16 @@
         margin-left: auto;
         margin-right: auto;
       }
-      @media only screen and (max-width:509px) {
+      @media only screen and (min-width:375px) and (max-width:509px) {
         min-height: 200px;
         width: 100%;
+        margin: 0 auto;
+        float: none;
+      }
+      @media only screen and (max-width:374px) {
+        min-height: 200px;
+        width: 90%;
+        margin: 0 auto;
         float: none;
       }
 
@@ -289,15 +296,51 @@
         }
       }
     }
+
+    &.faq--search-results {
+      h1 {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 1.8em;
+
+        span {
+          position: relative;
+
+          &:before {
+            content: open-quote;
+          }
+
+          &:after {
+            content: close-quote;
+          }
+        }
+      }
+
+      .note-result {
+        color: #969494;
+        margin: 0 0 2.1em;
+
+        span {
+          margin-right: 0.15em;
+        }
+      }
+    }
   }
   //partnershio page only
   &__partnership {
     padding: 2em;
     text-align: left;
 
-    .column-3 {
-      @media only screen and (max-width:999px) {
-        margin: 0;
+    .col {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      padding: 0 2em 0 0;
+      margin-bottom: 3em;
+      @media only screen and (max-width: 999px) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
       }
     }
 
