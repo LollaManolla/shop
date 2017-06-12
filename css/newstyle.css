@@ -274,10 +274,10 @@
   margin: 0;
   width: 80%;
 }
-.page-footer__faq .right .fullArticle .article-video iframe,
-.page-footer__faq .right .fullArticle .article-video object,
+.page-footer__faq .right .fullArticle .article-video .youtube-box,
 .page-footer__faq .right .fullArticle .article-video embed,
-.page-footer__faq .right .fullArticle .article-video .youtube-box {
+.page-footer__faq .right .fullArticle .article-video iframe,
+.page-footer__faq .right .fullArticle .article-video object {
   position: absolute;
   top: 0;
   left: 0;
@@ -402,10 +402,14 @@
     line-height: 2.2;
   }
 }
-.page-footer__faq .left .sidebar-list ul > li > a, .page-footer__faq .left .sidebar-list ul > li a:visited, .page-footer__faq .left .sidebar-list ul > li a:focus {
+.page-footer__faq .left .sidebar-list ul > li > a,
+.page-footer__faq .left .sidebar-list ul > li a:focus,
+.page-footer__faq .left .sidebar-list ul > li a:visited {
   color: #2d2d2d;
 }
-.page-footer__faq .left .sidebar-list ul > li > a:hover, .page-footer__faq .left .sidebar-list ul > li a:visited:hover, .page-footer__faq .left .sidebar-list ul > li a:focus:hover {
+.page-footer__faq .left .sidebar-list ul > li > a:hover,
+.page-footer__faq .left .sidebar-list ul > li a:focus:hover,
+.page-footer__faq .left .sidebar-list ul > li a:visited:hover {
   color: #e74c3c;
 }
 .page-footer__faq .left .sidebar-list ul > li.active a {
@@ -525,17 +529,20 @@
 }
 .page-footer__partnership .partner-info {
   clear: both;
-  height: 264px;
+  max-height: 264px;
+  min-height: 50px;
   overflow: hidden;
 }
 @media only screen and (min-width: 1000px) and (max-width: 1599px) {
   .page-footer__partnership .partner-info {
-    height: 273px;
+    max-height: 273px;
   }
 }
 @media only screen and (max-width: 999px) {
   .page-footer__partnership .partner-info {
     height: auto;
+    max-height: initial;
+    min-height: initial;
     margin-bottom: 3em;
   }
 }
