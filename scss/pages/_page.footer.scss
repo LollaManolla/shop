@@ -3,375 +3,394 @@
 
 
 .page-footer {
-  //faq page only styles
-  &__faq {
-    .content-wrapper {
-      @media only screen and (max-width: 999px) {
-        padding-top: 1em;
-      }
-    }
-    #footer-company-menu {
-      padding-left: 24rem;
-      padding-top: 4rem;
-      display: block;
-      @media only screen and (max-width: 1600px) {
-        padding-left: 16rem;
-        padding-top: 2rem;
-      }
-      @media only screen and (max-width: 999px)  {
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-top: 0;
-      }
-      li {
-        margin: 0 0.6rem;
-
-        @media only screen and (min-width: 1000px) and (max-width: 1600px) {
-          margin: 0 0.2rem;
-        }
-        @media only screen and (min-width: 510px) and (max-width: 999px) {
-          display: block;
-          font-size: 1.2em;
-          line-height: 2;
-          margin: 0;
-        }
-        @media only screen and (max-width: 509px) {
-          display: block;
-          font-size: 1.18em;
-          line-height: 2;
-          margin: 0;
-        }
-        a {
-          font-weight: normal;
-          &.active {
-            color: #e74c3c;
-          }
-          &:hover {
-            color: #e74c3c;
-          }
-        }
-      }
-    }
-    .right {
-      width: 70%;
-      text-align: left;
-      min-height: 600px;
-      margin-top: 0;
-      @media only screen and (min-width:510px) and (max-width:999px) {
-        float: none;
-        margin-bottom: 2em;
-        min-height: 300px;
-        padding: 2em;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      @media only screen and (max-width:509px) {
-        float: none;
-        margin-bottom: 2em;
-        min-height: 300px;
-        padding: 2em;
-        width: 100%;
-      }
-      h1 {
-        font-size: 1.9em;
-        @media only screen and (min-width:510px) and (max-width:999px) {
-          font-size: 2.3em;
-        }
-        @media only screen and (min-width:510px) {
-          font-size: 2.2em;
-        }
-      }
-      .list-file {
-        > li {
-          display: block;
-          line-height: normal;
-          padding: 0.5em 0 0.5em 1.3em;
-          position: relative;
-          @media only screen and (min-width:510px) and (max-width:999px) {
-            font-size: 1.7em;
-          }
-          @media only screen and (max-width:509px) {
-            font-size: 1.6em;
-          }
-
-          &:before {
-            background: transparent url("../images/icons/file.png") repeat scroll 0 0 / cover ;
-            bottom: 0;
-            content: "";
-            height: 1em;
-            left: 0;
-            position: absolute;
-            top: 0.65em;
-            width: 1em;
-          }
-        }
-      }
-
-      .fullArticle,
-      .fullArticle p {
-        color: #15212f;
-        font-size: 14px;
-        line-height: 1.55em;
-        margin-bottom: 1.5em;
-        @media only screen and (min-width: 509px) and (max-width: 999px) {
-          font-size: 15px;
-        }
-        @media only screen and (max-width: 509px) {
-          font-size: 16px;
-        }
-        .title {
-          margin: 0 30px 0 0;
-          color: #222;
-          font-size: 30px;
-          font-weight: 400;
-          line-height: 1.2em;
-          @media only screen and (min-width: 509px) and (max-width: 999px) {
-            font-size: 28px;
-          }
-          @media only screen and (max-width: 509px) {
-            font-size: 25px;
-          }
-        }
-      }
-      .fullArticle  .article-image {
-        display: block;
-        max-width: 80%;
-        margin: 2em 0;
-      }
-      .fullArticle .article-video {
-        position:relative;
-        padding-bottom:50%;
-        padding-top:30px;
-        height:0;
-        overflow:hidden;
-        margin: 0;
-        width: 80%;
-        iframe,
-        object,
-        embed,
-        .youtube-box {
-          position:absolute;
-          top:0;
-          left:0;
-          width:100% !important;
-          height:100% !important;
-          right: 0;
-          bottom: 0;
-        }
-        .youtube-box {
-          background-size: 100% 100%;
-        }
-
-      }
-    }
-    .left {
-      width: 28%;
-      text-align: left;
-      @media only screen and (min-width:510px) and (max-width:999px) {
-        min-height: 200px;
-        width: 90%;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      @media only screen and (max-width:509px) {
-        min-height:200px;
-        width: 100%;
-        float: none;
-      }
-      .search {
-        @media only screen and (min-width: 510px) and (max-width: 999px) {
-          font-size: 1.4em;
-        }
-        @media only screen and (max-width: 509px) {
-          font-size: 1.3em;
-        }
-        input {
-          background-color: #fff;
-          border-radius: 0.4em;
-          float: none;
-          height: auto;
-          line-height: 2.3;
-          width: 100%;
-          min-width: 50%;
-          padding-right: 0;
-          position: relative;
-        }
-        button {
-          border: medium none;
-          float: none;
-          height: 2.3em;
-          line-height: normal;
-          padding: 0;
-          position: absolute;
-          right: 1em;
-          width: auto;
-          background: none;
-          top: 0;
-          @media only screen and (min-width: 510px) and (max-width: 999px) {
-            height: 2.1em;
-            right: 0;
-            top: -0.5em;
-            width: 2.6em;
-          }
-
-          @media only screen and (max-width: 509px) {
-            height: 2em;
-            right: 0;
-            top: -0.4em;
-            width: 2.5em;
-          }
-          i {
-            @media only screen and (min-width: 510px) and (max-width: 999px) {
-              font-size: 2.1em;
+    //faq page only styles
+    &__faq {
+        .content-wrapper {
+            @media only screen and (max-width: 999px) {
+                padding-top: 1em;
             }
-            @media only screen and (max-width: 509px) {
-              font-size: 2em;
+        }
+        #footer-company-menu {
+            padding-left: 24rem;
+            padding-top: 4rem;
+            display: block;
+            @media only screen and (max-width: 1600px) {
+                padding-left: 16rem;
+                padding-top: 2rem;
             }
-          }
+            @media only screen and (max-width: 999px)  {
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-top: 0;
+            }
+            li {
+                margin: 0 0.6rem;
+
+                @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+                    margin: 0 0.2rem;
+                }
+                @media only screen and (min-width: 510px) and (max-width: 999px) {
+                    display: block;
+                    font-size: 1.2em;
+                    line-height: 2;
+                    margin: 0;
+                }
+                @media only screen and (max-width: 509px) {
+                    display: block;
+                    font-size: 1.18em;
+                    line-height: 2;
+                    margin: 0;
+                }
+                a {
+                    font-weight: normal;
+                    &.active {
+                        color: #e74c3c;
+                    }
+                    &:hover {
+                        color: #e74c3c;
+                    }
+                }
+            }
         }
-      }
-      .sidebar-list {
-        margin-top: 1.8em;
-        h2 {
-          font-size: 1.25em;
-          margin-bottom: 1.3em;
-          text-transform: uppercase;
-          @media only screen and (min-width: 510px) and (max-width: 999px) {
-            font-size: 1.37em;
-          }
-          @media only screen and (max-width: 509px) {
-            font-size: 1.35em;
-          }
+        .right {
+            width: 70%;
+            text-align: left;
+            min-height: 600px;
+            margin-top: 0;
+            @media only screen and (min-width:510px) and (max-width:999px) {
+                float: none;
+                margin-bottom: 2em;
+                min-height: 300px;
+                padding: 2em;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media only screen and (max-width:509px) {
+                float: none;
+                margin-bottom: 2em;
+                min-height: 300px;
+                padding: 2em;
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.9em;
+                @media only screen and (min-width:510px) and (max-width:999px) {
+                    font-size: 2.3em;
+                }
+                @media only screen and (min-width:510px) {
+                    font-size: 2.2em;
+                }
+            }
+            .list-file {
+                > li {
+                    display: block;
+                    line-height: normal;
+                    padding: 0.5em 0 0.5em 1.3em;
+                    position: relative;
+                    @media only screen and (min-width:510px) and (max-width:999px) {
+                        font-size: 1.7em;
+                    }
+                    @media only screen and (max-width:509px) {
+                        font-size: 1.6em;
+                    }
+
+                    &:before {
+                        background: transparent url("../images/icons/file.png") repeat scroll 0 0 / cover ;
+                        bottom: 0;
+                        content: "";
+                        height: 1em;
+                        left: 0;
+                        position: absolute;
+                        top: 0.65em;
+                        width: 1em;
+                    }
+                }
+            }
+
+            .fullArticle,
+            .fullArticle p {
+                color: #15212f;
+                font-size: 14px;
+                line-height: 1.55em;
+                margin-bottom: 1.5em;
+                @media only screen and (min-width: 509px) and (max-width: 999px) {
+                    font-size: 15px;
+                }
+                @media only screen and (max-width: 509px) {
+                    font-size: 16px;
+                }
+                .title {
+                    margin: 0 30px 0 0;
+                    color: #222;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 1.2em;
+                    @media only screen and (min-width: 509px) and (max-width: 999px) {
+                        font-size: 28px;
+                    }
+                    @media only screen and (max-width: 509px) {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .fullArticle  .article-image {
+                display: block;
+                max-width: 80%;
+                margin: 2em 0;
+            }
+            .fullArticle .article-video {
+                position:relative;
+                padding-bottom:50%;
+                padding-top:30px;
+                height:0;
+                overflow:hidden;
+                margin: 0;
+                width: 80%;
+                iframe,
+                object,
+                embed,
+                .youtube-box {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100% !important;
+                    height:100% !important;
+                    right: 0;
+                    bottom: 0;
+                }
+                .youtube-box {
+                    background-size: 100% 100%;
+                }
+
+            }
         }
-        ul > li {
-          display: block;
-          line-height: 1.8;
-          @media only screen and (min-width: 510px) and (max-width: 999px) {
+        .left {
+            width: 28%;
+            text-align: left;
+            @media only screen and (min-width:510px) and (max-width:999px) {
+                min-height: 200px;
+                width: 90%;
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media only screen and (max-width:509px) {
+                min-height:200px;
+                width: 100%;
+                float: none;
+            }
+            .search {
+                @media only screen and (min-width: 510px) and (max-width: 999px) {
+                    font-size: 1.4em;
+                }
+                @media only screen and (max-width: 509px) {
+                    font-size: 1.3em;
+                }
+                input {
+                    background-color: #fff;
+                    border-radius: 0.4em;
+                    float: none;
+                    height: auto;
+                    line-height: 2.3;
+                    width: 100%;
+                    min-width: 50%;
+                    padding-right: 0;
+                    position: relative;
+                }
+                button {
+                    border: medium none;
+                    float: none;
+                    height: 2.3em;
+                    line-height: normal;
+                    padding: 0;
+                    position: absolute;
+                    right: 1em;
+                    width: auto;
+                    background: none;
+                    top: 0;
+                    @media only screen and (min-width: 510px) and (max-width: 999px) {
+                        height: 2.1em;
+                        right: 0;
+                        top: -0.5em;
+                        width: 2.6em;
+                    }
+
+                    @media only screen and (max-width: 509px) {
+                        height: 2em;
+                        right: 0;
+                        top: -0.4em;
+                        width: 2.5em;
+                    }
+                    i {
+                        @media only screen and (min-width: 510px) and (max-width: 999px) {
+                            font-size: 2.1em;
+                        }
+                        @media only screen and (max-width: 509px) {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+            .sidebar-list {
+                margin-top: 1.8em;
+                h2 {
+                    font-size: 1.25em;
+                    margin-bottom: 1.3em;
+                    text-transform: uppercase;
+                    @media only screen and (min-width: 510px) and (max-width: 999px) {
+                        font-size: 1.37em;
+                    }
+                    @media only screen and (max-width: 509px) {
+                        font-size: 1.35em;
+                    }
+                }
+                ul > li {
+                    display: block;
+                    line-height: 1.8;
+                    @media only screen and (min-width: 510px) and (max-width: 999px) {
+                        font-size: 1.2em;
+                        line-height: 2.3;
+                    }
+                    @media only screen and (max-width: 509px) {
+                        font-size: 1.18em;
+                        line-height: 2.2;
+                    }
+                    > a, a:visited, a:focus {
+                        color: #2d2d2d;
+                        &:hover  {
+                            color: #e74c3c;
+                        }
+                    }
+                    &.active a {
+                        color: #e74c3c;
+                    }
+                }
+            }
+        }
+    }
+    //partnershio page only
+    &__partnership {
+        padding: 2em;
+        text-align: left;
+        .column-3{
+            @media only screen and  (max-width:999px) {
+                margin:0;
+            }
+        }
+        p {
+            @media only screen and  (min-width:599px) and (max-width: 999px) {
+                font-size: 1.4em;
+            }
+            @media only screen and  (max-width:598px) {
+                font-size: 1em;
+            }
+        }
+        .intro {
             font-size: 1.2em;
-            line-height: 2.3;
-          }
-          @media only screen and (max-width: 509px) {
-            font-size: 1.18em;
-            line-height: 2.2;
-          }
-          > a, a:visited, a:focus {
-            color: #2d2d2d;
-            &:hover  {
-              color: #e74c3c;
+            font-weight: bold;
+            margin: 0;
+            padding: 2em 0.22em;
+            text-align: center;
+            @media only screen and (min-width:599px) and (max-width: 999px) {
+                font-size: 1.38em;
             }
-          }
-          &.active a {
-            color: #e74c3c;
-          }
+            @media only screen and  (max-width:598px) {
+                font-size: 1.3em;
+                padding: 1em 0.22em 3em;
+            }
         }
-      }
-    }
-  }
-  //partnershio page only
-  &__partnership {
-    padding: 2em;
-    text-align: left;
-    .column-3{
-      @media only screen and  (max-width:999px) {
-       margin:0;
-      }
-    }
-    p {
-    @media only screen and  (max-width:598px) {
-     font-size: 1.3em;
-    }
-  }
-    .intro {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin: 0;
-      padding: 2em 0.22em;
-      text-align: center;
-      @media only screen and (min-width:599px) and (max-width: 999px) {
-       font-size: 1.38em;
-      }
-      @media only screen and  (max-width:598px) {
-       font-size: 1.3em;
-        padding: 1em 0.22em 3em;
-      }
-    }
-    h3 {
-      border-bottom: 1px solid #c6c6c6;
-      padding-bottom: 1.6em;
-    }
-    h4 {
-      font-size: 1.3em;
-       font-weight: 700;
-       line-height: 1.1em;
-       margin-bottom: 1em;
-       @media only screen and  (max-width:598px) {
-        font-size: 1.3em;
-       }
-    }
-    .partner-logo {
-      position: relative;
-      display: inline-block;
-      float: left;
-      margin-bottom: 2.2em;
-      .svg-icon {
-        display: inline-block;
-        fill: currentcolor;
-        stroke: currentcolor;
-        stroke-width: 0;
-        vertical-align: middle;
-        height: 40px;
-        width: 89px;
-        position: relative;
-        @media only screen and (min-width:599px) and (max-width: 999px) {
-          height: 48px;
-  width: 118px;
+        h3 {
+            border-bottom: 1px solid #c6c6c6;
+            padding-bottom: 1.6em;
+            @media only screen and  (max-width:598px) {
+                padding-bottom: 0.5em;
+            }
         }
-
-        @media only screen and  (max-width:598px) {
-          height: 48px;
-  width: 118px;
+        h4 {
+            font-size: 1.3em;
+            font-weight: 700;
+            line-height: 1.1em;
+            margin-bottom: 1em;
+            @media only screen and  (max-width:598px) {
+                font-size: 1.2em;
+            }
         }
+        .partner-logo {
+            display: block;
+            height: 40px;
+            width: 168px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 1em;
+            float: left;
+            @media only screen and (max-width: 999px) {
+                height: 30px;
+                width: 160px;
+            }
+            .svg-icon {
+                display: block;
+                position: absolute;
+                height: 40px;
+                width: 168px;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                @media only screen and (max-width: 999px) {
+                    height: 30px;
+                    width: 160px;
+                }
+                div {
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
 
-      }
-      .logo {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        position: absolute;
-        top:0;
-        right: 0;
-        bottom: 0;
-      }
-    }
-    .partner-link {
-      display: inline-block;
-      float: left;
-      clear: both;
-       margin-bottom: 1.2em;
-       @media only screen and (min-width:599px) and (max-width: 999px) {
-        font-size: 1.2em;
-       }
-       @media only screen and  (max-width:598px) {
-  font-size: 1.3em;
-       }
-    }
-    .partner-info {
-      clear: both;
-      max-height: 268px;
- overflow: hidden;
+                }
 
-       @media only screen and (min-width:599px) and (max-width: 999px) {
-        font-size: 1.2em;
-       }
-       @media only screen and  (max-width:598px) {
-  font-size: 1.3em;
-       }
+
+            }
+
+        }
+        .partner-link {
+            display: inline-block;
+            float: left;
+            clear: both;
+            margin-bottom: 1.2em;
+            @media only screen and (min-width:599px) and (max-width: 999px) {
+                font-size: 1.2em;
+            }
+            @media only screen and  (max-width:598px) {
+                font-size: 1em;
+                margin-bottom:0.5em
+            }
+        }
+        .partner-info {
+            clear: both;
+            height: 264px;
+            overflow: hidden;
+            @media only screen and (min-width:1000px) and (max-width: 1599px) {
+                height: 273px;
+            }
+            @media only screen and (max-width: 999px) {
+                height: auto;
+                margin-bottom: 3em;
+
+            }
+
+            @media only screen and (min-width:599px) and (max-width: 999px) {
+                font-size: 1.28em;
+
+            }
+            @media only screen and  (max-width:598px) {
+                font-size: 1em;
+            }
+        }
+        .separator {
+            height: 1px;
+            margin-bottom: 3em;
+        }
     }
-    .separator {
-      height: 1px;
-   margin-bottom: 3em;
-    }
-  }
 }
