@@ -1,0 +1,51 @@
+//my products page
+
+//pop up div
+.printpapers.printpapers--myProduct,
+.printsize.printsize--myProduct,
+.pricehoard.pricehoard--myProduct {
+  max-height:50px;
+  height: 50px;
+  @media only screen and (min-width:510px) and (max-width:999px) {
+font-size: 12px;
+  }
+  @media only screen and (max-width:509px) {
+    margin-top: 1em;
+  font-size: 13px;
+  }
+
+}
+.printpapers.printpapers--myProduct {
+  width: 40%;
+  @media only screen  and (min-width:510px) and (max-width: 1600px) {
+
+    width: 40%;
+  }
+
+  @media only screen and (max-width:509px) {
+
+    width: 39%;
+  }
+}
+.printsize--myProduct {
+  width:40%;
+  float: left;
+  font-size: 0.9em;
+  margin-right: 20px;
+    overflow-x: hidden;
+       padding-left: 0.8em;
+
+       @media only screen and (max-width: 1600px) {
+         margin-right: 0.8em;
+         width: 44%;
+       }
+
+}
+.pricehoard.pricehoard--myProduct {
+  margin-right: 0;
+    width: 15%;
+       @media only screen and (max-width: 1600px) {
+    margin-right: 0;
+ width: 13%;
+ }
+}
