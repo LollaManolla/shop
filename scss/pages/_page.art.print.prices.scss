@@ -1,0 +1,103 @@
+//my products page
+//pop up div
+.b-art-print-prices {
+  // max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 4em;
+  text-align: left;
+
+  ul {
+    display: block;
+    float: left;
+    width: 16.333%;
+    .title {
+      font-size: 1.25em;
+      font-weight: bold;
+      line-height: normal;
+      height: 63px;
+      margin-bottom: 0;
+    }
+    li {
+      font-size: 1em;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      line-height: 3;
+
+
+    }
+    &.list-papers,
+    &.list-size {
+      width: 25.333%;
+    }
+
+    &.list-your-price {
+      text-align: right;
+      .title {
+        padding: 0;
+      }
+      li {
+        line-height: normal;
+        padding: 0.38em 0;
+        span {
+          font-size: 1.25em;
+        }
+
+        input {
+          background-color: #2d2d2d;
+          border-radius: 10px;
+          line-height: normal;
+          width: 102px;
+          padding: 0.2em;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+          color: #fff;
+          font-size: 1em;
+          height: 34px;
+        }
+      }
+    }
+    &.list-your-profit {
+      text-align: right;
+      .title {
+        padding: 0;
+      }
+      li {
+        line-height: normal;
+        padding: 0.38em 0;
+        span {
+          font-size: 1.25em;
+        }
+        input {
+          background-color: #fff;
+          border-color:#acadad;
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 10px;
+          line-height: normal;
+          width: 102px;
+          padding: 0.2em;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+          color:  #2d2d2d;
+          font-size:1em;
+          height: 34px;
+        }
+      }
+    }
+  }
+  .btn-bottom-center {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 2em 0;
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
