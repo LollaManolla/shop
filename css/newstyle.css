@@ -40,6 +40,9 @@
   width: 650px;
   margin-bottom: 30px;
 }
+.popup-inner.cart-login {
+  width: 650px;
+}
 
 .slide .content-wrapper {
   height: 100%;
