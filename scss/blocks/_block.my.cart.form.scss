@@ -1,0 +1,277 @@
+//block.my.cart.form
+
+.b-my-cart-form {
+  text-align: left;
+  padding: 1.2em 0;
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+
+  .form {
+    margin-top: 1.4em;
+
+    .form-group {
+      display: inline-block;
+      width: 35%;
+      margin-right: 1.7em;
+      margin-bottom: 1em;
+
+      @media only screen and (max-width:1000px) {
+      display: block;
+    width: 100%;
+    margin-right:0;
+    margin-bottom: 1em;
+      }
+
+
+
+      label {
+        font-weight: normal;
+      }
+
+      input,
+      select {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        line-height: 2.3;
+        position: relative;
+        @media only screen and (max-width:1000px) {
+          line-height: 2;
+          font-size: 1em;
+        }
+
+      }
+
+      select {
+        height: 30px;
+      }
+      .errorMsg {
+        margin-top: 0;
+      }
+      //form group half
+      &.form-group--half {
+        width: 17%;
+        margin-right: 0.6em;
+        @media only screen and (max-width:1000px) {
+        display: block;
+      width: 100%;
+      margin-right:0;
+      margin-bottom: 1em;
+        }
+      }
+      //checkobx default and half
+      &.form-group-checkbox {
+        width: 100%;
+        margin-right: 0;
+
+        input {
+          display: inline-block;
+          width: auto;
+          vertical-align: middle;
+          position: relative;
+          top: 2px;
+          margin-right: 0.3em;
+        }
+
+        label {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .separator {
+          margin-top: 1.5em;
+        }
+      }
+    }
+
+    .separator {
+      height: 1px;
+      margin-bottom: 1.5em;
+    }
+    //block payment method
+    .b-payment-method {
+      .form-group-checkbox {
+        max-width: 270px;
+        width: 30%;
+          vertical-align: top;
+        @media only screen and (max-width:1000px) {
+          margin-bottom: 0;
+
+          width: 47%;
+           display: inline-block;
+        }
+
+        .img-paypal {
+          width: 97px;
+          margin-top: 5px;
+          @media only screen and (max-width:1000px) {
+            width:77px;
+          }
+        }
+      }
+      .shipping-via {
+        margin-left: 0;
+        li {
+          @media only screen and (max-width:1000px) {
+            margin-bottom: 0;
+          }
+        }
+        li img {
+          @media only screen and (max-width:1000px) {
+            width: 50px;
+            margin-bottom: 0;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .b-shipping {
+      padding-bottom: 1.5em;
+      overflow: hidden; width: 100%; display: none;
+      .separator {
+        margin-bottom: 0.5em;
+        margin-top: 2em;
+      }
+    }
+    //block payment card
+    .b-payment-card {
+      width: 45%;
+      @media only screen and (max-width:1000px) {
+        width: 100%;
+      }
+
+      .form-group {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        label {
+          display: block;
+          float: left;
+          min-width: 34%;
+          @media only screen and (max-width:1000px) {
+            display: block;
+            float: none;
+            min-width: unset;
+            text-align: left;
+            width: 100%;
+          }
+
+        }
+
+        input {
+          float: left;
+          width: 66%;
+          @media only screen and (max-width:1000px) {
+            width: 100%;
+            float: none;
+          }
+        }
+
+        select, .select-year {
+          width: 31.333%;
+          float: left;
+          @media only screen and (min-width:1001px) and (max-width:1599px) {
+            width:31%;
+          }
+
+          @media only screen and (max-width:1000px) {
+            width:100%;
+          }
+        }
+        .select-year {
+
+
+
+          @media only screen and (max-width:1000px) {
+            width: 50%;
+          }
+          span {
+            margin-bottom: 0;
+            @media only screen and (max-width:1000px) {
+              font-size: 1.35em;
+            }
+          }
+          input {
+            line-height: normal;
+          }
+        }
+
+        &--half {
+          select {
+            margin-right: 1em;
+            @media only screen and (max-width:1000px) {
+              width: 45%;
+            }
+
+            &:nth-child(3) {
+              margin-right: 0;
+
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          input {
+            width: 32%;
+            @media only screen and (max-width:1000px) {
+              width: 80%;
+              float: left;
+            }
+          }
+        }
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .ccSample {
+        height: 37px;
+        width: auto;
+        margin-left: 18px;
+        display: inline-block;
+        margin-top: 4px;
+
+        @media only screen and (min-width:1001px) and (max-width:1599px) {
+          height: 32px;
+    margin-left: 0.8em;
+    margin-top: 0.48em;
+        }
+
+        @media only screen and (max-width:1000px) {
+          float: left;
+        height: 29px;
+        margin-left: 1em;
+        margin-top: 0.5em;
+        }
+
+
+
+      }
+    }
+  }
+  .clearfix.btn-right {
+    text-align: right;
+    .btn {
+      @media only screen and (max-width:1000px) {
+  line-height: 2.2;
+  margin-top: 1.3em;
+  margin-bottom: 0;
+      }
+    }
+  }
+}

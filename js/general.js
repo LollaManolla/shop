@@ -58,6 +58,7 @@ $(document).ready(function() {
     showSearchWlMsg();
     ccSpinner();
     changePayMethod();
+    addAddress();
     generateMap();
     colorSuppMap();
 	quantitySpinnerCartCards();
@@ -2747,6 +2748,17 @@ var changePayMethod = function() {
     }
   });
 };
+
+var addAddress = function() {
+  $("input[name=add-adress]").click(function () {
+    if (this.id == "add-adress") {
+        $("#dd-method").show();
+    } else {
+        $("#dd-method").hide();
+    }
+  });
+};
+
 
 var showSupInfo = function(e) {
     var id = e.id;
