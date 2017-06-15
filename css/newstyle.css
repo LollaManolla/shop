@@ -1022,6 +1022,9 @@ table.data-myProducts tbody td:nth-child(3) {
 .b-art-print-prices table tbody tr td .errorMsg .errorIcon {
   display: inline-block;
 }
+.b-art-print-prices table tbody tr td span {
+  font-size: 12px;
+}
 @media only screen and (min-width: 1000px) and (max-width: 1600px) {
   .b-art-print-prices table tbody tr td span {
     display: block;
