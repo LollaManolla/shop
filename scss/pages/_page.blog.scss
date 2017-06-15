@@ -1,0 +1,220 @@
+//page blog
+
+.page-blog {
+  padding: 3.2em;
+  text-align: left;
+  @media only screen and (max-width: 1000px) {
+    padding: 1.5em;
+  }
+
+  .col-left {
+    float: left;
+    width: 74%;
+    @media only screen and (max-width: 509px) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .col-right {
+    float: right;
+    width: 22.222%;
+    border: solid 1px #D0CFCF;
+    @media only screen and (max-width: 509px) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .blog-teaser {
+    position: relative;
+    border: solid 1px #D0CFCF;
+    margin-bottom: 2.5em;
+
+    &__date {
+      position: relative;
+      line-height: 2.1;
+
+      span {
+        display: inline-block;
+        position: relative;
+        left: -0.7em;
+        background-color: #E54D42;
+        color: #fff;
+        padding: 0 1em;
+      }
+    }
+
+    &__content {
+      padding: 0 1.85em 1.85em;
+    }
+
+    &__title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 1.12em;
+      @media only screen and (max-width: 1000px) {
+        font-size: 1.35em;
+      }
+    }
+
+    &__category {
+      margin: 0 0 0.8em;
+      font-style: italic;
+      color: #E54D42;
+    }
+
+    &__image {
+      display: block;
+      float: left;
+      width: 24.666%;
+      @media only screen and (max-width: 1000px) {
+        margin-top: 0.39em;
+      }
+
+      img {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__intro {
+      display: block;
+      float: right;
+      width: 72%;
+      margin: 0;
+      font-size: 0.9em;
+      line-height: 1.6;
+      @media only screen and (max-width: 1000px) {
+        font-size: 1.05em;
+        line-height: 1.4;
+      }
+    }
+
+    &__btn {
+      text-align: right;
+      padding-top: 2em;
+      clear: both;
+      @media only screen and (max-width: 509px) {
+        text-align: center;
+      }
+
+      .btn {
+        line-height: 36px;
+        min-width: 118px;
+      }
+    }
+  }
+
+  .blog-category {
+    &__head {
+      text-align: center;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      line-height: 2.4;
+      border-bottom: solid 1px #D0CFCF;
+      color: #e74c3c;
+    }
+
+    &__list {
+      padding: 0.6em 0;
+
+      li {
+        display: block;
+        text-align: center;
+        line-height: 2;
+        padding-bottom: 0.3em;
+
+        a {
+          font-style: italic;
+          color: #313b46;
+          border-bottom: solid 1px #D0CFCF;
+          display: inline-block;
+          min-width: 80px;
+
+          &:hover {
+            color: #e74c3c;
+          }
+        }
+
+        &:last-child {
+          a {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-article {
+    figure {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2.5em;
+
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+      }
+    }
+    // figure {
+    //   margin: 0 auto;
+    //   text-align: center;
+    //   width: 100%;
+    //   height: 0;
+    //   padding-bottom: 40.555%;
+    //   position: relative;
+    //   -moz-box-sizing: border-box;
+    //   box-sizing: border-box;
+    //   overflow: hidden;
+    //   margin-bottom: 2.5em;
+    //
+    //   img {
+    //     margin: 0 auto;
+    //     //position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     display: block;
+    //     width: 100vh;
+    //     height: 100vh;
+    //   }
+    //
+    //   div {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //   }
+    // }
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.18em;
+      text-align: center;
+      margin-bottom: 0.2em;
+      @media only screen and (max-width: 999px) {
+        font-size: 1.5em;
+      }
+    }
+
+    .date-category {
+      text-align: center;
+      font-style: italic;
+      color: #E54D42;
+      margin: 0 0 4em;
+      @media only screen and (max-width: 999px) {
+        margin: 0 0 2em;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.9;
+    }
+  }
+}
