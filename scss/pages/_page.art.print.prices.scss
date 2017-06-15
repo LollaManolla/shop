@@ -8,7 +8,7 @@
   text-align: left;
 
   table {
-    width: 100%;
+    width: 111%;
     table-layout: fixed;
     position: relative;
 
@@ -73,13 +73,6 @@
 
             .errorIcon {
               display: inline-block;
-            }
-          }
-
-          span {
-            font-size: 12px;
-            @media only screen and (min-width: 1000px) and (max-width: 1600px) {
-              display: block;
             }
           }
         }

@@ -1,16 +1,15 @@
 //import all styles
 // @import "responsive/responsive.math";
-@import "settings/settings.wrappers";
-//components
+@import "settings/settings.wrappers"; //blocks
 @import "blocks/block.my.cart.form"; //components
 @import "components/popup/component.popup";
-@import "components/owl-slider/component.owl.slider";
-//pages
+@import "components/owl-slider/component.owl.slider"; //pages
 @import "pages/page.home";
 @import "pages/page.footer";
 @import "pages/page.my.products";
 @import "pages/page.art.print.prices";
-//responsive
+@import "pages/page.blog";
+@import "pages/page.static"; //responsive
 @import "responsive/responsive.first";
 @import "responsive/responsive.second";
 @import "responsive/responsive.third";
