@@ -961,7 +961,7 @@ table.data-myProducts tbody td:nth-child(3) {
   text-align: left;
 }
 .b-art-print-prices table {
-  width: 100%;
+  width: 111%;
   table-layout: fixed;
   position: relative;
 }
@@ -1039,6 +1039,79 @@ table.data-myProducts tbody td:nth-child(3) {
 .b-art-print-prices .btn-bottom-center .btn {
   display: block;
   margin: 0 auto;
+}
+
+.page-blog {
+  padding: 3.2em;
+  text-align: left;
+}
+.page-blog .col-left {
+  float: left;
+  width: 74%;
+}
+.page-blog .col-right {
+  float: right;
+  width: 22.222%;
+  border: solid 1px #D0CFCF;
+}
+.page-blog .blog-teaser {
+  position: relative;
+  border: solid 1px #D0CFCF;
+  margin-bottom: 2.5em;
+}
+.page-blog .blog-teaser__date {
+  position: relative;
+  line-height: 2.1;
+}
+.page-blog .blog-teaser__date span {
+  display: inline-block;
+  position: relative;
+  left: -0.7em;
+  background-color: #E54D42;
+  color: #fff;
+  padding: 0 1em;
+}
+.page-blog .blog-teaser__content {
+  padding: 0 1.85em 1.85em;
+}
+.page-blog .blog-teaser__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.12em;
+}
+.page-blog .blog-teaser__category {
+  margin: 0 0 0.8em;
+  font-style: italic;
+  color: #E54D42;
+}
+.page-blog .blog-teaser__image {
+  display: block;
+  float: left;
+  width: 24.666%;
+}
+.page-blog .blog-teaser__image img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+.page-blog .blog-teaser__intro {
+  display: block;
+  float: right;
+  width: 72%;
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+.page-blog .blog-teaser__btn {
+  text-align: right;
+  padding-top: 2em;
+  clear: both;
+}
+.page-blog .blog-teaser__btn .btn {
+  font-size: 0.86em;
+  line-height: 36px;
+  min-width: 118px;
 }
 
 @media screen and (min-width: 1200px) {
