@@ -10,25 +10,26 @@
   table {
     width: 100%;
     table-layout: fixed;
-     position: relative;
+    position: relative;
+
     thead {
       tr {
-
-          font-size: 1.25em;
-          font-weight: bold;
-          line-height: normal;
-          height: 63px;
-          margin-bottom: 0;
-
+        font-size: 1.25em;
+        font-weight: bold;
+        line-height: normal;
+        height: 63px;
+        margin-bottom: 0;
+        position: relative;
       }
     }
+
     tbody {
       tr {
         font-size: 1em;
         vertical-align: top;
 
         td {
-        .black {
+          .black {
             background-color: #2d2d2d;
             border-radius: 10px;
             line-height: normal;
@@ -42,6 +43,7 @@
             font-size: 1em;
             height: 34px;
           }
+
           .white {
             background-color: #fff;
             border-color: #acadad;
@@ -59,21 +61,21 @@
             font-size: 1em;
             height: 34px;
           }
+
           .errorMsg {
             left: 0;
-            bottom: 0;
-               margin: 0;
-               position: absolute;
-               text-align: left;
-               width: 100%;
+            margin-top: -0.9em;
+            position: absolute;
+            text-align: left;
             @media only screen and (min-width: 1000px) and (max-width: 1600px) {
-              bottom: -1.5em;
+              margin-top: 0.5em;
             }
 
             .errorIcon {
               display: inline-block;
             }
           }
+
           span {
             @media only screen and (min-width: 1000px) and (max-width: 1600px) {
               display: block;
@@ -84,12 +86,11 @@
     }
   }
 
-
   .btn-bottom-center {
     text-align: center;
     float: left;
     width: 100%;
-    margin: 4em 0 2em; 
+    margin: 4em 0 2em;
 
     .btn {
       display: block;
