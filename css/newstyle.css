@@ -1428,6 +1428,88 @@ table.data-myProducts tbody td:nth-child(3) {
     width: 80%;
   }
 }
+.static-pages-content .b-b2b {
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+  display: table;
+  vertical-align: middle;
+  margin-bottom: 5em;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b {
+    margin-bottom: 3em;
+  }
+}
+.static-pages-content .b-b2b .col-right {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-right {
+    width: 100%;
+  }
+}
+.static-pages-content .b-b2b .col-right img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-right img {
+    display: none;
+  }
+}
+.static-pages-content .b-b2b .col-right p {
+  padding: 0 2.5em;
+  text-align: center;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-right p {
+    padding: 0;
+  }
+}
+.static-pages-content .b-b2b .col-left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-left {
+    width: 100%;
+  }
+}
+.static-pages-content .b-b2b .col-left img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-left img {
+    display: none;
+  }
+}
+.static-pages-content .b-b2b .col-left p {
+  padding: 0 2.5em;
+  text-align: center;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b .col-left p {
+    padding: 0;
+  }
+}
+.static-pages-content .b-b2b__title {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 1.32em;
+  text-align: center;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-b2b__title {
+    font-size: 18px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   ::-webkit-scrollbar {

@@ -218,4 +218,78 @@
       };
     }
   }
+  //business to busniess block
+  .b-b2b {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+    display: table;
+    vertical-align: middle;
+    margin-bottom: 5em;
+    @media only screen and (max-width: 999px) {
+      margin-bottom: 3em;
+    }
+
+    .col-right {
+      width: 49%;
+      display: inline-block;
+      vertical-align: middle;
+      @media only screen and (max-width: 999px) {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        @media only screen and (max-width: 999px) {
+          display: none;
+        }
+      }
+
+      p {
+        padding: 0 2.5em;
+        text-align: center;
+        @media only screen and (max-width: 999px) {
+          padding: 0;
+        }
+      }
+    }
+
+    .col-left {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+      @media only screen and (max-width: 999px) {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        @media only screen and (max-width: 999px) {
+          display: none;
+        }
+      }
+
+      p {
+        padding: 0 2.5em;
+        text-align: center;
+        @media only screen and (max-width: 999px) {
+          padding: 0;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 25px;
+      font-style: italic;
+      margin-bottom: 1.32em;
+      text-align: center;
+      @media only screen and (max-width: 999px) {
+        font-size: 18px;
+      }
+    }
+  }
 }
