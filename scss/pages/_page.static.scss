@@ -225,9 +225,10 @@
     position: relative;
     display: table;
     vertical-align: middle;
-    margin-bottom: 5em;
-    @media only screen and (max-width: 999px) {
-      margin-bottom: 3em;
+    margin-bottom: 2em;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
     }
 
     .col-right {
@@ -242,6 +243,8 @@
         display: block;
         margin: 0;
         max-width: 100%;
+        position: relative;
+        right: -3em;
         @media only screen and (max-width: 999px) {
           display: none;
         }
@@ -268,6 +271,8 @@
         display: block;
         margin: 0;
         max-width: 100%;
+        position: relative;
+        left: -3em;
         @media only screen and (max-width: 999px) {
           display: none;
         }

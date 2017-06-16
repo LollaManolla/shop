@@ -1434,12 +1434,10 @@ table.data-myProducts tbody td:nth-child(3) {
   position: relative;
   display: table;
   vertical-align: middle;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
-@media only screen and (max-width: 999px) {
-  .static-pages-content .b-b2b {
-    margin-bottom: 3em;
-  }
+.static-pages-content .b-b2b:nth-child(3) {
+  margin-bottom: 0;
 }
 .static-pages-content .b-b2b .col-right {
   width: 49%;
@@ -1455,6 +1453,8 @@ table.data-myProducts tbody td:nth-child(3) {
   display: block;
   margin: 0;
   max-width: 100%;
+  position: relative;
+  right: -3em;
 }
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-b2b .col-right img {
@@ -1484,6 +1484,8 @@ table.data-myProducts tbody td:nth-child(3) {
   display: block;
   margin: 0;
   max-width: 100%;
+  position: relative;
+  left: -3em;
 }
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-b2b .col-left img {
