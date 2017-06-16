@@ -180,7 +180,7 @@
       padding: 0 4em;
       @media only screen and (max-width: 999px) {
         padding: 0;
-        width: 100%;
+        // width: 100%;
       }
     }
 
@@ -189,13 +189,17 @@
       vertical-align: middle;
       width: 39%;
       @media only screen and (max-width: 999px) {
-        display: none;
+        // display: none;
       }
 
       img {
         display: block;
         margin: 0;
         max-width: 100%;
+        @media only screen and (max-width: 999px) {
+          max-width: 80%;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -204,7 +208,13 @@
       font-style: italic;
       margin-bottom: 1.32em;
       @media only screen and (max-width: 999px) {
-        font-size: 18px;
+        font-size: 15px;
+      }
+    }
+
+    p {
+      @media only screen and (max-width: 999px) {
+        font-size: 13px;
       }
     }
 
@@ -246,7 +256,8 @@
         position: relative;
         right: -3em;
         @media only screen and (max-width: 999px) {
-          display: none;
+          right: auto;
+          margin-bottom: 1em;
         }
       }
 
@@ -274,7 +285,8 @@
         position: relative;
         left: -3em;
         @media only screen and (max-width: 999px) {
-          display: none;
+          left: 0;
+          margin-bottom: 1em;
         }
       }
 

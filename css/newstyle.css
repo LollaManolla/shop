@@ -1389,7 +1389,6 @@ table.data-myProducts tbody td:nth-child(3) {
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-sell .col-text {
     padding: 0;
-    width: 100%;
   }
 }
 .static-pages-content .b-sell .col-image {
@@ -1397,15 +1396,16 @@ table.data-myProducts tbody td:nth-child(3) {
   vertical-align: middle;
   width: 39%;
 }
-@media only screen and (max-width: 999px) {
-  .static-pages-content .b-sell .col-image {
-    display: none;
-  }
-}
 .static-pages-content .b-sell .col-image img {
   display: block;
   margin: 0;
   max-width: 100%;
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-sell .col-image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 .static-pages-content .b-sell__title {
   font-size: 25px;
@@ -1414,7 +1414,12 @@ table.data-myProducts tbody td:nth-child(3) {
 }
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-sell__title {
-    font-size: 18px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .static-pages-content .b-sell p {
+    font-size: 13px;
   }
 }
 .static-pages-content .b-sell .separator {
@@ -1458,7 +1463,8 @@ table.data-myProducts tbody td:nth-child(3) {
 }
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-b2b .col-right img {
-    display: none;
+    right: auto;
+    margin-bottom: 1em;
   }
 }
 .static-pages-content .b-b2b .col-right p {
@@ -1489,7 +1495,8 @@ table.data-myProducts tbody td:nth-child(3) {
 }
 @media only screen and (max-width: 999px) {
   .static-pages-content .b-b2b .col-left img {
-    display: none;
+    left: 0;
+    margin-bottom: 1em;
   }
 }
 .static-pages-content .b-b2b .col-left p {
