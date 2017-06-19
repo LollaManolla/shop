@@ -3785,9 +3785,9 @@ var addAddress = function() {
 };
 
 var showGiftEmail = function() {
-  $("input[name=recipient-email]")
+  $("input[name=direct-email]")
     .click(function() {
-      if (this.id == "recipient-email") {
+      if (this.id == "direct-email") {
         $("#showGiftEmail")
           .show();
       } else {

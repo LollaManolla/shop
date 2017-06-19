@@ -288,13 +288,18 @@
   <div class="content-wrapper white page__gift-card">
 
       <div class="col-left">
-        <div class="img--top">
+        <div class="content--top">
           <img src="images/gift-card-front.jpg" alt="">
         </div>
 
-        <div class="img--back">
-          <img src="images/gift-card-back.jpg" alt="">
+        <div class="content--bottom">
+            <h2>Indelibl Gift Card</h2>
+            <p><strong>Value:</strong> <span>£25</span></p>
+            <p><strong>To:</strong> <span>Name here</span></p>
+            <p><strong>From:</strong> <span>From Here</span></p>
+            <p class="message"><strong>Message:</strong> <span>“We have a hunger of the mind which asks for knowledge of all around us, and the more we gain, the more is our desire,” trailblazing astronomer Maria Mitchell observed in contemplating science, religion, and our conquest of truth at the end of thef. </span></p>
         </div>
+
       </div>
 
       <div class="col-right">
@@ -335,7 +340,7 @@
 
           <div class="form-group">
             <label>Your message (optional):</label>
-            <textarea name="message" placeholder="Enter your note here"></textarea>
+            <textarea name="message" placeholder="Enter your note here" maxlength="250"></textarea>
           </div>
 
           <div class="form-group ">
@@ -343,7 +348,7 @@
             <div class="form-group checkbox">
 
               <label>
-                <input name="recipient-email" value="My Email"  checked="" type="radio" >
+                <input name="direct-email" value="My Email"  checked="" type="radio" >
                 Send to my email address
               </label>
             </div>
@@ -351,14 +356,14 @@
             <div class="form-group checkbox">
 
               <label>
-                <input name="recipient-email" value="Recipient email" type="radio" id="recipient-email">
+                <input name="direct-email" value="Recipient email" type="radio" id="direct-email">
                 Send direct to the recipient's email address
               </label>
             </div>
 
             <div id="showGiftEmail" >
 <label>Recipient email</label>
-              <input placeholder="Enter their email address" type="text" name="recipient-email" >
+              <input placeholder="Enter their email address" type="text" name="recipient-email"  >
 
             </div>
 

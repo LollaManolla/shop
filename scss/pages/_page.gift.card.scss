@@ -37,9 +37,35 @@
       max-width: 100%;
     }
 
-    .img {
+    .content {
+
       &--top {
         margin-bottom: 2em;
+
+      }
+      &--bottom {
+        max-height: 440px;
+        padding: 2rem;
+        border: solid 1px #d0cfcf;
+        background:  url("../images/gift-card-back.jpg") bottom center no-repeat;
+        background-size: contain;
+        h2 {
+          color: #e74c3c;
+          // font-size: 1em;
+        }
+        p {
+          color: #2d2d2d;
+          // font-size: 1em;
+          strong {
+            font-weight: bold;
+          }
+          span {
+            // font-size: 0.85em;
+          }
+          &.message span {
+            display: block;
+          }
+        }
       }
     }
     @media only screen and (max-width: 999px) {
@@ -65,6 +91,9 @@
           margin-right: 1em;
           display: inline-block;
           margin-bottom: 2.7em;
+                @media only screen and (min-width:510px) and (max-width: 1599px) {
+                  width: 46%;
+                }
           @media only screen and (max-width: 509px) {
             width: 100%;
             margin-right: 0;
