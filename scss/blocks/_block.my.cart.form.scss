@@ -2,7 +2,7 @@
 
 .b-my-cart-form {
   text-align: left;
-  padding: 1.2em 0; 
+  padding: 1.2em 0;
 
   h2 {
     font-size: 1.6em;
@@ -17,15 +17,12 @@
       width: 35%;
       margin-right: 1.7em;
       margin-bottom: 1em;
-
       @media only screen and (max-width:1000px) {
-      display: block;
-    width: 100%;
-    margin-right:0;
-    margin-bottom: 1em;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
       }
-
-
 
       label {
         font-weight: normal;
@@ -43,12 +40,12 @@
           line-height: 2;
           font-size: 1em;
         }
-
       }
 
       select {
         height: 30px;
       }
+
       .errorMsg {
         margin-top: 0;
       }
@@ -57,10 +54,10 @@
         width: 17%;
         margin-right: 0.6em;
         @media only screen and (max-width:1000px) {
-        display: block;
-      width: 100%;
-      margin-right:0;
-      margin-bottom: 1em;
+          display: block;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 1em;
         }
       }
       //checkobx default and half
@@ -73,7 +70,7 @@
           width: auto;
           vertical-align: middle;
           position: relative;
-          top: 2px;
+          top: -2px;
           margin-right: 0.3em;
         }
 
@@ -81,6 +78,7 @@
           display: inline-block;
           vertical-align: middle;
         }
+
         .separator {
           margin-top: 1.5em;
         }
@@ -96,29 +94,31 @@
       .form-group-checkbox {
         max-width: 270px;
         width: 30%;
-          vertical-align: top;
+        vertical-align: top;
         @media only screen and (max-width:1000px) {
           margin-bottom: 0;
-
           width: 47%;
-           display: inline-block;
+          display: inline-block;
         }
 
         .img-paypal {
           width: 97px;
           margin-top: 5px;
           @media only screen and (max-width:1000px) {
-            width:77px;
+            width: 77px;
           }
         }
       }
+
       .shipping-via {
         margin-left: 0;
+
         li {
           @media only screen and (max-width:1000px) {
             margin-bottom: 0;
           }
         }
+
         li img {
           @media only screen and (max-width:1000px) {
             width: 50px;
@@ -131,7 +131,10 @@
 
     .b-shipping {
       padding-bottom: 1.5em;
-      overflow: hidden; width: 100%; display: none;
+      overflow: hidden;
+      width: 100%;
+      display: none;
+
       .separator {
         margin-bottom: 0.5em;
         margin-top: 2em;
@@ -167,7 +170,6 @@
             text-align: left;
             width: 100%;
           }
-
         }
 
         input {
@@ -179,30 +181,30 @@
           }
         }
 
-        select, .select-year {
+        .select-year,
+        select {
           width: 31.333%;
           float: left;
           @media only screen and (min-width:1001px) and (max-width:1599px) {
-            width:31%;
+            width: 31%;
           }
-
           @media only screen and (max-width:1000px) {
-            width:100%;
+            width: 100%;
           }
         }
+
         .select-year {
-
-
-
           @media only screen and (max-width:1000px) {
             width: 50%;
           }
+
           span {
             margin-bottom: 0;
             @media only screen and (max-width:1000px) {
               font-size: 1.35em;
             }
           }
+
           input {
             line-height: normal;
           }
@@ -217,8 +219,14 @@
 
             &:nth-child(3) {
               margin-right: 0;
-
             }
+          }
+
+          .errorMsg {
+            margin-top: 0;
+            clear: both;
+            position: absolute;
+            left: 0;
           }
         }
 
@@ -245,32 +253,34 @@
         margin-left: 18px;
         display: inline-block;
         margin-top: 4px;
-
         @media only screen and (min-width:1001px) and (max-width:1599px) {
           height: 32px;
-    margin-left: 0.8em;
-    margin-top: 0.48em;
+          margin-left: 0.8em;
+          margin-top: 0.48em;
         }
-
         @media only screen and (max-width:1000px) {
           float: left;
-        height: 29px;
-        margin-left: 1em;
-        margin-top: 0.5em;
+          height: 29px;
+          margin-left: 1em;
+          margin-top: 0.5em;
         }
+      }
 
-
-
+      .errorMsg {
+        margin-top: 0;
+        clear: both;
       }
     }
   }
+
   .clearfix.btn-right {
     text-align: right;
+
     .btn {
       @media only screen and (max-width:1000px) {
-  line-height: 2.2;
-  margin-top: 1.3em;
-  margin-bottom: 0;
+        line-height: 2.2;
+        margin-top: 1.3em;
+        margin-bottom: 0;
       }
     }
   }

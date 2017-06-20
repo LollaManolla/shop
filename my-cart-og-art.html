@@ -446,14 +446,42 @@
           </div>
           <div class="referral-half-panel cart-right-panel" style="padding-left: 0;">
             <div style="width: 100%; overflow: hidden;">
-              <div class="discount-code-panel">
-                <p style="text-align: left; margin-bottom: 5px; margin-top: 5px;">Enter your discount code</p>
-                <input type="text" class="form-input" id="disc-code" name="disc-code">
-                <button class="btn" style="margin-left: 10px; min-width: 100px; width: 100px; line-height: 30px; margin-top: 7px;">Apply</button>
-                <div class="errorMsg" style="margin-top: 0; text-align: left;">
-                  <div class="errorIcon"></div>Please fill this field appropriately
-                </div>
-              </div>
+
+                                  <div class="b-codes">
+                                    <div class="b-codes__buttons">
+                                    <a  class="showSingle" target="1">Enter  your discount code</a>
+                                    <p>or</p>
+                                    <a  class="showSingle" target="2">Enter your gift card code</a>
+                                  </div>
+
+                                  <div id="div1" class="targetDiv">
+                                    <div class="b-codes__discount">
+                                      <p class="b-codes__title">Enter  your discount code</p>
+                                      <input type="text" class="form-input" id="disc-code" name="disc-code">
+                                      <button class="btn">Apply</button>
+                                      <button class="btn dark hideall">Cancel</button>
+                                      <div class="errorMsg">
+                                        <div class="errorIcon"></div>You already add your discount  code<!--or "Wrong code"-->
+                                          <!--there can be 2 errors: code already added, or wrong code added-->
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div id="div2" class="targetDiv">
+                                    <div class="b-codes__gift">
+                                      <p class="b-codes__title">Enter your gift card code</p>
+                                      <input type="text" class="form-input" id="gift-code" name="gift-code">
+                                      <button class="btn">Apply</button>
+                                      <button class="btn dark hideall">Cancel</button>
+                                      <div class="errorMsg">
+                                        <div class="errorIcon"></div>You already add your gift card code<!--or "Wrong code"-->
+                                          <!--there can be 2 errors: code already added, or wrong code added-->
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  </div>
             </div>
             <div style="width: 100%; overflow: hidden;">
               <div class="shipping-total">
@@ -690,7 +718,7 @@ Cardholder name *
         </div>
       </div>
       <div class="form-group ">
-        <label>State*</label>
+        <label>State</label>
         <select id="profileState" name="profileState" class="form-input">
           <option value="Select State" selected="true" disabled="disabled">Select State</option>
           <option value="State 1">State 1</option>
@@ -701,24 +729,24 @@ Cardholder name *
           <option value="State 6">State 6</option>
           <option value="State 7">State 7</option>
         </select>
-        <div class="errorMsg">
-          <div class="errorIcon"></div>
-          Please fill this field appropriately.
-        </div>
+      </div>
+      <div class="form-group form-group-checkbox">
+
+<label for="samead">
+        <input type="radio" id="samead" name="add-adress" value="Same Address">
+      My shipping address is same as billing
+      </label>
+
+
+
       </div>
       <div class="form-group form-group-checkbox">
 
 
-        <input type="radio" name="add-adress" value="Same Address"  checked="">
-        <label for="samead">My shipping address is same as billing</label>
 
-
-      </div>
-      <div class="form-group form-group-checkbox">
-
-
-        <input type="radio" name="add-adress" value="Add Address" id="add-adress">
-        <label for="adress">Add another address</label>
+        <label for="add-adress">
+          <input type="radio" name="add-adress" value="Add Address" id="add-adress">
+          Add another address</label>
         <hr class="separator" />
       </div>
 
@@ -789,7 +817,7 @@ Cardholder name *
         </div>
       </div>
       <div class="form-group ">
-        <label>State*</label>
+        <label>State</label>
         <select id="profileStateShipping" name="profileStateShipping" class="form-input">
           <option value="Select State" selected="true" disabled="disabled">Select State</option>
           <option value="State 1">State 1</option>
@@ -800,10 +828,6 @@ Cardholder name *
           <option value="State 6">State 6</option>
           <option value="State 7">State 7</option>
         </select>
-        <div class="errorMsg">
-          <div class="errorIcon"></div>
-          Please fill this field appropriately.
-        </div>
       </div>
       <hr class="separator"/>
     </div>
@@ -813,8 +837,10 @@ Cardholder name *
       <h2>Payment Method</h2>
       <p>Please choose your payment method here</p>
       <div class="form-group form-group-checkbox">
-        <input type="radio" name="pay-methods" value="PayPal" id="payp" checked="">
-        <label for="payp">PayPal</label>
+
+        <label for="payp">
+          <input type="radio" name="pay-methods" value="PayPal" id="payp" checked="">PayPal
+        </label>
         <ul class="shipping-via">
           <li class="shipping-via-item">
             <img src="images/PayPal.png" alt="" class="img-paypal">
@@ -822,8 +848,8 @@ Cardholder name *
         </ul>
       </div>
       <div class="form-group form-group-checkbox">
-        <input type="radio" name="pay-methods" value="Credit card" id="credc">
-        <label for="credc">Credit card</label>
+
+        <label for="credc">  <input type="radio" name="pay-methods" value="Credit card" id="credc">Credit card</label>
         <ul class="shipping-via">
           <li class="shipping-via-item">
             <img src="images/visa.png" alt="pay by visa">
@@ -897,21 +923,23 @@ Cardholder name *
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          <div class="errorMsg">
-            <div class="errorIcon"></div>
-            Please fill this field appropriately.
+          <div class="select-year"><input type="text" class="form-input" id="cc-year" name="cc-year">
+            <div class="errorMsg">
+              <div class="errorIcon"></div>
+              Please fill this field appropriately.
+            </div>
           </div>
-          <div class="select-year"><input type="text" class="form-input" id="cc-year" name="cc-year"></div>
-          <div class="errorMsg">
-            <div class="errorIcon"></div>
-            Please fill this field appropriately.
-          </div>
+
         </div>
 
         <div class="form-group">
           <label class="form-label" for="cc-code"> Security code*</label>
           <input id="cc-code" class="form-input" name="cc-code" type="text">
           <img src="images/CreditCardSample.png" class="ccSample">
+          <div class="errorMsg">
+            <div class="errorIcon"></div>
+            Please fill this field appropriately.
+          </div>
         </div>
 
         <div class="form-group">

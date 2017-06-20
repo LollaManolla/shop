@@ -66,6 +66,7 @@ $(document)
     generateMap();
     colorSuppMap();
     quantitySpinnerCartCards();
+    showCodes();
   });
 
 /******* Run functions when document resize **********/
@@ -4284,3 +4285,22 @@ $(function() {
         .replaceWith('<iframe allowfullscreen class="youtube-frame" src="https://www.youtube.com/embed/' + yt_id + ' "></iframe>');
     });
 });
+
+//---show codes on my cart page
+var showCodes = function() {
+
+  $('.hideall')
+    .click(function() {
+      $('.targetDiv')
+        .fadeOut('300');
+    });
+  $('.showSingle')
+    .click(function() {
+      $('.targetDiv')
+        .fadeOut('300');
+      $('#div' + $(this)
+          .attr('target'))
+        .fadeIn('300');
+    });
+
+};
