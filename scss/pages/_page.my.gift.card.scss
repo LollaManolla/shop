@@ -237,6 +237,10 @@
     }
 
     .payment-amount-fig {
+      @media only screen and (min-width:1000px) and (max-width: 1599px) {
+        margin-top: 1em;
+      }
+
       h2 {
         font-size: 1.55em;
         margin-bottom: 0.5em;
@@ -311,6 +315,8 @@
           }
 
           &--half {
+            margin-bottom: 2em;
+
             select {
               margin-right: 1em;
               @media only screen and (max-width:999px) {
@@ -384,6 +390,7 @@
           }
           @media only screen and (max-width:999px) {
             padding-left: 0;
+            text-align: left;
           }
         }
       }
@@ -422,6 +429,21 @@
       border: 1px solid #e74c3c;
       color: #e74c3c;
       margin-right: 12px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+    @media only screen and (max-width:509px) {
+      .btn {
+        margin: 0;
+        width: 100%;
+        min-width: none;
+
+        &.white {
+          margin-bottom: 1em;
+        }
+      }
     }
   }
 }
