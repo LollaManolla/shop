@@ -88,12 +88,14 @@
       .form-group {
         width: 100%;
         margin-bottom: 0.5em;
+        float: left;
 
         &--half {
           width: 46.777%;
           margin-right: 1em;
-          display: inline-block;
+          display: block;
           margin-bottom: 2.7em;
+          float: left;
           @media only screen and (min-width:510px) and (max-width: 1599px) {
             width: 46%;
           }
