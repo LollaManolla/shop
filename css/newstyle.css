@@ -1808,6 +1808,13 @@ table.data-myProducts tbody td:nth-child(3) {
   margin-top: 0;
 }
 
+.page__sales-orders .page-title {
+  text-align: left;
+  font-size: 2.2em;
+  padding-top: 1.5em;
+  margin-bottom: 2em;
+}
+
 @media screen and (min-width: 1200px) {
   ::-webkit-scrollbar {
     height: 10px;

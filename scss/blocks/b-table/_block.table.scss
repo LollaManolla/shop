@@ -1,0 +1,174 @@
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  tbody,
+  td,
+  th,
+  thead,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    line-height: 2;
+    vertical-align: middle;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    vertical-align: middle;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before {
+    content: "Order ID ";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Date/Time";
+  }
+
+  td:nth-of-type(3):before {
+    content: " Sale Amount ";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Income ";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Status";
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 320px;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    width: 495px;
+  }
+}
+// //-------------------------
+// //-------------------BLOCK TABLE common elements for all tables
+// //-------------------------
+//
+// .b-table {
+//   text-align: left;
+//   vertical-align: top;
+//   table-layout: fixed;
+//   white-space: nowrap;
+//   width: 1027px;
+//   position: relative;
+//
+//   &__header {
+//     border-bottom: solid 1px $zambezi;
+//
+//     th {
+//       font-size: 16px;
+//       color: $white;
+//       text-transform: uppercase;
+//       padding-bottom: 1.2rem;
+//       padding-left: 1.2rem;
+//       padding-right: 1.2rem;
+//     }
+//   }
+//
+//   &__body {
+//     tr {
+//       line-height: 3.3;
+//     }
+//
+//     td {
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       border-bottom: solid 1px $zambezi;
+//       padding-left: 1.2rem;
+//       padding-right: 1.2rem;
+//     }
+//     // .unseen {
+//     //     background-color: $charcoal;
+//     // }
+//     .user-name,
+//     .user-name a {
+//       font-style: italic;
+//       color: $lightg;
+//       //padding-left: 0.6rem;
+//     }
+//
+//     .user-role,
+//     .user-role a {
+//       color: $whiteish;
+//     }
+//
+//     .user-contact,
+//     .user-contact a {
+//       color: $lighterg;
+//       font-size: 1.38rem;
+//       line-height: normal;
+//       // position: relative;
+//     }
+//
+//     .user-joined,
+//     .user-visits {
+//       color: $silver;
+//     }
+//
+//     .c-btn {
+//       padding: 0;
+//       display: block;
+//       width: 100px;
+//       min-width: unset;
+//       line-height: 2;
+//
+//       &-approved,
+//       &-rejected {
+//         padding: 0 0.2rem;
+//       }
+//     }
+//
+//     .rejected .nice-select,
+//     .rejected .user-name a,
+//     .rejected td {
+//       color: $grey;
+//     }
+//
+//     .rejected .nice-select {
+//       border-color: $grey;
+//
+//       &:after {
+//         border-color: $grey;
+//       }
+//     }
+//   }
+//   @import "block.table.sales";
+// }
