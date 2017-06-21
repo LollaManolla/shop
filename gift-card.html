@@ -287,101 +287,115 @@
 
   <div class="content-wrapper white page__gift-card">
 
-      <div class="col-left">
-        <div class="content--top">
-          <img src="images/gift-card-front.jpg" alt="">
-        </div>
-
-        <div class="content--bottom">
-            <h2>Indelibl Gift Card</h2>
-            <p><strong>Value:</strong> <span>£25</span></p>
-            <p><strong>To:</strong> <span>Name here</span></p>
-            <p><strong>From:</strong> <span>From Here</span></p>
-            <p class="message"><strong>Message:</strong> <span>“We have a hunger of the mind which asks for knowledge of all around us, and the more we gain, the more is our desire,” trailblazing astronomer Maria Mitchell observed in contemplating science, religion, and our conquest of truth at the end of thef. </span></p>
-        </div>
-
+    <div class="col-left">
+      <div class="content--top">
+        <img src="images/gift-card-front.jpg" alt="">
       </div>
 
-      <div class="col-right">
-        <div class="form">
+      <div class="content--bottom">
+        <h2>Indelibl Gift Card</h2>
+        <p><strong>Value:</strong> <span>£25</span></p>
+        <p><strong>To:</strong> <span>Name here</span></p>
+        <p><strong>From:</strong> <span>From Here</span></p>
+        <p class="message"><strong>Message:</strong> <span>“We have a hunger of the mind which asks for knowledge of all around us, and the more we gain, the more is our desire,” trailblazing astronomer Maria Mitchell observed in contemplating science, religion, and our conquest of truth at the end of thef. </span></p>
+      </div>
 
+    </div>
+
+    <div class="col-right">
+      <div class="form">
+
+        <div class="form-group--half">
+          <h2>1. Pick value</h2>
+          <select name="amount">
+            <option value="" selected="selected">---------</option>
+            <option value="">£25</option>
+            <option value="">£40</option>
+            <option value="">£50</option>
+            <option value="">£75</option>
+            <option value="">£100</option>
+            <option value="">£150</option>
+            <option value="">£200</option>
+            <option value="">£250</option>
+            <option value="">£280</option>
+            <option value="">£320</option>
+            <option value="">£500</option>
+            <option value="">£750</option>
+            <option value="">£1,000</option>
+            <option value="">£1,200</option>
+          </select>
+          <div class="errorMsg">
+            <div class="errorIcon"></div>This field is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h2>2. Personalise your gift card</h2>
           <div class="form-group--half">
-            <h2>1. Pick value</h2>
-            <select name="amount">
-              <option value="" selected="selected">---------</option>
-              <option value="">£25</option>
-              <option value="">£40</option>
-              <option value="">£50</option>
-              <option value="">£75</option>
-              <option value="">£100</option>
-              <option value="">£150</option>
-              <option value="">£200</option>
-              <option value="">£250</option>
-              <option value="">£280</option>
-              <option value="">£320</option>
-              <option value="">£500</option>
-              <option value="">£750</option>
-              <option value="">£1,000</option>
-              <option value="">£1,200</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <h2>2. Personalise your gift card</h2>
-            <div class="form-group--half">
-              <label>Recipient Name:</label>
-              <input name="recipient_name" placeholder="Enter their name" type="text">
-            </div>
-            <div class="form-group--half">
-              <label>Sender Name:</label>
-              <input name="from_name" placeholder="Enter your name" type="text">
+            <label>Recipient Name:</label>
+            <input name="recipient_name" placeholder="Enter their name" type="text">
+            <div class="errorMsg">
+              <div class="errorIcon"></div>This field is required.
             </div>
           </div>
+          <div class="form-group--half">
+            <label>Sender Name:</label>
+            <input name="from_name" placeholder="Enter your name" type="text">
+            <div class="errorMsg">
+              <div class="errorIcon"></div>This field is required.
+            </div>
+          </div>
+        </div>
 
-          <div class="form-group">
-            <label>Your message (optional):</label>
-            <textarea name="message" placeholder="Enter your note here" maxlength="250"></textarea>
+        <div class="form-group">
+          <label>Your message (optional):</label>
+          <textarea name="message" placeholder="Enter your note here" maxlength="250"></textarea>
+          <div class="errorMsg">
+            <div class="errorIcon"></div>This field is required.
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <h2 class="medium-padding-top">3. Choose your delivery method:</h2>
+          <div class="form-group checkbox">
+
+            <label>
+              <input name="direct-email" value="My Email"  checked="" type="radio" >
+              Send to my email address
+            </label>
           </div>
 
-          <div class="form-group ">
-            <h2>3. Choose your delivery method:</h2>
-            <div class="form-group checkbox">
+          <div class="form-group checkbox">
 
-              <label>
-                <input name="direct-email" value="My Email"  checked="" type="radio" >
-                Send to my email address
-              </label>
-            </div>
-
-            <div class="form-group checkbox">
-
-              <label>
-                <input name="direct-email" value="Recipient email" type="radio" id="direct-email">
-                Send direct to the recipient's email address
-              </label>
-            </div>
-
-            <div id="showGiftEmail" >
-<label>Recipient email</label>
-              <input placeholder="Enter their email address" type="text" name="recipient-email"  >
-
-            </div>
-
-
+            <label>
+              <input name="direct-email" value="Recipient email" type="radio" id="direct-email">
+              Send direct to the recipient's email address
+            </label>
           </div>
 
+          <div id="showGiftEmail" >
+            <label>Recipient email</label>
+            <input placeholder="Enter their email address" type="text" name="recipient-email"  >
 
-
-
-
-
-
-            <button class="btn wide ">Add to cart</button>
-
-
+          </div>
+          <div class="errorMsg">
+            <div class="errorIcon"></div>This field is required.
+          </div>
 
         </div>
+
+
+
+
+
+
+
+        <button class="btn wide ">Add to cart</button>
+
+
+
       </div>
+    </div>
 
 
 

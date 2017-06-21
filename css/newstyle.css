@@ -1,3 +1,9 @@
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .main-container {
   overflow-x: hidden;
   height: 100vh;
@@ -1356,7 +1362,6 @@ table.data-myProducts tbody td:nth-child(3) {
   min-height: 7em;
   margin-top: 1.2em;
   width: 100%;
-  margin-bottom: 1.9em;
   font-size: 0.9em;
   resize: none;
 }
@@ -1372,6 +1377,12 @@ table.data-myProducts tbody td:nth-child(3) {
 }
 .page__gift-card .btn.wide {
   width: 100%;
+}
+.page__gift-card .errorMsg {
+  margin-top: 0;
+}
+.page__gift-card .medium-padding-top {
+  padding-top: 1.9em;
 }
 
 @media only screen and (max-width: 1599px) {
@@ -1691,6 +1702,14 @@ table.data-myProducts tbody td:nth-child(3) {
 
 .static-text-align-center {
   text-align: center;
+}
+
+.title__curate {
+  font-size: 1.14em;
+  padding-bottom: 1.5em;
+}
+.title__curate a {
+  color: #e74c3c;
 }
 
 .b-codes {
