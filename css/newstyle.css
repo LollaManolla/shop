@@ -1393,6 +1393,394 @@ table.data-myProducts tbody td:nth-child(3) {
   }
 }
 
+.page__my-gift-card {
+  text-align: left;
+  padding: 3.6em 2.6em;
+}
+.page__my-gift-card-content {
+  background-color: #fff;
+  border: solid 1px #acacac;
+  padding: 2.7em 2.5em;
+}
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+  .page__my-gift-card {
+    padding: 2em 1em;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card {
+    padding: 2em 0.8em;
+  }
+}
+.page__my-gift-card:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.page__my-gift-card .col-left,
+.page__my-gift-card .col-right {
+  position: relative;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  float: left;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left,
+  .page__my-gift-card .col-right {
+    padding: 0;
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-left {
+  width: 54%;
+  padding-right: 3.4rem;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.page__my-gift-card .col-left .col-title {
+  text-transform: uppercase;
+  font-size: 1.15em;
+  margin-bottom: 1.5em;
+}
+.page__my-gift-card .col-left .content-top {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.4em;
+  padding-bottom: 2em;
+  position: relative;
+}
+.page__my-gift-card .col-left .content-top--left {
+  float: left;
+  width: 57%;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left .content-top--left {
+    float: none;
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-left .content-top--left img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.page__my-gift-card .col-left .content-top--right {
+  float: left;
+  width: 43%;
+  padding: 0 2em;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left .content-top--right {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 1.2em;
+  }
+}
+.page__my-gift-card .col-left .content-top--right h2 {
+  color: #e74c3c;
+  font-size: 1.15em;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.page__my-gift-card .col-left .content-top--right p {
+  font-weight: bold;
+}
+.page__my-gift-card .col-left .content-top--right p span {
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 0.95em;
+}
+.page__my-gift-card .col-left .content-top:after {
+  content: "";
+  border-bottom: solid 1px #acadad;
+  width: 60%;
+  height: 3px;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left .content-top:after {
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-left .content-bottom {
+  float: left;
+  width: 100%;
+}
+.page__my-gift-card .col-left .content-bottom .shipping-total {
+  float: none;
+  width: auto;
+  padding: 0.8em 2em 0.8em 0.8em;
+  width: 57%;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left .content-bottom .shipping-total {
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-left .content-bottom .shipping-total p {
+  text-transform: uppercase;
+  color: #2d2d2d;
+  font-size: 1em;
+}
+.page__my-gift-card .col-left .content-bottom .shipping-total .sum p,
+.page__my-gift-card .col-left .content-bottom .shipping-total .sum td {
+  color: #e74c3c;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-left {
+    margin-bottom: 2.2em;
+  }
+}
+.page__my-gift-card .col-right {
+  width: 46%;
+  padding-left: 1em;
+  border-left: solid 1px #acadad;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right {
+    width: 100%;
+    padding-left: 0;
+    border: none;
+  }
+}
+.page__my-gift-card .col-right .email {
+  margin-bottom: 3.5em;
+}
+.page__my-gift-card .col-right .email label {
+  font-weight: normal;
+}
+.page__my-gift-card .col-right .email .form-input {
+  width: 87%;
+  height: auto;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .email .form-input {
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-right .b-payment-method h2 {
+  font-size: 1.55em;
+  margin-bottom: 0;
+}
+.page__my-gift-card .col-right .b-payment-method .form-group-checkbox {
+  max-width: 270px;
+  width: 37%;
+  vertical-align: top;
+  display: inline-block;
+}
+.page__my-gift-card .col-right .b-payment-method .form-group-checkbox label {
+  font-weight: normal;
+}
+.page__my-gift-card .col-right .b-payment-method .form-group-checkbox input {
+  margin-right: 0.5em;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .b-payment-method .form-group-checkbox {
+    margin-bottom: 0;
+    width: 47%;
+    display: inline-block;
+  }
+}
+.page__my-gift-card .col-right .b-payment-method .form-group-checkbox .img-paypal {
+  width: 83px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .b-payment-method .form-group-checkbox .img-paypal {
+    width: 77px;
+  }
+}
+.page__my-gift-card .col-right .b-payment-method .shipping-via {
+  margin-left: 0;
+}
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+  .page__my-gift-card .col-right .b-payment-method .shipping-via li {
+    height: 6px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .b-payment-method .shipping-via li {
+    margin-bottom: 0;
+    width: 43px;
+  }
+}
+.page__my-gift-card .col-right .b-payment-method .shipping-via li img {
+  width: 42px;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .b-payment-method .shipping-via li img {
+    width: 42px;
+    margin-bottom: 0;
+    margin-right: 4px;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig h2 {
+  font-size: 1.55em;
+  margin-bottom: 0.5em;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group {
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  position: relative;
+  margin-bottom: 1em;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group label {
+  display: block;
+  float: left;
+  min-width: 34%;
+}
+@media only screen and (max-width: 1000px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group label {
+    display: block;
+    float: none;
+    min-width: unset;
+    text-align: left;
+    width: 100%;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group input {
+  float: left;
+  width: 66%;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group input {
+    width: 100%;
+    float: none;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year,
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group select {
+  width: 31.333%;
+  float: left;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year,
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group select {
+    width: 31%;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year,
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group select {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year {
+    width: 50%;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year span {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year span {
+    font-size: 1.35em;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group .select-year input {
+  line-height: normal;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group--half select {
+  margin-right: 1em;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group--half select {
+    width: 45%;
+    margin-right: 0.8em;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group--half select:nth-child(3) {
+  margin-right: 0;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group--half .errorMsg {
+  margin-top: 0;
+  clear: both;
+  position: absolute;
+  left: 0;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group:nth-child(4) input {
+  width: 32%;
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .form-group:nth-child(4) input {
+    width: 80%;
+    float: left;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .ccSample {
+  height: 37px;
+  width: auto;
+  margin-left: 18px;
+  display: inline-block;
+  margin-top: 4px;
+}
+@media only screen and (min-width: 1000999pxpx) and (max-width: 1599px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .ccSample {
+    height: 32px;
+    margin-left: 0.8em;
+    margin-top: 0.48em;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .page__my-gift-card .col-right .payment-amount-fig .b-payment-card .ccSample {
+    float: left;
+    height: 29px;
+    margin-left: 0.2em;
+    margin-top: 0.5em;
+  }
+}
+.page__my-gift-card .col-right .payment-amount-fig .b-payment-card .errorMsg {
+  margin-top: 0;
+  clear: both;
+}
+.page__my-gift-card #showGiftEmail {
+  margin-top: 1.1em;
+  display: none;
+}
+.page__my-gift-card #showGiftEmail label {
+  margin-bottom: 1.4em;
+}
+.page__my-gift-card .btn {
+  margin-top: 3.3em;
+}
+.page__my-gift-card .btn.wide {
+  width: 100%;
+}
+.page__my-gift-card .errorMsg {
+  margin-top: 0;
+}
+.page__my-gift-card .medium-padding-top {
+  padding-top: 1.9em;
+}
+
+@media only screen and (max-width: 1599px) {
+  .content-wrapper.white.page__gift-card {
+    margin-bottom: 2em;
+  }
+}
+
 .page-head__color {
   display: table;
   width: 100%;

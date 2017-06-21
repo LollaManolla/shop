@@ -1,0 +1,399 @@
+//page gift card
+
+.page__my-gift-card {
+  &-content {
+    background-color: #fff;
+    border: solid 1px #acacac;
+    padding: 2.7em 2.5em;
+  }
+  text-align: left;
+  padding: 3.6em 2.6em;
+  @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+    padding: 2em 1em;
+  }
+  @media only screen and (max-width: 999px) {
+    padding: 2em 0.8em;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  .col-left,
+  .col-right {
+    position: relative;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    float: left;
+    @media only screen and (max-width: 999px) {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .col-left {
+    width: 54%;
+    padding-right: 3.4rem;
+    @media only screen and (max-width: 999px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .col-title {
+      text-transform: uppercase;
+      font-size: 1.15em;
+      margin-bottom: 1.5em;
+    }
+
+    .content-top {
+      float: left;
+      width: 100%;
+      margin-bottom: 1.4em;
+      padding-bottom: 2em;
+      position: relative;
+
+      &--left {
+        float: left;
+        width: 57%;
+        @media only screen and (max-width: 999px) {
+          float: none;
+          width: 100%;
+        }
+
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      }
+
+      &--right {
+        float: left;
+        width: 43%;
+        padding: 0 2em;
+        @media only screen and (max-width: 999px) {
+          float: none;
+          width: 100%;
+          padding: 0;
+          margin-top: 1.2em;
+        }
+
+        h2 {
+          color: #e74c3c;
+          font-size: 1.15em;
+          font-style: italic;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-weight: bold;
+
+          span {
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 0.95em;
+          }
+        }
+      }
+
+      &:after {
+        content: "";
+        border-bottom: solid 1px #acadad;
+        width: 60%;
+        height: 3px;
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .content-bottom {
+      float: left;
+      width: 100%;
+
+      .shipping-total {
+        float: none;
+        width: auto;
+        padding: 0.8em 2em 0.8em 0.8em;
+        width: 57%;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+
+        p {
+          text-transform: uppercase;
+          color: #2d2d2d;
+          font-size: 1em;
+        }
+
+        .sum {
+          p,
+          td {
+            color: #e74c3c;
+            font-size: 1.12em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 999px) {
+      margin-bottom: 2.2em;
+    }
+  }
+
+  .col-right {
+    width: 46%;
+    padding-left: 1em;
+    border-left: solid 1px #acadad;
+    @media only screen and (max-width: 999px) {
+      width: 100%;
+      padding-left: 0;
+      border: none;
+    }
+
+    .email {
+      margin-bottom: 3.5em;
+
+      label {
+        font-weight: normal;
+      }
+
+      .form-input {
+        width: 87%;
+        height: auto;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .b-payment-method {
+      h2 {
+        font-size: 1.55em;
+        margin-bottom: 0;
+      }
+
+      .form-group-checkbox {
+        label {
+          font-weight: normal;
+        }
+
+        input {
+          margin-right: 0.5em;
+        }
+        max-width: 270px;
+        width: 37%;
+        vertical-align: top;
+        display: inline-block;
+        @media only screen and (max-width:999px) {
+          margin-bottom: 0;
+          width: 47%;
+          display: inline-block;
+        }
+
+        .img-paypal {
+          width: 83px;
+          margin-top: 5px;
+          @media only screen and (max-width:999px) {
+            width: 77px;
+          }
+        }
+      }
+
+      .shipping-via {
+        margin-left: 0;
+
+        li {
+          @media only screen and (min-width:1000px) and (max-width: 1599px) {
+            height: 6px;
+          }
+          @media only screen and (max-width:999px) {
+            margin-bottom: 0;
+            width: 43px;
+          }
+        }
+
+        li img {
+          width: 42px;
+          @media only screen and (max-width:999px) {
+            width: 42px;
+            margin-bottom: 0;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .payment-amount-fig {
+      h2 {
+        font-size: 1.55em;
+        margin-bottom: 0.5em;
+      }
+
+      .b-payment-card {
+        .form-group {
+          display: block;
+          width: 100%;
+          margin-right: 0;
+          position: relative;
+          margin-bottom: 1em;
+
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+
+          label {
+            display: block;
+            float: left;
+            min-width: 34%;
+            @media only screen and (max-width:1000px) {
+              display: block;
+              float: none;
+              min-width: unset;
+              text-align: left;
+              width: 100%;
+            }
+          }
+
+          input {
+            float: left;
+            width: 66%;
+            @media only screen and (max-width:999px) {
+              width: 100%;
+              float: none;
+            }
+          }
+
+          .select-year,
+          select {
+            width: 31.333%;
+            float: left;
+            @media only screen and (min-width:1001px) and (max-width:1599px) {
+              width: 31%;
+            }
+            @media only screen and (max-width:999px) {
+              width: 100%;
+            }
+          }
+
+          .select-year {
+            @media only screen and (max-width:999px) {
+              width: 50%;
+            }
+
+            span {
+              margin-bottom: 0;
+              @media only screen and (max-width:999px) {
+                font-size: 1.35em;
+              }
+            }
+
+            input {
+              line-height: normal;
+            }
+          }
+
+          &--half {
+            select {
+              margin-right: 1em;
+              @media only screen and (max-width:999px) {
+                width: 45%;
+                margin-right: 0.8em;
+              }
+
+              &:nth-child(3) {
+                margin-right: 0;
+              }
+            }
+
+            .errorMsg {
+              margin-top: 0;
+              clear: both;
+              position: absolute;
+              left: 0;
+            }
+          }
+
+          &:nth-child(4) {
+            input {
+              width: 32%;
+              @media only screen and (max-width:999px) {
+                width: 80%;
+                float: left;
+              }
+            }
+          }
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        .ccSample {
+          height: 37px;
+          width: auto;
+          margin-left: 18px;
+          display: inline-block;
+          margin-top: 4px;
+          @media only screen and (min-width:1000999pxpx) and (max-width:1599px) {
+            height: 32px;
+            margin-left: 0.8em;
+            margin-top: 0.48em;
+          }
+          @media only screen and (max-width:999px) {
+            float: left;
+            height: 29px;
+            margin-left: 0.2em;
+            margin-top: 0.5em;
+          }
+        }
+
+        .errorMsg {
+          margin-top: 0;
+          clear: both;
+        }
+      }
+    }
+  }
+
+  #showGiftEmail {
+    margin-top: 1.1em;
+    display: none;
+
+    label {
+      margin-bottom: 1.4em;
+    }
+  }
+
+  .btn {
+    margin-top: 3.3em;
+
+    &.wide {
+      width: 100%;
+    }
+  }
+
+  .errorMsg {
+    margin-top: 0;
+  }
+
+  .medium-padding-top {
+    padding-top: 1.9em;
+  }
+}
+
+.content-wrapper.white.page__gift-card {
+  @media only screen and (max-width: 1599px) {
+    margin-bottom: 2em;
+  }
+}
