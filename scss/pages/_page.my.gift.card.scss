@@ -204,6 +204,12 @@
             width: 77px;
           }
         }
+
+        &:nth-child(4) {
+          @media only screen and (min-width:1000px) and (max-width: 1599px) {
+            width: 60%;
+          }
+        }
       }
 
       .shipping-via {
@@ -254,6 +260,9 @@
             display: block;
             float: left;
             min-width: 34%;
+            @media only screen and (min-width:1000px) and (max-width:1599px) {
+              font-size: 12px;
+            }
             @media only screen and (max-width:1000px) {
               display: block;
               float: none;
@@ -276,7 +285,7 @@
           select {
             width: 31.333%;
             float: left;
-            @media only screen and (min-width:1001px) and (max-width:1599px) {
+            @media only screen and (min-width:1000px) and (max-width:1599px) {
               width: 31%;
             }
             @media only screen and (max-width:999px) {
@@ -331,6 +340,14 @@
               }
             }
           }
+
+          &:nth-child(5) {
+            input {
+              @media only screen and (min-width:1000px) and (max-width:1599px) {
+                width: 66%;
+              }
+            }
+          }
         }
 
         &:after {
@@ -345,7 +362,7 @@
           margin-left: 18px;
           display: inline-block;
           margin-top: 4px;
-          @media only screen and (min-width:1000999pxpx) and (max-width:1599px) {
+          @media only screen and (min-width:1000px) and (max-width:1599px) {
             height: 32px;
             margin-left: 0.8em;
             margin-top: 0.48em;
@@ -361,6 +378,13 @@
         .errorMsg {
           margin-top: 0;
           clear: both;
+          padding-left: 10.6rem;
+          @media only screen and (min-width:1000px) and (max-width:1599px) {
+            padding-left: 7.6rem;
+          }
+          @media only screen and (max-width:999px) {
+            padding-left: 0;
+          }
         }
       }
     }
@@ -389,6 +413,16 @@
 
   .medium-padding-top {
     padding-top: 1.9em;
+  }
+
+  .btn-bottom {
+    text-align: right;
+
+    .btn.white {
+      border: 1px solid #e74c3c;
+      color: #e74c3c;
+      margin-right: 12px;
+    }
   }
 }
 
