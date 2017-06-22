@@ -297,6 +297,15 @@
             }
           }
 
+          &:nth-child(1) {
+            select {
+              width: 66%;
+              @media only screen and (max-width:999px) {
+                width: 100%;
+              }
+            }
+          }
+
           .select-year {
             @media only screen and (max-width:999px) {
               width: 50%;
@@ -349,8 +358,14 @@
 
           &:nth-child(5) {
             input {
+              width: 50%;
               @media only screen and (min-width:1000px) and (max-width:1599px) {
-                width: 66%;
+                width: 48%;
+              }
+              @media only screen and (max-width:999px) {
+                width: 45%;
+                float: left;
+                margin-right: 0.5em;
               }
             }
           }
