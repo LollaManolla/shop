@@ -2293,6 +2293,9 @@ table.data-myProducts tbody td:nth-child(3) {
   margin-top: 0;
 }
 
+.page__sales-orders {
+  padding-bottom: 1rem;
+}
 .page__sales-orders .page-title {
   text-align: left;
   font-size: 2.2em;
