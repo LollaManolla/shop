@@ -30,9 +30,9 @@
     .errorMsg.bottom-long {
       text-align: left;
       margin-top: 1em;
-      // @media only screen and (max-width: 999px) {
-      //   margin-top: 1em;
-      // }
+      @media only screen and (min-width: 1000px) {
+        max-width: 45%;
+      }
     }
   }
 }

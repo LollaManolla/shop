@@ -315,6 +315,11 @@
   text-align: left;
   margin-top: 1em;
 }
+@media only screen and (min-width: 1000px) {
+  .b-my-cart-form .btn-bottom .errorMsg.bottom-long {
+    max-width: 45%;
+  }
+}
 
 .popup-inner {
   width: 100%;
@@ -2436,6 +2441,11 @@ table.data-myProducts tbody td:nth-child(3) {
 .ch-pay-wrapper .btn-bottom .errorMsg.bottom-long {
   text-align: left;
   margin-top: 1em;
+}
+@media only screen and (min-width: 1000px) {
+  .ch-pay-wrapper .btn-bottom .errorMsg.bottom-long {
+    max-width: 45%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
