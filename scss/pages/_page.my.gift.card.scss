@@ -444,6 +444,7 @@
       border: 1px solid #e74c3c;
       color: #e74c3c;
       margin-right: 12px;
+      margin-bottom: 0;
 
       &:hover {
         color: #fff;
@@ -459,6 +460,14 @@
           margin-bottom: 1em;
         }
       }
+    }
+
+    .errorMsg.bottom-long {
+      text-align: left;
+      margin-top: 1em;
+      // @media only screen and (max-width: 999px) {
+      //   margin-top: 1em;
+      // }
     }
   }
 }
