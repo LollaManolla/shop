@@ -2270,6 +2270,128 @@ table.data-myProducts tbody td:nth-child(3) {
   margin-top: 0;
 }
 
+.page__sales-orders .page-title {
+  text-align: left;
+  font-size: 2.2em;
+  padding-top: 2.1em;
+  margin-bottom: 2em;
+}
+.page__sales-orders .content-wrapper.white {
+  margin: 0 auto 40px;
+  padding: 3em;
+  text-align: left;
+}
+.page__sales-orders .form-group {
+  padding-top: 7px;
+  margin-bottom: 3em;
+}
+.page__sales-orders .form-group label {
+  display: block;
+}
+.page__sales-orders .form-group .form-input {
+  display: block;
+  max-width: 100%;
+  width: 17%;
+  margin-top: 1.2em;
+}
+.page__sales-orders .b-table {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  border-top: solid 1px #acadad;
+  border-left: solid 1px #acadad;
+  border-bottom: solid 1px #acadad;
+}
+.page__sales-orders .b-table thead {
+  font-weight: bold;
+}
+.page__sales-orders .b-table tr {
+  border-bottom: solid 1px #acadad;
+}
+.page__sales-orders .b-table td,
+.page__sales-orders .b-table th {
+  border-right: solid 1px #acadad;
+  padding: 0 1.7em;
+  line-height: 3;
+}
+.page__sales-orders .b-table .delivered {
+  color: #2db504;
+  font-weight: bold;
+}
+.page__sales-orders .b-table .processing {
+  color: #f48f22;
+  font-weight: bold;
+}
+.page__sales-orders .b-table .received {
+  color: #c00005;
+  font-weight: bold;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .page__sales-orders {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+    Label the data
+    */
+  }
+  .page__sales-orders .b-table,
+  .page__sales-orders .b-table tbody,
+  .page__sales-orders .b-table td,
+  .page__sales-orders .b-table th,
+  .page__sales-orders .b-table thead,
+  .page__sales-orders .b-table tr {
+    display: block;
+  }
+  .page__sales-orders .b-table,
+  .page__sales-orders .b-table td,
+  .page__sales-orders .b-table th,
+  .page__sales-orders .b-table tr {
+    border: none;
+  }
+  .page__sales-orders .b-table tbody {
+    border: solid 1px #acadad;
+  }
+  .page__sales-orders .b-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .page__sales-orders .b-table tr {
+    line-height: 2;
+    vertical-align: middle;
+  }
+  .page__sales-orders .b-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #acadad;
+    position: relative;
+    padding-left: 50%;
+    vertical-align: middle;
+  }
+  .page__sales-orders td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .page__sales-orders .b-table td:nth-of-type(1):before {
+    content: "Order ID ";
+  }
+  .page__sales-orders .b-table td:nth-of-type(2):before {
+    content: "Order total";
+  }
+  .page__sales-orders .b-table td:nth-of-type(3):before {
+    content: "Date";
+  }
+  .page__sales-orders .b-table td:nth-of-type(4):before {
+    content: " Status";
+  }
+}
+
 @media screen and (min-width: 1200px) {
   ::-webkit-scrollbar {
     height: 10px;

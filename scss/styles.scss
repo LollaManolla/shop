@@ -2,7 +2,7 @@
 // @import "responsive/responsive.math";
 @import "settings/settings.global";
 @import "settings/settings.wrappers"; //blocks
-@import "blocks/block.my.cart.form"; //components
+@import "blocks/block.my.cart.form"; // @import "blocks/b-table/block.table";
 @import "components/popup/component.popup";
 @import "components/owl-slider/component.owl.slider"; //pages
 @import "pages/page.home";
@@ -13,7 +13,8 @@
 @import "pages/page.gift.card";
 @import "pages/page.my.gift.card";
 @import "pages/page.static";
-@import "pages/page.my.cart"; //responsive
+@import "pages/page.my.cart";
+@import "pages/page.sales.orders";
 @import "responsive/responsive.first";
 @import "responsive/responsive.second";
 @import "responsive/responsive.third";

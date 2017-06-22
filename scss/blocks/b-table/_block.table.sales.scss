@@ -1,0 +1,119 @@
+//-------------------------
+//-------------------BLOCK TABLE NEW USERS TABLE
+//-------------------------
+
+&--sales {
+  td,
+  th,
+  tr {
+    border: solid 1px $zambezi;
+    text-transform: none;
+  }
+  // Column widths are based on these cells
+  .row-1 {
+    width: 204px;
+    //padding-left: 1.2rem;
+  }
+
+  .row-2 {
+    width: 248px;
+  }
+
+  .row-3 {
+    width: 182px;
+  }
+
+  .row-4 {
+    width: 183px;
+  }
+
+  .row-5 {
+    width: 209px;
+  }
+
+  .b-table__header th {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1.1rem;
+  }
+
+  .b-table__body td {
+    font-size: 16px;
+    text-align: left;
+    color: $lightg;
+    line-height: 2.9;
+    vertical-align: middle;
+    overflow: visible;
+  }
+
+  .sales-orders {
+    font-style: italic;
+    color: $keppel !important;
+
+    a {
+      color: $keppel;
+    }
+  }
+
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+
+    .c-dropdown {
+      display: block;
+      float: none;
+      margin-right: 0;
+
+      .nice-select {
+        border: medium none;
+        border-radius: 0;
+        height: auto;
+        line-height: inherit;
+        min-width: auto;
+        outline: medium none;
+        padding-left: 1.6rem;
+        padding-right: 1.2rem;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+
+        &:after {
+          height: 7px;
+          margin-top: -5px;
+          right: 1.2rem;
+          top: 50%;
+          width: 7px;
+        }
+
+        &.open .list {
+          width: 208px;
+        }
+      }
+    }
+  }
+}
+// .current .option.selected {
+//   color: pink;
+// }
+// [data-value="1"] {
+//     border: 12px solid red;
+// }
+// [data-value="2"] {
+//     border: 12px solid blue;
+// }
+// [data-value="3"] {
+//     border: 12px solid green;
+// }
+//colors
+// .received .current,
+// .received {
+//   color: $amaranth;
+// };
+// .processing .current,
+// .processing {
+//   color: $yellow;
+// };
+// .delivered .current,
+// .delivered {
+//   color: $keppel;
+// };

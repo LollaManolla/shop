@@ -1,0 +1,112 @@
+.b-table {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  border-top: solid 1px #acadad;
+  border-left: solid 1px #acadad;
+  border-bottom: solid 1px #acadad;
+
+  thead {
+    font-weight: bold;
+  }
+
+  tr {
+    border-bottom: solid 1px #acadad;
+  }
+
+  td,
+  th {
+    border-right: solid 1px #acadad;
+    padding: 0 1.7em;
+    line-height: 3;
+  }
+
+  .delivered {
+    color: #2db504;
+    font-weight: bold;
+  }
+
+  .processing {
+    color: #f48f22;
+    font-weight: bold;
+  }
+
+  .received {
+    color: #c00005;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  .b-table,
+  .b-table tbody,
+  .b-table td,
+  .b-table th,
+  .b-table thead,
+  .b-table tr {
+    display: block;
+  }
+
+  .b-table,
+  .b-table td,
+  .b-table th,
+  .b-table tr {
+    border: none;
+  }
+
+  .b-table tbody {
+    border: solid 1px #acadad;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .b-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .b-table tr {
+    // border-top: solid 1px #acadad;
+    // border-left: solid 1px #acadad;
+    // border-right: solid 1px #acadad;
+    line-height: 2;
+    vertical-align: middle;
+  }
+
+  .b-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #acadad;
+    position: relative;
+    padding-left: 50%;
+    vertical-align: middle;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+  Label the data
+  */
+  .b-table td:nth-of-type(1):before {
+    content: "Order ID ";
+  }
+
+  .b-table td:nth-of-type(2):before {
+    content: "Order total";
+  }
+
+  .b-table td:nth-of-type(3):before {
+    content: "Date";
+  }
+
+  .b-table td:nth-of-type(4):before {
+    content: " Status";
+  }
+}
