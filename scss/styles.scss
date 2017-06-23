@@ -1,10 +1,10 @@
 //import all styles
-// @import "responsive/responsive.math";
 @import "settings/settings.global";
-@import "settings/settings.wrappers"; //blocks
-@import "blocks/block.my.cart.form"; // @import "blocks/b-table/block.table";
+@import "settings/settings.wrappers";
+@import "blocks/block.my.cart.form";
+@import "blocks/block.payment.card";
 @import "components/popup/component.popup";
-@import "components/owl-slider/component.owl.slider"; //pages
+@import "components/owl-slider/component.owl.slider";
 @import "pages/page.home";
 @import "pages/page.footer";
 @import "pages/page.my.products";
