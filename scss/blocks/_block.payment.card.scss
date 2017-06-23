@@ -1,0 +1,376 @@
+.b-payment-card {
+  width: 45%;
+  @media only screen and (max-width:1000px) {
+    width: 100%;
+  }
+
+  .form-group {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: 1em;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    label {
+      display: block;
+      float: left;
+      min-width: 34%;
+      font-weight: normal;
+      @media only screen and (max-width:1000px) {
+        display: block;
+        float: none;
+        min-width: unset;
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    input {
+      float: left;
+      width: 66%;
+      @media only screen and (max-width:1000px) {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .select-year,
+    select {
+      width: 31.333%;
+      float: left;
+      @media only screen and (min-width:1001px) and (max-width:1599px) {
+        width: 31%;
+      }
+      @media only screen and (max-width:1000px) {
+        width: 100%;
+      }
+    }
+
+    .select-year {
+      @media only screen and (max-width:1000px) {
+        width: 50%;
+      }
+
+      span {
+        margin-bottom: 0;
+        @media only screen and (max-width:1000px) {
+          font-size: 1.35em;
+        }
+      }
+
+      input {
+        line-height: normal;
+      }
+    }
+
+    &--half {
+      select {
+        margin-right: 1em;
+        @media only screen and (max-width:1000px) {
+          width: 45%;
+        }
+        @media only screen and (max-width:999px) {
+          width: 44%;
+        }
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+
+      .errorMsg {
+        margin-top: 0;
+        clear: both;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      input {
+        width: 32%;
+        @media only screen and (max-width:1000px) {
+          width: 80%;
+          float: left;
+        }
+      }
+    }
+
+    #cc-code {
+      width: 52%;
+      float: left;
+      @media only screen and (min-width:1000px) and (max-width:1599px) {
+        width: 50%;
+      }
+      @media only screen and (min-width:510px) and (max-width:999px) {
+        width: 87%;
+      }
+      @media only screen and (max-width:509px) {
+        width: 80%;
+      }
+    }
+
+    &.country {
+      select {
+        width: 66%;
+        @media only screen and (max-width:999px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .ccSample {
+    height: 37px;
+    width: auto;
+    margin-left: 18px;
+    display: inline-block;
+    margin-top: 4px;
+    @media only screen and (min-width:1001px) and (max-width:1599px) {
+      height: 32px;
+      margin-left: 0.8em;
+      margin-top: 0.48em;
+    }
+    @media only screen and (max-width:1000px) {
+      float: left;
+      height: 29px;
+      margin-left: 1em;
+      margin-top: 0.5em;
+    }
+  }
+
+  .errorMsg {
+    margin-top: 0;
+    clear: both;
+    padding-left: 15em;
+    @media only screen and (min-width:1000px) and (max-width:1599px) {
+      padding-left: 12em;
+    }
+    @media only screen and (max-width:1000px) {
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+}
+//overwrite
+
+.b-my-cart-form .form .payment-amount-fig .b-payment-card {
+  .form-group {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    label {
+      display: block;
+      float: left;
+      min-width: 34%;
+      @media only screen and (max-width:1000px) {
+        display: block;
+        float: none;
+        min-width: unset;
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    input {
+      float: left;
+      width: 66%;
+      @media only screen and (max-width:1000px) {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .select-year,
+    select {
+      width: 31.333%;
+      float: left;
+      @media only screen and (min-width:1001px) and (max-width:1599px) {
+        width: 31%;
+      }
+      @media only screen and (max-width:1000px) {
+        width: 100%;
+      }
+    }
+
+    .select-year {
+      @media only screen and (max-width:1000px) {
+        width: 50%;
+      }
+
+      span {
+        margin-bottom: 0;
+        @media only screen and (max-width:1000px) {
+          font-size: 1.35em;
+        }
+      }
+
+      input {
+        line-height: normal;
+      }
+    }
+
+    &--half {
+      select {
+        margin-right: 1em;
+        @media only screen and (max-width:1000px) {
+          width: 45%;
+        }
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+
+      .errorMsg {
+        margin-top: 0;
+        clear: both;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      input {
+        width: 32%;
+        @media only screen and (max-width:1000px) {
+          width: 80%;
+          float: left;
+        }
+      }
+    }
+
+    #cc-code {
+      width: 52%;
+      float: left;
+      @media only screen and (min-width:1000px) and (max-width:1599px) {
+        width: 50%;
+      }
+      @media only screen and (min-width:510px) and (max-width:999px) {
+        width: 87%;
+      }
+      @media only screen and (max-width:509px) {
+        width: 80%;
+      }
+    }
+
+    &.country {
+      select {
+        width: 66%;
+        @media only screen and (max-width:999px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .ccSample {
+    height: 37px;
+    width: auto;
+    margin-left: 18px;
+    display: inline-block;
+    margin-top: 4px;
+    @media only screen and (min-width:1001px) and (max-width:1599px) {
+      height: 32px;
+      margin-left: 0.8em;
+      margin-top: 0.48em;
+    }
+    @media only screen and (max-width:1000px) {
+      float: left;
+      height: 29px;
+      margin-left: 1em;
+      margin-top: 0.5em;
+    }
+  }
+
+  .errorMsg {
+    margin-top: 0;
+    clear: both;
+    padding-left: 15em;
+    @media only screen and (min-width:1000px) and (max-width:1599px) {
+      padding-left: 12em;
+    }
+    @media only screen and (max-width:1000px) {
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+}
+//my gift cart
+
+.page__my-gift-card .b-payment-card {
+  width: 100%;
+
+  .form-group {
+    #cc-code {
+      float: left;
+      width: 48%;
+      // @media only screen and (min-width:1000px) and (max-width:1599px) {
+      //   width: 50%;
+      // }
+      @media only screen and (min-width:510px) and (max-width:999px) {
+        width: 87%;
+      }
+      @media only screen and (max-width:509px) {
+        width: 76%;
+      }
+    }
+
+    #cc-name {
+      float: right;
+      @media only screen and (min-width:1000px) and (max-width:1599px) {
+        width: 65%;
+      }
+    }
+
+    &--half {
+      margin-bottom: 2em;
+    }
+
+    label {
+      @media only screen and (min-width:1000px) and (max-width:1599px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .errorMsg {
+    margin-top: 0;
+    clear: both;
+    padding-left: 15em;
+    font-size: 0.7em;
+    @media only screen and (min-width:1000px) and (max-width:1599px) {
+      padding-left: 13em;
+    }
+    @media only screen and (max-width:1000px) {
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+}
