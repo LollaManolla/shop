@@ -17,18 +17,49 @@
   }
 
   .form-group {
-    padding-top: 7px;
-    margin-bottom: 3em;
+    &-wrapper {
+      margin-bottom: 3em;
 
-    label {
-      display: block;
-    }
+      .form-group {
+        display: inline-block;
+        margin-right: 1.3em;
+        width: 16.555%;
+        position: relative;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
 
-    .form-input {
-      display: block;
-      max-width: 100%;
-      width: 17%;
-      margin-top: 1.2em;
+        input {
+          position: relative;
+          @media only screen and (max-width: 999px) {
+            width: 100%;
+          }
+        }
+
+        select {
+          @media only screen and (max-width: 999px) {
+            width: 100%;
+          }
+        }
+
+        label {
+          display: block;
+        }
+
+        button {
+          bottom: 0.2em;
+          position: absolute;
+          right: 0;
+          @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+            bottom: 0.45em;
+            font-size: 1em;
+          }
+          @media only screen and (max-width: 999px) {
+            font-size: 2.2em;
+            bottom: 0.1em;
+          }
+        }
+      }
     }
   }
 

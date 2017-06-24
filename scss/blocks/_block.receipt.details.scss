@@ -1,0 +1,407 @@
+//block receipt detials on sales and orders page
+
+.b-receipt__details {
+  border-top: solid 1px #d0cfcf;
+  margin: 1.6em 0;
+  padding: 0.4em 0;
+
+  .col-left {
+    float: left;
+    width: 67%;
+    @media only screen and (min-width: 510px) and (max-width: 999px) {
+      padding-right: 0;
+      width: 50%;
+    }
+    @media only screen and (max-width: 509px) {
+      width: 100%;
+    }
+
+    .col__item {
+      &.product {
+        width: 70%;
+        margin-right: 0;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+
+        .product-title {
+          text-transform: uppercase;
+          font-size: 0.9em;
+          font-weight: bold;
+          margin-bottom: 1em;
+          border: none;
+          padding-bottom: 0;
+        }
+
+        .product-image {
+          border: 1px solid #d0cfcf;
+          display: inline-block;
+          margin: 0 auto 1em;
+          text-align: center;
+          vertical-align: middle;
+          width: 42%;
+          position: relative;
+          height: 0;
+          padding-bottom: 41%;
+
+          div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            // background-size: 77%;
+            // background-repeat: no-repeat;
+            // background-position: center center;
+          }
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            width: 58%;
+            padding-bottom: 50%;
+          }
+          @media only screen and (max-width: 509px) {
+            width: 100%;
+            padding-bottom: 90%;
+          }
+
+          img {
+            display: inline-block;
+            height: 94px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+          }
+        }
+
+        .product-info {
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 0.8em;
+          margin-top: 0.5em;
+          line-height: 1.3;
+          @media only screen and (max-width: 509px) {
+            margin-left: 0;
+          }
+
+          p {
+            margin: 0;
+            line-height: 1.3em;
+          }
+
+          .title {
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            padding-bottom: 0;
+            font-size: 1em;
+            margin-bottom: 0;
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              font-size: 1.20em;
+            }
+            @media only screen and (max-width: 509px) {
+              font-size: 1.15em;
+            }
+          }
+
+          .author {
+            font-style: italic;
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-size: 0.9em;
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              font-size: 1.20em;
+            }
+            @media only screen and (max-width: 509px) {
+              font-size: 1.15em;
+            }
+          }
+
+          .product {
+            font-weight: bold;
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-size: 0.9em;
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              font-size: 1.20em;
+            }
+            @media only screen and (max-width: 509px) {
+              font-size: 1.15em;
+            }
+          }
+        }
+      }
+    }
+
+    .col__item {
+      float: left;
+      // margin-right: 1em;
+      // width: 100%;
+      &.data {
+        width: 30%;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+          float: none;
+        }
+      }
+
+      &.price,
+      &.qty,
+      &.total {
+        width: 5.3em;
+        font-size: 0.9em;
+        font-weight: bold;
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          width: 4em;
+        }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          font-size: 1.1em;
+          width: 5em;
+        }
+        @media only screen and (max-width: 509px) {
+          font-size: 1.15em;
+        }
+      }
+
+      &.sum {
+        clear: both;
+        width: 100%;
+        border-top: solid 1px #d0cfcf;
+        margin-top: 2.4em;
+        padding-top: 2em;
+
+        ul li {
+          text-transform: uppercase;
+          font-size: 0.9em;
+          color: #acadad;
+          font-weight: bold;
+          line-height: 1.85;
+          float: left;
+          display: block;
+          width: 100%;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            font-size: 1.20em;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 1.10em;
+          }
+
+          span {
+            display: block;
+            float: right;
+            text-align: right;
+          }
+
+          &.last {
+            color: #e74c3c;
+            font-size: 1em;
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              font-size: 1.20em;
+            }
+            @media only screen and (max-width: 509px) {
+              font-size: 1.10em;
+            }
+          }
+        }
+      }
+
+      &.price {
+        text-align: left;
+      }
+
+      &.qty {
+        text-align: center;
+      }
+
+      &.total {
+        text-align: right;
+      }
+
+      .type {
+        text-transform: uppercase;
+        margin-bottom: 1.6em;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .value {
+        color: red;
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          font-size: 1.1em;
+        }
+        @media only screen and (max-width: 509px) {
+          font-size: 1.15em;
+        }
+      }
+    }
+  }
+
+  .col-right {
+    float: right;
+    width: 23.333%;
+    border: solid 3px #e74c3c;
+    min-height: 272px;
+    margin-top: 1em;
+    @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+      border: solid 2px #e74c3c;
+      min-height: 237px;
+    }
+    @media only screen and (min-width: 510px) and (max-width: 999px) {
+      width: 40%;
+      border: solid 2px #e74c3c;
+      min-height: 406px;
+    }
+    @media only screen and (max-width: 509px) {
+      width: 100%;
+      border: solid 2px #e74c3c;
+      min-height: none;
+    }
+
+    ul {
+      padding: 0.9em 3em 0.9em 4.5em;
+      @media only screen and (min-width: 510px) and (max-width: 1599px) {
+        padding: 0.9em 1.5em;
+      }
+      @media only screen and (max-width: 509px) {
+        padding: 0.9em 1.5em;
+      }
+
+      li {
+        display: block;
+        margin-bottom: 0.2em;
+        @media only screen and (max-width: 999px) {
+          margin-bottom: 1.20em;
+        }
+        @media only screen and (max-width: 509px) {
+          font-size: 1.15em;
+        }
+
+        span {
+          display: block;
+        }
+
+        .title {
+          color: #acadad;
+          font-size: 0.9em;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            font-size: 1.20em;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 1.15em;
+          }
+        }
+
+        .data {
+          color: #2d2d2d;
+          font-size: 1em;
+          line-height: 1.3;
+          font-weight: bold;
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            font-size: 1.20em;
+          }
+          @media only screen and (max-width: 509px) {
+            font-size: 1.15em;
+          }
+        }
+      }
+    }
+  }
+
+  .col-bottom {
+    border-top: 1px solid #d0cfcf;
+    clear: both;
+    float: left;
+    margin-top: 1.8em;
+    width: 100%;
+    padding-top: 3em;
+
+    a,
+    h3 {
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.56em;
+      margin-right: 5em;
+      @media only screen and (max-width: 999px) {
+        margin: 0;
+      }
+    }
+
+    a {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .col-full {
+      margin-top: 1.8em;
+
+      .delivered {
+        color: #2db504;
+        font-weight: bold;
+      }
+
+      .processing {
+        color: #f48f22;
+        font-weight: bold;
+      }
+
+      .received {
+        color: #c00005;
+        font-weight: bold;
+      }
+
+      &--left {
+        display: inline-block;
+        position: relative;
+        width: 36%;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+
+        &:after {
+          border-right: 1px solid #d0cfcf;
+          content: "";
+          display: inline;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          @media only screen and (max-width: 999px) {
+            border: none;
+          }
+        }
+      }
+
+      &--right {
+        display: inline-block;
+        width: 40%;
+        padding-left: 5.6em;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      ul {
+        li {
+          line-height: 1.8;
+          @media only screen and (max-width: 999px) {
+            font-size: 1.15em;
+          }
+
+          .title {
+            font-weight: bold;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

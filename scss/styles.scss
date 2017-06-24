@@ -3,6 +3,8 @@
 @import "settings/settings.wrappers";
 @import "blocks/block.my.cart.form";
 @import "blocks/block.payment.card";
+@import "blocks/block.receipt.details";
+@import "blocks/block.list.checkout";
 @import "components/popup/component.popup";
 @import "components/owl-slider/component.owl.slider";
 @import "pages/page.home";
@@ -16,6 +18,7 @@
 @import "pages/page.my.cart";
 @import "pages/page.sales.orders";
 @import "pages/page.checkout";
+@import "pages/page.sales.orders.receipt";
 @import "responsive/responsive.first";
 @import "responsive/responsive.second";
 @import "responsive/responsive.third";

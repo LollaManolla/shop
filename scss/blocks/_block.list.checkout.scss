@@ -1,0 +1,88 @@
+//block list checkout
+
+.b-list__checkout {
+  li {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    @media only screen and(min-width: 510px) and (max-width: 999px) {
+      margin-right: 0.5em;
+    }
+    @media only screen and (max-width: 509px) {
+      display: block;
+      line-height: 1.8;
+    }
+
+    &:before {
+      background: url("../images/check1.png") center center no-repeat;
+      content: "";
+      display: inline-block;
+      height: 1.5em;
+      vertical-align: middle;
+      width: 1.5em;
+      margin-right: 0.5em;
+      @media only screen and(min-width: 510px) and (max-width: 999px) {
+        background-size: cover;
+        height: 1.15em;
+        width: 1.15em;
+      }
+      @media only screen and (max-width: 509px) {
+        background-size: cover;
+        width: 1.01em;
+        height: 1.01em;
+      }
+    }
+
+    &:after {
+      background-color: #e74c3c;
+      content: "";
+      display: inline-block;
+      height: 0.06em;
+      vertical-align: middle;
+      width: 4.3em;
+      margin-left: 0.9em;
+      margin-right: 0.9em;
+      @media only screen and (max-width: 999px) {
+        width: 0;
+        background-color: transparent;
+        margin: 0;
+      }
+    }
+
+    &.last {
+      &:after {
+        background-color: transparent;
+        width: auto;
+        margin-right: 0;
+      }
+    }
+
+    &.unchecked {
+      &:before {
+        background: none;
+        border: solid 1px #e74c3c;
+        border-radius: 50px;
+        height: 1em;
+        width: 1em;
+        @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+          width: 1.15em;
+          height: 1.151em;
+        }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          width: 1.15em;
+          height: 1.15em;
+          margin-left: 0.15em;
+        }
+        // @media only screen and (min-width: 510px) and (max-width: 999px) {
+        //   height: 1.32em;
+        //   margin-right: 0.7em;
+        //   width: 1.32em;
+        // }
+        // @media only screen and (max-width: 509px) {
+        //   width: 1.01em;
+        //   height: 1.01em;
+        // }
+      }
+    }
+  }
+}

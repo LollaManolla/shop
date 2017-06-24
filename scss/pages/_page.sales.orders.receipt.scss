@@ -1,0 +1,38 @@
+//page sales and orders
+
+.page__sales-orders--receipt {
+  padding-bottom: 1rem;
+
+  .page-title {
+    text-align: left;
+    font-size: 2.2em;
+    padding-top: 2.1em;
+    margin-bottom: 2em;
+  }
+
+  .block-title {
+    display: inline-block;
+    font-size: 1.24em;
+    text-transform: uppercase;
+  }
+
+  .btn.dark {
+    font-size: 0.9em;
+    line-height: 2.5;
+    margin-left: 1em;
+    min-width: 126px;
+    padding: 0;
+    @media only screen and (max-width: 509px) {
+      margin-left: 0;
+    }
+  }
+
+  .note {
+    font-size: 1em;
+    color: #a4a5a5;
+    margin: 1em 0 2.3em;
+    @media only screen and (max-width: 509px) {
+      font-size: 1.15em;
+    }
+  }
+}
