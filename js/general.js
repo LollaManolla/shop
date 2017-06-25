@@ -67,6 +67,8 @@ $(document)
     colorSuppMap();
     quantitySpinnerCartCards();
     showCodes();
+    toggleQuarters();
+    togglePayment();
   });
 
 /******* Run functions when document resize **********/
@@ -4302,5 +4304,32 @@ var showCodes = function() {
           .attr('target'))
         .fadeIn('300');
     });
+
+};
+
+// -- toggle quarters on payment page
+var toggleQuarters = function() {
+
+  $('.quarter-toggle').on('change',function() {
+      var target = $(this).data('target');
+      var show = $("option:selected", this).data('show');
+      $(target).children().addClass('hide');
+      $(show).removeClass('hide');
+  });
+
+  $('.quarter-toggle ').trigger('change');
+
+};
+// -- toggle quarters on payment page
+var togglePayment = function() {
+
+  $('.pay-toggle').on('change',function() {
+      var target = $(this).data('target');
+      var show = $("option:selected", this).data('show');
+      $(target).children().addClass('hide');
+      $(show).removeClass('hide');
+  });
+
+  $('.pay-toggle ').trigger('change');
 
 };

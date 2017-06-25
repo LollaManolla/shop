@@ -1,0 +1,558 @@
+//page sales and orders
+
+.page__payment {
+  padding-bottom: 1rem;
+
+  .page-title {
+    text-align: left;
+    font-size: 2.2em;
+    padding-top: 2.1em;
+    margin-bottom: 2em;
+  }
+
+  .content-wrapper.white {
+    margin: 0 auto 40px;
+    padding: 3em;
+    text-align: left;
+  }
+
+  .b-payment__quarters {
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 3.3em;
+    @media only screen and (max-width: 509px) {
+      padding-bottom: 0;
+    }
+
+    .form {
+      margin-bottom: 3em;
+
+      .form-group {
+        display: inline-block;
+        margin-right: 1.3em;
+        width: 16.555%;
+        position: relative;
+        @media only screen and (max-width: 999px) {
+          width: 100%;
+        }
+        // input {
+        //   position: relative;
+        //   @media only screen and (max-width: 999px) {
+        //     width: 100%;
+        //   }
+        // }
+        select {
+          border: 1px solid #acacac;
+          width: 100%;
+          border-radius: 5px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 0.95em;
+        }
+
+        label {
+          display: block;
+        }
+      }
+    }
+
+    .b-quarter {
+      float: left;
+      margin-top: 0.4em;
+      margin-bottom: 2.6em;
+      width: 100%;
+
+      h3 {
+        color: #2d2d2d;
+        font-size: 1.2em;
+        margin-bottom: 0.7em;
+        @media only screen and (max-width: 509px) {
+          margin-top: 0.7em;
+          margin-bottom: 0.2em;
+        }
+      }
+
+      &-wrapper {
+        clear: both;
+      }
+
+      &__content {
+        float: left;
+        width: 25%;
+        display: inline-block;
+        vertical-align: middle;
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          width: 24.800%;
+        }
+        @media only screen and (max-width: 509px) {
+          width: 100%;
+          display: block;
+          float: none;
+        }
+
+        &-col {
+          display: table;
+          height: 9.3em;
+          vertical-align: middle;
+          width: 100%;
+          border: solid #acacac;
+          border-width: 1px 0 1px 1px;
+
+          &:nth-last-child(1) {
+            border-right: 1px solid #acacac;
+          }
+
+          a {
+            display: inline;
+            color: #959595;
+
+            &:hover {
+              color: red;
+            }
+          }
+
+          p {
+            display: table-cell;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2em;
+            color: #959595;
+          }
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+  }
+
+  .b-payment__schedule {
+    clear: both;
+    margin-top: 2.5em;
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 3.3em;
+
+    .b-tabel {
+      margin-bottom: 2.2em;
+    }
+
+    select {
+      width: 100%;
+      // border: 1px solid #acacac;
+    }
+
+    .btn {
+      float: right;
+      margin-top: 1.4em;
+    }
+
+    .b-table {
+      width: 100%;
+      text-align: left;
+      vertical-align: middle;
+      border-top: solid 1px #acadad;
+      border-left: solid 1px #acadad;
+      border-bottom: solid 1px #acadad;
+
+      thead {
+        font-weight: bold;
+      }
+
+      tr {
+        border-bottom: solid 1px #acadad;
+      }
+
+      td,
+      th {
+        border-right: solid 1px #acadad;
+        padding: 0 1.7em;
+        line-height: 3;
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          padding: 0 1em;
+        }
+      }
+
+      .delivered {
+        color: #2db504;
+        font-weight: bold;
+      }
+
+      .processing {
+        color: #f48f22;
+        font-weight: bold;
+      }
+
+      .received {
+        color: #c00005;
+        font-weight: bold;
+      }
+    }
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+      /* Force table to not be like tables anymore */
+      .b-table,
+      .b-table tbody,
+      .b-table td,
+      .b-table th,
+      .b-table thead,
+      .b-table tr {
+        display: block;
+      }
+
+      .b-table,
+      .b-table td,
+      .b-table th,
+      .b-table tr {
+        border: none;
+      }
+
+      .b-table tbody {
+        border: solid 1px #acadad;
+      }
+      /* Hide table headers (but not display: none;, for accessibility) */
+      .b-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      .b-table tr {
+        // border-top: solid 1px #acadad;
+        // border-left: solid 1px #acadad;
+        // border-right: solid 1px #acadad;
+        line-height: 2;
+        vertical-align: middle;
+      }
+
+      .b-table td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #acadad;
+        position: relative;
+        padding-left: 50%;
+        vertical-align: middle;
+      }
+
+      td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+      /*
+      Label the data
+      */
+      .b-table td:nth-of-type(1):before {
+        content: "Payment ID ";
+      }
+
+      .b-table td:nth-of-type(2):before {
+        content: "Income total";
+      }
+
+      .b-table td:nth-of-type(3):before {
+        content: "Description";
+      }
+
+      .b-table td:nth-of-type(4):before {
+        content: " Due Date";
+      }
+
+      .b-table td:nth-of-type(5):before {
+        content: "Status";
+      }
+
+      .b-table td:nth-of-type(6):before {
+        content: "Collect/Store";
+      }
+    }
+
+    .btn {
+      @media only screen and (max-width: 999px) {
+        margin-bottom: 1.25em;
+      }
+    }
+  }
+
+  .b-payment__settings {
+    clear: both;
+    margin-top: 2.5em;
+    border-bottom: 1px solid #acacac;
+    float: left;
+    width: 100%;
+    margin-bottom: 2.5em;
+
+    .form-group-head {
+      margin-bottom: 1.8em;
+
+      label {
+        display: block;
+        margin-bottom: 1em;
+      }
+
+      select {
+        border: 1px solid #acacac;
+        min-width: 16.333%;
+        height: 2em;
+        border-radius: 5px;
+      }
+    }
+
+    .b-pay {
+      float: left;
+      margin-top: 0.4em;
+      width: 100%;
+
+      .hide {
+        display: none;
+      }
+    }
+  }
+  //notofications error
+  .notification {
+    clear: both;
+
+    &.payment {
+      &--no {
+        margin: 0 auto;
+        text-align: center;
+        border: solid 2px #e74c3c;
+        color: #acadad;
+        display: table;
+        width: 50%;
+        vertical-align: middle;
+        padding: 3em 0;
+        @media only screen and (max-width: 509px) {
+          width: 90%;
+          padding: 1em 0;
+        }
+
+        .notification-wrapper {
+          display: table-cell;
+          margin: 0;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        .big {
+          font-size: 1.25em;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .small {
+          font-size: 0.9em;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .b-pay__bank {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 1.6em;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+    text-align: left;
+    padding: 1.2em 0;
+
+    .form-group {
+      display: inline-block;
+      width: 35%;
+      margin-right: 1.7em;
+      margin-bottom: 1em;
+      @media only screen and (max-width:1000px) {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+      }
+
+      label {
+        font-weight: normal;
+        width: 100%;
+      }
+
+      input,
+      select {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        line-height: 2.3;
+        position: relative;
+        @media only screen and (max-width:1000px) {
+          line-height: 2;
+          font-size: 1em;
+        }
+      }
+
+      select {
+        height: 30px;
+      }
+
+      .errorMsg {
+        margin-top: 0;
+      }
+      //form group half
+      &.form-group--half {
+        width: 17%;
+        margin-right: 0.6em;
+        @media only screen and (max-width:1000px) {
+          display: block;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    .b-billing {
+      &--banks {
+        margin-top: 1.2em;
+
+        .form-group {
+          &--double {
+            margin-right: 0;
+            width: 100%;
+
+            span {
+              display: block;
+              width: 100%;
+            }
+
+            input {
+              display: inline-block;
+              margin-right: 2em;
+              width: 35%;
+            }
+          }
+        }
+
+        .btn-bottom {
+          margin-top: 3.5em;
+          @media only screen and (max-width: 509px) {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+
+          .btn.dark {
+            margin-right: 1em;
+            @media only screen and (max-width: 509px) {
+              margin-bottom: 1em;
+              margin-right: 0;
+            }
+          }
+
+          .btn.white {
+            color: #232324;
+
+            &:hover {
+              background-color: #232324;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .b-pay__paypal {
+    h3 {
+      font-size: 20px;
+    }
+    text-align: left;
+    padding: 1.2em 0;
+
+    .form {
+      .form-group {
+        label {
+          display: block;
+          font-weight: normal;
+        }
+
+        input {
+          display: block;
+        }
+      }
+    }
+
+    .btn-bottom {
+      margin-top: 3.5em;
+
+      .btn.dark {
+        margin-right: 1em;
+      }
+
+      .btn.white {
+        color: #232324;
+
+        &:hover {
+          background-color: #232324;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .b-payment__info {
+    clear: both;
+    margin-top: 4em;
+    max-width: 45%;
+    width: 100%;
+    // border: 1px solid #acacac;
+    // padding: 1em 2em;
+    position: relative;
+    @media only screen and (max-width: 999px) {
+      max-width: none;
+    }
+
+    .btn.edit-pencil {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2.6em;
+      height: 2.6em;
+      min-width: initial;
+      margin: 0;
+      line-height: initial;
+      @media only screen and (min-width: 510px) and (max-width: 999px) {
+        top: 1em;
+      }
+      @media only screen and (max-width: 509px) {
+        top: 2.2em;
+      }
+
+      img {
+        display: inline-block;
+        height: 20px;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      padding-bottom: 0.8em;
+      border-bottom: 1px solid #acacac;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    p {
+      line-height: 1.85em;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}

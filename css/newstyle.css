@@ -729,6 +729,365 @@
           font-weight: bold;
           font-size: 1em; }
 
+.b-receipt__details--artist {
+  border-top: solid 1px #d0cfcf;
+  margin: 1.6em 0;
+  padding: 0.4em 0; }
+  .b-receipt__details--artist .col-left {
+    float: left;
+    width: 67%; }
+    @media only screen and (max-width: 999px) {
+      .b-receipt__details--artist .col-left {
+        padding-right: 0;
+        width: 100%;
+        float: none; } }
+    .b-receipt__details--artist .col-left .top {
+      float: left;
+      width: 100%; }
+      @media only screen and (max-width: 999px) {
+        .b-receipt__details--artist .col-left .top {
+          width: 100%;
+          padding-bottom: 2em; } }
+    .b-receipt__details--artist .col-left .bottom {
+      float: left;
+      border-top: solid 1px #d0cfcf;
+      width: 100%;
+      padding-top: 1.2em; }
+    .b-receipt__details--artist .col-left .col__item.details {
+      width: 59%; }
+      @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+        .b-receipt__details--artist .col-left .col__item.details {
+          width: 70%; } }
+      @media only screen and (max-width: 999px) {
+        .b-receipt__details--artist .col-left .col__item.details {
+          width: 100%; } }
+      .b-receipt__details--artist .col-left .col__item.details ul {
+        color: #acadad;
+        font-size: 15px;
+        display: block; }
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          .b-receipt__details--artist .col-left .col__item.details ul {
+            font-size: 13px; } }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.details ul {
+            font-size: 14px; } }
+        .b-receipt__details--artist .col-left .col__item.details ul li {
+          width: 100%;
+          line-height: 2; }
+          @media only screen and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.details ul li {
+              line-height: 1.8;
+              margin-bottom: 1em; } }
+          .b-receipt__details--artist .col-left .col__item.details ul li .title {
+            min-width: 34%;
+            display: inline-block; }
+            @media only screen and (max-width: 999px) {
+              .b-receipt__details--artist .col-left .col__item.details ul li .title {
+                display: block;
+                min-width: initial;
+                width: 100%; } }
+          .b-receipt__details--artist .col-left .col__item.details ul li .info {
+            color: #2d2d2d;
+            display: inline-block; }
+            @media only screen and (max-width: 999px) {
+              .b-receipt__details--artist .col-left .col__item.details ul li .info {
+                display: block;
+                min-width: initial;
+                width: 100%; } }
+    .b-receipt__details--artist .col-left .col__item.product {
+      width: 58%;
+      margin-right: 0; }
+      @media only screen and (max-width: 999px) {
+        .b-receipt__details--artist .col-left .col__item.product {
+          width: 100%; } }
+      .b-receipt__details--artist .col-left .col__item.product .product-title {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        border: none;
+        padding-bottom: 0; }
+      .b-receipt__details--artist .col-left .col__item.product .product-image {
+        border: 1px solid #d0cfcf;
+        display: inline-block;
+        margin: 0 auto 1em;
+        text-align: center;
+        vertical-align: middle;
+        width: 26%;
+        position: relative;
+        height: 0;
+        padding-bottom: 26%; }
+        .b-receipt__details--artist .col-left .col__item.product .product-image div {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%; }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.product .product-image {
+            width: 100%;
+            padding-bottom: 90%; } }
+        @media only screen and (max-width: 509px) {
+          .b-receipt__details--artist .col-left .col__item.product .product-image {
+            width: 100%;
+            padding-bottom: 90%; } }
+        .b-receipt__details--artist .col-left .col__item.product .product-image img {
+          display: inline-block;
+          height: 94px;
+          margin: 0 auto;
+          text-align: center;
+          vertical-align: middle;
+          width: 100%; }
+      .b-receipt__details--artist .col-left .col__item.product .product-info {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        line-height: 1.3; }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.product .product-info {
+            margin-left: 0; } }
+        .b-receipt__details--artist .col-left .col__item.product .product-info p {
+          margin: 0;
+          line-height: 1.3em; }
+        .b-receipt__details--artist .col-left .col__item.product .product-info .title {
+          text-transform: uppercase;
+          font-weight: bold;
+          border: none;
+          padding-bottom: 0;
+          font-size: 1em;
+          margin-bottom: 0; }
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .title {
+              font-size: 1.20em; } }
+          @media only screen and (max-width: 509px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .title {
+              font-size: 1.15em; } }
+        .b-receipt__details--artist .col-left .col__item.product .product-info .author {
+          font-style: italic;
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          font-size: 0.9em; }
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .author {
+              font-size: 1.20em; } }
+          @media only screen and (max-width: 509px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .author {
+              font-size: 1.15em; } }
+        .b-receipt__details--artist .col-left .col__item.product .product-info .product {
+          font-weight: bold;
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          font-size: 0.9em; }
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .product {
+              font-size: 1.20em; } }
+          @media only screen and (max-width: 509px) {
+            .b-receipt__details--artist .col-left .col__item.product .product-info .product {
+              font-size: 1.15em; } }
+    .b-receipt__details--artist .col-left .col__item {
+      float: left; }
+      .b-receipt__details--artist .col-left .col__item.data {
+        width: 30%; }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.data {
+            width: 100%;
+            float: none; } }
+      .b-receipt__details--artist .col-left .col__item.price, .b-receipt__details--artist .col-left .col__item.qty, .b-receipt__details--artist .col-left .col__item.total {
+        width: 5.3em;
+        font-size: 0.9em;
+        font-weight: bold; }
+        @media only screen and (max-width: 1599px) {
+          .b-receipt__details--artist .col-left .col__item.price, .b-receipt__details--artist .col-left .col__item.qty, .b-receipt__details--artist .col-left .col__item.total {
+            width: 32%; } }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.price, .b-receipt__details--artist .col-left .col__item.qty, .b-receipt__details--artist .col-left .col__item.total {
+            font-size: 1.1em; } }
+        @media only screen and (max-width: 509px) {
+          .b-receipt__details--artist .col-left .col__item.price, .b-receipt__details--artist .col-left .col__item.qty, .b-receipt__details--artist .col-left .col__item.total {
+            font-size: 1.15em; } }
+      .b-receipt__details--artist .col-left .col__item.sum {
+        width: 29%;
+        clear: none;
+        border-top: none;
+        margin: 0;
+        padding: 0; }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item.sum {
+            width: 100%; } }
+        .b-receipt__details--artist .col-left .col__item.sum ul li {
+          text-transform: uppercase;
+          font-size: 0.9em;
+          color: #acadad;
+          font-weight: bold;
+          line-height: 1.85;
+          float: left;
+          display: block;
+          width: 100%; }
+          @media only screen and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.sum ul li {
+              width: 100%; } }
+          @media only screen and (min-width: 510px) and (max-width: 999px) {
+            .b-receipt__details--artist .col-left .col__item.sum ul li {
+              font-size: 1.20em; } }
+          @media only screen and (max-width: 509px) {
+            .b-receipt__details--artist .col-left .col__item.sum ul li {
+              font-size: 1.10em; } }
+          .b-receipt__details--artist .col-left .col__item.sum ul li span {
+            display: block;
+            float: right;
+            text-align: right; }
+          .b-receipt__details--artist .col-left .col__item.sum ul li.last {
+            color: #e74c3c;
+            font-size: 1em; }
+            @media only screen and (min-width: 510px) and (max-width: 999px) {
+              .b-receipt__details--artist .col-left .col__item.sum ul li.last {
+                font-size: 1.20em; } }
+            @media only screen and (max-width: 509px) {
+              .b-receipt__details--artist .col-left .col__item.sum ul li.last {
+                font-size: 1.10em; } }
+      .b-receipt__details--artist .col-left .col__item.price {
+        text-align: left; }
+      .b-receipt__details--artist .col-left .col__item.qty {
+        text-align: center; }
+      .b-receipt__details--artist .col-left .col__item.total {
+        text-align: right; }
+      .b-receipt__details--artist .col-left .col__item .type {
+        text-transform: uppercase;
+        margin-bottom: 1.6em;
+        border-bottom: none;
+        padding-bottom: 0; }
+      .b-receipt__details--artist .col-left .col__item .value {
+        color: #2d2d2d;
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+        @media only screen and (min-width: 510px) and (max-width: 999px) {
+          .b-receipt__details--artist .col-left .col__item .value {
+            font-size: 1.1em; } }
+        @media only screen and (max-width: 509px) {
+          .b-receipt__details--artist .col-left .col__item .value {
+            font-size: 1.15em; } }
+  .b-receipt__details--artist .col-right {
+    float: right;
+    width: 23.333%;
+    border: solid 3px #e74c3c;
+    margin-top: 1em;
+    height: 0;
+    min-height: initial;
+    padding-bottom: 30%;
+    position: relative; }
+    @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+      .b-receipt__details--artist .col-right {
+        padding-bottom: 37%;
+        width: 30%; } }
+    @media only screen and (max-width: 999px) {
+      .b-receipt__details--artist .col-right {
+        margin-top: 3em;
+        min-height: initial;
+        padding-bottom: 63%;
+        width: 100%; } }
+    @media only screen and (max-width: 510px) {
+      .b-receipt__details--artist .col-right {
+        margin-top: 3em;
+        min-height: initial;
+        padding-bottom: 117%;
+        width: 100%; } }
+    .b-receipt__details--artist .col-right .tracking-form {
+      height: 100%;
+      padding: 1.5em 1em;
+      position: absolute;
+      width: 100%; }
+      .b-receipt__details--artist .col-right .tracking-form .form-group {
+        margin-bottom: 0.45em; }
+        .b-receipt__details--artist .col-right .tracking-form .form-group label {
+          font-weight: normal; }
+          @media only screen and (max-width: 999px) {
+            .b-receipt__details--artist .col-right .tracking-form .form-group label {
+              width: 100%; } }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-right .tracking-form .form-group input {
+            width: 100%; } }
+      .b-receipt__details--artist .col-right .tracking-form .btns {
+        margin-top: 2.5em;
+        text-align: center; }
+  .b-receipt__details--artist .col-bottom {
+    border-top: 1px solid #d0cfcf;
+    clear: both;
+    float: left;
+    margin-top: 1.8em;
+    width: 100%;
+    padding-top: 3em; }
+    .b-receipt__details--artist .col-bottom a,
+    .b-receipt__details--artist .col-bottom h3 {
+      display: inline-block; }
+    .b-receipt__details--artist .col-bottom h3 {
+      font-size: 1.56em;
+      margin-right: 5em; }
+      @media only screen and (max-width: 999px) {
+        .b-receipt__details--artist .col-bottom h3 {
+          margin: 0; } }
+    .b-receipt__details--artist .col-bottom a {
+      font-weight: bold;
+      font-style: italic; }
+    .b-receipt__details--artist .col-bottom .col-full {
+      margin-top: 1.8em; }
+      .b-receipt__details--artist .col-bottom .col-full .delivered {
+        color: #2db504;
+        font-weight: bold; }
+      .b-receipt__details--artist .col-bottom .col-full .processing {
+        color: #f48f22;
+        font-weight: bold; }
+      .b-receipt__details--artist .col-bottom .col-full .received {
+        color: #c00005;
+        font-weight: bold; }
+      .b-receipt__details--artist .col-bottom .col-full--left {
+        display: inline-block;
+        position: relative;
+        width: 36%; }
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          .b-receipt__details--artist .col-bottom .col-full--left {
+            width: 46%; } }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-bottom .col-full--left {
+            width: 100%;
+            display: block; } }
+        .b-receipt__details--artist .col-bottom .col-full--left:after {
+          border-right: 1px solid #d0cfcf;
+          content: "";
+          display: inline;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0; }
+          @media only screen and (max-width: 999px) {
+            .b-receipt__details--artist .col-bottom .col-full--left:after {
+              border: none; } }
+      .b-receipt__details--artist .col-bottom .col-full--right {
+        display: inline-block;
+        width: 40%;
+        padding-left: 5.6em; }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-bottom .col-full--right {
+            width: 100%;
+            padding: 0; } }
+      .b-receipt__details--artist .col-bottom .col-full ul li {
+        line-height: 1.8; }
+        @media only screen and (max-width: 999px) {
+          .b-receipt__details--artist .col-bottom .col-full ul li {
+            font-size: 1.15em; } }
+        .b-receipt__details--artist .col-bottom .col-full ul li .title {
+          font-weight: bold;
+          font-size: 1em; }
+        @media only screen and (max-width: 510px) {
+          .b-receipt__details--artist .col-bottom .col-full ul li span {
+            width: 100%;
+            display: block; } }
+
 .b-list__checkout li {
   display: inline-block;
   white-space: nowrap;
@@ -2311,6 +2670,379 @@ table.data-myProducts {
     @media only screen and (max-width: 509px) {
       .page__sales-orders--receipt .note {
         font-size: 1.15em; } }
+
+.page__payment {
+  padding-bottom: 1rem; }
+  .page__payment .page-title {
+    text-align: left;
+    font-size: 2.2em;
+    padding-top: 2.1em;
+    margin-bottom: 2em; }
+  .page__payment .content-wrapper.white {
+    margin: 0 auto 40px;
+    padding: 3em;
+    text-align: left; }
+  .page__payment .b-payment__quarters {
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 3.3em; }
+    @media only screen and (max-width: 509px) {
+      .page__payment .b-payment__quarters {
+        padding-bottom: 0; } }
+    .page__payment .b-payment__quarters .form {
+      margin-bottom: 3em; }
+      .page__payment .b-payment__quarters .form .form-group {
+        display: inline-block;
+        margin-right: 1.3em;
+        width: 16.555%;
+        position: relative; }
+        @media only screen and (max-width: 999px) {
+          .page__payment .b-payment__quarters .form .form-group {
+            width: 100%; } }
+        .page__payment .b-payment__quarters .form .form-group select {
+          border: 1px solid #acacac;
+          width: 100%;
+          border-radius: 5px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 0.95em; }
+        .page__payment .b-payment__quarters .form .form-group label {
+          display: block; }
+    .page__payment .b-payment__quarters .b-quarter {
+      float: left;
+      margin-top: 0.4em;
+      margin-bottom: 2.6em;
+      width: 100%; }
+      .page__payment .b-payment__quarters .b-quarter h3 {
+        color: #2d2d2d;
+        font-size: 1.2em;
+        margin-bottom: 0.7em; }
+        @media only screen and (max-width: 509px) {
+          .page__payment .b-payment__quarters .b-quarter h3 {
+            margin-top: 0.7em;
+            margin-bottom: 0.2em; } }
+      .page__payment .b-payment__quarters .b-quarter-wrapper {
+        clear: both; }
+      .page__payment .b-payment__quarters .b-quarter__content {
+        float: left;
+        width: 25%;
+        display: inline-block;
+        vertical-align: middle; }
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          .page__payment .b-payment__quarters .b-quarter__content {
+            width: 24.800%; } }
+        @media only screen and (max-width: 509px) {
+          .page__payment .b-payment__quarters .b-quarter__content {
+            width: 100%;
+            display: block;
+            float: none; } }
+        .page__payment .b-payment__quarters .b-quarter__content-col {
+          display: table;
+          height: 9.3em;
+          vertical-align: middle;
+          width: 100%;
+          border: solid #acacac;
+          border-width: 1px 0 1px 1px; }
+          .page__payment .b-payment__quarters .b-quarter__content-col:nth-last-child(1) {
+            border-right: 1px solid #acacac; }
+          .page__payment .b-payment__quarters .b-quarter__content-col a {
+            display: inline;
+            color: #959595; }
+            .page__payment .b-payment__quarters .b-quarter__content-col a:hover {
+              color: red; }
+          .page__payment .b-payment__quarters .b-quarter__content-col p {
+            display: table-cell;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2em;
+            color: #959595; }
+      .page__payment .b-payment__quarters .b-quarter .hide {
+        display: none; }
+  .page__payment .b-payment__schedule {
+    clear: both;
+    margin-top: 2.5em;
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 3.3em; }
+    .page__payment .b-payment__schedule .b-tabel {
+      margin-bottom: 2.2em; }
+    .page__payment .b-payment__schedule select {
+      width: 100%; }
+    .page__payment .b-payment__schedule .btn {
+      float: right;
+      margin-top: 1.4em; }
+    .page__payment .b-payment__schedule .b-table {
+      width: 100%;
+      text-align: left;
+      vertical-align: middle;
+      border-top: solid 1px #acadad;
+      border-left: solid 1px #acadad;
+      border-bottom: solid 1px #acadad; }
+      .page__payment .b-payment__schedule .b-table thead {
+        font-weight: bold; }
+      .page__payment .b-payment__schedule .b-table tr {
+        border-bottom: solid 1px #acadad; }
+      .page__payment .b-payment__schedule .b-table td,
+      .page__payment .b-payment__schedule .b-table th {
+        border-right: solid 1px #acadad;
+        padding: 0 1.7em;
+        line-height: 3; }
+        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
+          .page__payment .b-payment__schedule .b-table td,
+          .page__payment .b-payment__schedule .b-table th {
+            padding: 0 1em; } }
+      .page__payment .b-payment__schedule .b-table .delivered {
+        color: #2db504;
+        font-weight: bold; }
+      .page__payment .b-payment__schedule .b-table .processing {
+        color: #f48f22;
+        font-weight: bold; }
+      .page__payment .b-payment__schedule .b-table .received {
+        color: #c00005;
+        font-weight: bold; }
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+      .page__payment .b-payment__schedule {
+        /* Force table to not be like tables anymore */
+        /* Hide table headers (but not display: none;, for accessibility) */
+        /*
+        Label the data
+        */ }
+        .page__payment .b-payment__schedule .b-table,
+        .page__payment .b-payment__schedule .b-table tbody,
+        .page__payment .b-payment__schedule .b-table td,
+        .page__payment .b-payment__schedule .b-table th,
+        .page__payment .b-payment__schedule .b-table thead,
+        .page__payment .b-payment__schedule .b-table tr {
+          display: block; }
+        .page__payment .b-payment__schedule .b-table,
+        .page__payment .b-payment__schedule .b-table td,
+        .page__payment .b-payment__schedule .b-table th,
+        .page__payment .b-payment__schedule .b-table tr {
+          border: none; }
+        .page__payment .b-payment__schedule .b-table tbody {
+          border: solid 1px #acadad; }
+        .page__payment .b-payment__schedule .b-table thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px; }
+        .page__payment .b-payment__schedule .b-table tr {
+          line-height: 2;
+          vertical-align: middle; }
+        .page__payment .b-payment__schedule .b-table td {
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #acadad;
+          position: relative;
+          padding-left: 50%;
+          vertical-align: middle; }
+        .page__payment .b-payment__schedule td:before {
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(1):before {
+          content: "Payment ID "; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(2):before {
+          content: "Income total"; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(3):before {
+          content: "Description"; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(4):before {
+          content: " Due Date"; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(5):before {
+          content: "Status"; }
+        .page__payment .b-payment__schedule .b-table td:nth-of-type(6):before {
+          content: "Collect/Store"; } }
+    @media only screen and (max-width: 999px) {
+      .page__payment .b-payment__schedule .btn {
+        margin-bottom: 1.25em; } }
+  .page__payment .b-payment__settings {
+    clear: both;
+    margin-top: 2.5em;
+    border-bottom: 1px solid #acacac;
+    float: left;
+    width: 100%;
+    margin-bottom: 2.5em; }
+    .page__payment .b-payment__settings .form-group-head {
+      margin-bottom: 1.8em; }
+      .page__payment .b-payment__settings .form-group-head label {
+        display: block;
+        margin-bottom: 1em; }
+      .page__payment .b-payment__settings .form-group-head select {
+        border: 1px solid #acacac;
+        min-width: 16.333%;
+        height: 2em;
+        border-radius: 5px; }
+    .page__payment .b-payment__settings .b-pay {
+      float: left;
+      margin-top: 0.4em;
+      width: 100%; }
+      .page__payment .b-payment__settings .b-pay .hide {
+        display: none; }
+  .page__payment .notification {
+    clear: both; }
+    .page__payment .notification.payment--no {
+      margin: 0 auto;
+      text-align: center;
+      border: solid 2px #e74c3c;
+      color: #acadad;
+      display: table;
+      width: 50%;
+      vertical-align: middle;
+      padding: 3em 0; }
+      @media only screen and (max-width: 509px) {
+        .page__payment .notification.payment--no {
+          width: 90%;
+          padding: 1em 0; } }
+      .page__payment .notification.payment--no .notification-wrapper {
+        display: table-cell;
+        margin: 0;
+        vertical-align: middle;
+        width: 100%; }
+      .page__payment .notification.payment--no .big {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin: 0; }
+      .page__payment .notification.payment--no .small {
+        font-size: 0.9em;
+        margin: 0; }
+  .page__payment .b-pay__bank {
+    text-align: left;
+    padding: 1.2em 0; }
+    .page__payment .b-pay__bank h2 {
+      font-size: 25px;
+      margin-bottom: 1.6em; }
+    .page__payment .b-pay__bank h3 {
+      font-size: 20px; }
+    .page__payment .b-pay__bank .form-group {
+      display: inline-block;
+      width: 35%;
+      margin-right: 1.7em;
+      margin-bottom: 1em; }
+      @media only screen and (max-width: 1000px) {
+        .page__payment .b-pay__bank .form-group {
+          display: block;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 1em; } }
+      .page__payment .b-pay__bank .form-group label {
+        font-weight: normal;
+        width: 100%; }
+      .page__payment .b-pay__bank .form-group input,
+      .page__payment .b-pay__bank .form-group select {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        line-height: 2.3;
+        position: relative; }
+        @media only screen and (max-width: 1000px) {
+          .page__payment .b-pay__bank .form-group input,
+          .page__payment .b-pay__bank .form-group select {
+            line-height: 2;
+            font-size: 1em; } }
+      .page__payment .b-pay__bank .form-group select {
+        height: 30px; }
+      .page__payment .b-pay__bank .form-group .errorMsg {
+        margin-top: 0; }
+      .page__payment .b-pay__bank .form-group.form-group--half {
+        width: 17%;
+        margin-right: 0.6em; }
+        @media only screen and (max-width: 1000px) {
+          .page__payment .b-pay__bank .form-group.form-group--half {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 1em; } }
+    .page__payment .b-pay__bank .b-billing--banks {
+      margin-top: 1.2em; }
+      .page__payment .b-pay__bank .b-billing--banks .form-group--double {
+        margin-right: 0;
+        width: 100%; }
+        .page__payment .b-pay__bank .b-billing--banks .form-group--double span {
+          display: block;
+          width: 100%; }
+        .page__payment .b-pay__bank .b-billing--banks .form-group--double input {
+          display: inline-block;
+          margin-right: 2em;
+          width: 35%; }
+      .page__payment .b-pay__bank .b-billing--banks .btn-bottom {
+        margin-top: 3.5em; }
+        @media only screen and (max-width: 509px) {
+          .page__payment .b-pay__bank .b-billing--banks .btn-bottom {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; } }
+        .page__payment .b-pay__bank .b-billing--banks .btn-bottom .btn.dark {
+          margin-right: 1em; }
+          @media only screen and (max-width: 509px) {
+            .page__payment .b-pay__bank .b-billing--banks .btn-bottom .btn.dark {
+              margin-bottom: 1em;
+              margin-right: 0; } }
+        .page__payment .b-pay__bank .b-billing--banks .btn-bottom .btn.white {
+          color: #232324; }
+          .page__payment .b-pay__bank .b-billing--banks .btn-bottom .btn.white:hover {
+            background-color: #232324;
+            color: white; }
+  .page__payment .b-pay__paypal {
+    text-align: left;
+    padding: 1.2em 0; }
+    .page__payment .b-pay__paypal h3 {
+      font-size: 20px; }
+    .page__payment .b-pay__paypal .form .form-group label {
+      display: block;
+      font-weight: normal; }
+    .page__payment .b-pay__paypal .form .form-group input {
+      display: block; }
+    .page__payment .b-pay__paypal .btn-bottom {
+      margin-top: 3.5em; }
+      .page__payment .b-pay__paypal .btn-bottom .btn.dark {
+        margin-right: 1em; }
+      .page__payment .b-pay__paypal .btn-bottom .btn.white {
+        color: #232324; }
+        .page__payment .b-pay__paypal .btn-bottom .btn.white:hover {
+          background-color: #232324;
+          color: white; }
+  .page__payment .b-payment__info {
+    clear: both;
+    margin-top: 4em;
+    max-width: 45%;
+    width: 100%;
+    position: relative; }
+    @media only screen and (max-width: 999px) {
+      .page__payment .b-payment__info {
+        max-width: none; } }
+    .page__payment .b-payment__info .btn.edit-pencil {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2.6em;
+      height: 2.6em;
+      min-width: initial;
+      margin: 0;
+      line-height: initial; }
+      @media only screen and (min-width: 510px) and (max-width: 999px) {
+        .page__payment .b-payment__info .btn.edit-pencil {
+          top: 1em; } }
+      @media only screen and (max-width: 509px) {
+        .page__payment .b-payment__info .btn.edit-pencil {
+          top: 2.2em; } }
+      .page__payment .b-payment__info .btn.edit-pencil img {
+        display: inline-block;
+        height: 20px; }
+    .page__payment .b-payment__info h2 {
+      font-size: 20px;
+      padding-bottom: 0.8em;
+      border-bottom: 1px solid #acacac;
+      margin-bottom: 1em;
+      margin-top: 1em; }
+    .page__payment .b-payment__info p {
+      line-height: 1.85em;
+      margin: 0; }
+    .page__payment .b-payment__info strong {
+      font-weight: bold; }
 
 @media screen and (min-width: 1200px) {
   ::-webkit-scrollbar {
