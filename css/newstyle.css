@@ -2498,6 +2498,13 @@ table.data-myProducts {
   .b-codes .errorMsg {
     margin-top: 0; }
 
+.mc-fields .q-up {
+  display: none;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  position: relative;
+  top: 3px; }
+
 .page__sales-orders {
   padding-bottom: 1rem; }
   .page__sales-orders .page-title {

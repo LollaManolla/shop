@@ -98,3 +98,12 @@
     margin-top: 0;
   }
 }
+//update link next to qty
+
+.mc-fields .q-up {
+  display: none;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  position: relative;
+  top: 3px;
+}
