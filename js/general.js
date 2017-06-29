@@ -69,8 +69,6 @@ $(document)
     showCodes();
     toggleQuarters();
     togglePayment();
-valueUpdate();
-valueUpdateShow();
   });
 
 /******* Run functions when document resize **********/
@@ -2659,17 +2657,6 @@ var quantitySpinnerCartCards = function() {
       });
   }
 };
-
-var valueUpdate = function(ele) {
-  $(ele).parent().next().show();
-};
-var valueUpdateShow = function(ele) {
-  $(".cart-product-quantity").spinner();
-  $(".cart-product-quantity").on("spinstop", function() {
-    $(this).parent().next().show();
-  });
-};
-
 var initArtPrintSize = function() {
   if ($('#print-main')
     .length) {
