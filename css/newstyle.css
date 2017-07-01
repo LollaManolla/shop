@@ -1151,6 +1151,17 @@
         height: 1.15em;
         margin-left: 0.15em; } }
 
+.user-options .drop-content.drop-right.profile.active {
+  background-color: #e74c3c;
+  border: medium none; }
+  .user-options .drop-content.drop-right.profile.active a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em; }
+
+.user-options .dropdown .drop-content:after, .user-options .dropdown .drop-content:before {
+  border-color: transparent transparent #e74c3c; }
+
 .popup-inner {
   width: 100%;
   margin: auto;
@@ -3050,6 +3061,39 @@ table.data-myProducts {
       margin: 0; }
     .page__payment .b-payment__info strong {
       font-weight: bold; }
+
+.profile-form .birthday .form-row .form-item.form-item_third {
+  width: 15%; }
+  @media only screen and (max-width: 510px) {
+    .profile-form .birthday .form-row .form-item.form-item_third {
+      width: 24%; } }
+
+.profile-form .birthday .form-row.birthday-visibility {
+  clear: both;
+  float: left;
+  height: auto;
+  margin-bottom: 1.2em;
+  margin-right: 0;
+  margin-top: -2em;
+  max-width: initial;
+  min-height: initial;
+  white-space: initial;
+  width: auto; }
+  @media only screen and (max-width: 1000px) {
+    .profile-form .birthday .form-row.birthday-visibility {
+      margin-bottom: 0; } }
+  .profile-form .birthday .form-row.birthday-visibility .form-item.form-item_full {
+    float: none;
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    margin-right: 0.8em; }
+    .profile-form .birthday .form-row.birthday-visibility .form-item.form-item_full label {
+      font-size: 0.9em; }
+
+.profile-form .form-item.form-item_full.button-row {
+  margin-bottom: 1em;
+  margin-top: 1em; }
 
 @media screen and (min-width: 1200px) {
   ::-webkit-scrollbar {
