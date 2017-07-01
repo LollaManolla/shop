@@ -1,0 +1,19 @@
+//header
+
+.user-options .drop-content.drop-right.profile.active {
+  background-color: #e74c3c;
+  border: medium none;
+
+  a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+}
+
+.user-options .dropdown .drop-content {
+  &:after,
+  &:before {
+    border-color: transparent transparent #e74c3c;
+  }
+}
