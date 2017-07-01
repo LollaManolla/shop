@@ -107,3 +107,40 @@
   position: relative;
   top: 3px;
 }
+
+.cart-items-block {
+  text-align: left;
+
+  ul {
+    border: none;
+  }
+
+  .total {
+    // background-color: #f4f4f4;
+    border-bottom: 1px solid #d0cfcf;
+    border-top: 1px solid #d0cfcf;
+    margin: 0 0 3em;
+    padding: 0.8em 0;
+
+    label {
+      margin: 0;
+      width: 6em;
+    }
+
+    p {
+      display: inline-block;
+      margin: 0;
+      line-height: normal;
+    }
+
+    .mc-shiptgle {
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .col-second {
+      margin-top: 0.5em;
+    }
+  }
+}

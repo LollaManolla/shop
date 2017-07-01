@@ -2516,6 +2516,29 @@ table.data-myProducts {
   position: relative;
   top: 3px; }
 
+.cart-items-block {
+  text-align: left; }
+  .cart-items-block ul {
+    border: none; }
+  .cart-items-block .total {
+    border-bottom: 1px solid #d0cfcf;
+    border-top: 1px solid #d0cfcf;
+    margin: 0 0 3em;
+    padding: 0.8em 0; }
+    .cart-items-block .total label {
+      margin: 0;
+      width: 6em; }
+    .cart-items-block .total p {
+      display: inline-block;
+      margin: 0;
+      line-height: normal; }
+    .cart-items-block .total .mc-shiptgle {
+      float: none;
+      margin: 0;
+      padding: 0; }
+    .cart-items-block .total .col-second {
+      margin-top: 0.5em; }
+
 .page__sales-orders {
   padding-bottom: 1rem; }
   .page__sales-orders .page-title {
