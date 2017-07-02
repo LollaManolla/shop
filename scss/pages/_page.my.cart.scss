@@ -144,3 +144,71 @@
     }
   }
 }
+//pop up for shipping method on my cart page.
+
+.c-modal {
+  // background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &-inner {
+    max-width: 90%;
+    min-width: 40%;
+    width: 40%;
+    border: 1px solid #d0cfcf;
+    padding: 20px 20px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 9px 59px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 9px 59px 11px rgba(0,0,0,0.75);
+    box-shadow: 0 9px 59px 11px rgba(0,0,0,0.75);
+    text-align: left;
+    height: auto;
+    // margin: 0 auto;
+    position: relative;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (min-width: 1001px) and (max-width: 1300px) {
+      width: 57%;
+    }
+    @media only screen and (min-width: 901px) and (max-width: 1000px) {
+      width: 53%;
+    }
+    @media only screen and (min-width: 801px) and (max-width: 900px) {
+      width: 63%;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 800px) {
+      width: 70%;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 700px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+    }
+  }
+
+  &.shipping-method {
+    label {
+      font-weight: normal;
+      font-size: 0.9em;
+      display: block;
+      line-height: 1.8;
+    }
+
+    .xIcon {
+      float: none;
+      margin: 0;
+      position: absolute;
+      right: 2em;
+    }
+  }
+}

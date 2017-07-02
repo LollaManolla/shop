@@ -2539,6 +2539,62 @@ table.data-myProducts {
     .cart-items-block .total .col-second {
       margin-top: 0.5em; }
 
+.c-modal {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  .c-modal-inner {
+    max-width: 90%;
+    min-width: 40%;
+    width: 40%;
+    border: 1px solid #d0cfcf;
+    padding: 20px 20px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 9px 59px 11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 9px 59px 11px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 9px 59px 11px rgba(0, 0, 0, 0.75);
+    text-align: left;
+    height: auto;
+    position: relative;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (min-width: 1001px) and (max-width: 1300px) {
+      .c-modal-inner {
+        width: 57%; } }
+    @media only screen and (min-width: 901px) and (max-width: 1000px) {
+      .c-modal-inner {
+        width: 53%; } }
+    @media only screen and (min-width: 801px) and (max-width: 900px) {
+      .c-modal-inner {
+        width: 63%; } }
+    @media only screen and (min-width: 701px) and (max-width: 800px) {
+      .c-modal-inner {
+        width: 70%; } }
+    @media only screen and (min-width: 601px) and (max-width: 700px) {
+      .c-modal-inner {
+        width: 80%; } }
+    @media only screen and (max-width: 600px) {
+      .c-modal-inner {
+        width: 90%; } }
+  .c-modal.shipping-method label {
+    font-weight: normal;
+    font-size: 0.9em;
+    display: block;
+    line-height: 1.8; }
+  .c-modal.shipping-method .xIcon {
+    float: none;
+    margin: 0;
+    position: absolute;
+    right: 2em; }
+
 .page__sales-orders {
   padding-bottom: 1rem; }
   .page__sales-orders .page-title {

@@ -239,16 +239,16 @@
     </div>
   </section>
   <!-- start user cover photo -->
-  
+
   <!-- cover picture -->
   <div class="profile-cover-save dashboard">
     <div class="profile-cover_inner-save" id="cover-image-preview">
       <img id="cover-img-save" src="images/slider-1.jpg">
     </div>
   </div>
-  
+
   <!-- end user cover photo -->
-  
+
   <section class="bg-lightest view-events-header">
     <div class="content-wrapper large-padding-y">
       <h2>
@@ -459,14 +459,70 @@
               <div class="total">
                 <div class="col-first">
                   <label class="form-label"> SHIPPING </label>
+<p class="choosed-method" style="display:none"></p>
                   <button class="mc-shiptgle bfr-tgle" id="shipbutt_1" onclick="showShipOptions(this)">Choose shipping method</button>
                 </div>
                 <div class="col-second">
                   <label class="form-label"> SUBTOTAL </label>
                   <p><b>&pound;56</b></p>
                 </div>
+                    <div class="errorMsg" style="margin-top:0;">
+                      <div class="errorIcon"></div>
+                      Choose your shipping method
+                    </div>
+
+
               </div>
             </div>
+<!--popup div-->
+
+<div class="c-modal shipping-method" style="display:none">
+<div class="c-modal-inner">
+
+
+          <div class="xIcon" onclick="hideShipbox(this)"></div>
+          <h3>Choose shipping method</h3>
+
+<label>
+<input name="shipping-option" value="&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)" type="radio">
+&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)
+</label>
+
+<label>
+<input name="shipping-option" value="&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)" type="radio">
+&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)
+</label>
+
+
+<label>
+<input name="shipping-option" type="radio" value="&pound;34.00 - Flat Rate (10-20 business days after fulfillment)">
+&pound;34.00 - Flat Rate (10-20 business days after fulfillment)
+</label>
+
+<label>
+<input name="shipping-option" type="radio" value="&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)">
+&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)
+</label>
+
+<label>
+<input name="shipping-option" type="radio" value="&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)">
+&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)
+</label>
+
+<label>
+<input name="shipping-option" type="radio" value="&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)">
+&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)
+</label>
+
+<label>
+<input name="shipping-option" type="radio" value="&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)">
+&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)
+</label>
+
+</div>
+</div>
+
+<!--popup div end-->
             <!-- art print cart item -->
             <div class="cart-items-block">
               <ul>
@@ -596,7 +652,7 @@
                 </div>
               </div>
             </div>
-            
+
             <!--gift card cart item-->
             <div class="cart-items-block">
               <ul>
@@ -690,7 +746,7 @@
                     <button class="btn dark hideall">Cancel</button>
                     <div class="errorMsg">
                       <div class="errorIcon"></div>
-                      You already add your discount code 
+                      You already add your discount code
                       <!--or "Wrong code"-->
                       <!--there can be 2 errors: code already added, or wrong code added-->
                     </div>
@@ -704,7 +760,7 @@
                     <button class="btn dark hideall">Cancel</button>
                     <div class="errorMsg">
                       <div class="errorIcon"></div>
-                      You already add your gift card code 
+                      You already add your gift card code
                       <!--or "Wrong code"-->
                       <!--there can be 2 errors: code already added, or wrong code added-->
                     </div>
@@ -1000,133 +1056,9 @@
           <!-- end content wrapper -->
         </div>
       </section>
-      <div class="popup-wrapper clear-shipmtd-wrapper" style="display: none;">
-        <div class="shipmtd-box" id="shipbox_1">
-          <div class="xIcon" onclick="hideShipbox(this)" id="closeship_1"></div>
-          <h3 style="padding-top: 0;">
-            <b> Choose shipping method </b>
-          </h3>
-          <input type="radio" name="ship1-op" value="&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)" id="ship1-op1" checked>
-          <label for="ship1-op1">&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)" id="ship1-op2">
-          <label for="ship1-op2">&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;34.00 - Flat Rate (10-20 business days after fulfillment)" id="ship1-op3">
-          <label for="ship1-op3">&pound;34.00 - Flat Rate (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)" id="ship1-op4">
-          <label for="ship1-op4">&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)" id="ship1-op5">
-          <label for="ship1-op5">&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)" id="ship1-op6">
-          <label for="ship1-op6">&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship1-op" value="&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)" id="ship1-op7">
-          <label for="ship1-op7">&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)</label>
-          <div style="overflow: hidden; display: block; width: 100%;">
-            <button class="btn clearBtn" onclick="selectShipOption(this)" id="slcship_1">Select</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup-wrapper clear-shipmtd-wrapper" style="display: none;" >
-        <div class="shipmtd-box" id="shipbox_2">
-          <div class="xIcon" onclick="hideShipbox(this)" id="closeship_2"></div>
-          <h3 style="padding-top: 0;">
-            <b> Choose shipping method </b>
-          </h3>
-          <input type="radio" name="ship2-op" value="&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)" id="ship2-op1" checked>
-          <label for="ship2-op1">&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)" id="ship2-op2">
-          <label for="ship2-op2">&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;34.00 - Flat Rate (10-20 business days after fulfillment)" id="ship2-op3">
-          <label for="ship2-op3">&pound;34.00 - Flat Rate (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)" id="ship2-op4">
-          <label for="ship2-op4">&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)" id="ship2-op5">
-          <label for="ship2-op5">&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)" id="ship2-op6">
-          <label for="ship2-op6">&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship2-op" value="&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)" id="ship2-op7">
-          <label for="ship2-op7">&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)</label>
-          <div style="overflow: hidden; display: block; width: 100%;">
-            <button class="btn clearBtn" onclick="selectShipOption(this)" id="slcship_2">Select</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup-wrapper clear-shipmtd-wrapper" style="display: none;" >
-        <div class="shipmtd-box" id="shipbox_3">
-          <div class="xIcon" onclick="hideShipbox(this)" id="closeship_3"></div>
-          <h3 style="padding-top: 0;">
-            <b> Choose shipping method </b>
-          </h3>
-          <input type="radio" name="ship3-op" value="&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)" id="ship3-op1" checked>
-          <label for="ship3-op1">&pound;19.04 - Int'l Economy without tracking (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)" id="ship3-op2">
-          <label for="ship3-op2">&pound;24.17 - Int'l Economy with tracking (7-16 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;34.00 - Flat Rate (10-20 business days after fulfillment)" id="ship3-op3">
-          <label for="ship3-op3">&pound;34.00 - Flat Rate (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)" id="ship3-op4">
-          <label for="ship3-op4">&pound;36.06 - USPS First Class Package Int'l (10-20 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)" id="ship3-op5">
-          <label for="ship3-op5">&pound;45.79 - Int'l Priority with tracking (3-5 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)" id="ship3-op6">
-          <label for="ship3-op6">&pound;52.40 - USPS Priority Mail Int'l (6-10 business days after fulfillment)</label>
-          <br/>
-          <input type="radio" name="ship3-op" value="&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)" id="ship3-op7">
-          <label for="ship3-op7">&pound;119.65 - FedEx International Economy (4-6 business days after fulfillment)</label>
-          <div style="overflow: hidden; display: block; width: 100%;">
-            <button class="btn clearBtn" onclick="selectShipOption(this)" id="slcship_3">Select</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup-wrapper clear-shipmtd-wrapper" style="display: none;" >
-        <div class="shipmtd-box card-shipmtd-box" id="shipbox_4">
-          <div class="xIcon" onclick="hideShipbox(this)" id="closeship_4"></div>
-          <h3 style="padding-top: 0;">
-            <b> Choose shipping method </b>
-          </h3>
-          <input type="radio" name="ship4-op" value="&pound;19.04 - 14 business days after fulfillment" id="ship4-op1" checked>
-          <label for="ship4-op1">&pound;19.04 - 14 days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;24.17 - 7 business days after fulfillment" id="ship4-op2">
-          <label for="ship4-op2">&pound;24.17 - 7 business days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;34.00 - 10 business days after fulfillment" id="ship4-op3">
-          <label for="ship4-op3">&pound;34.00 - 10 business days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;36.06 - 12 business days after fulfillment" id="ship4-op4">
-          <label for="ship4-op4">&pound;36.06 - 12 business days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;45.79 - 4 business days after fulfillment" id="ship4-op5">
-          <label for="ship4-op5">&pound;45.79 - 4 business days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;52.40 - 8 business days after fulfillment" id="ship4-op6">
-          <label for="ship4-op6">&pound;52.40 - 8 business days after fulfillment</label>
-          <br/>
-          <input type="radio" name="ship4-op" value="&pound;119.65 - 4 business days after fulfillment" id="ship4-op7">
-          <label for="ship4-op7">&pound;119.65 - 4 business days after fulfillment</label>
-          <div style="overflow: hidden; display: block; width: 100%;">
-            <button class="btn clearBtn" onclick="selectShipOption(this)" id="slcship_4">Select</button>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-  
+
   <!-- end  -->
   <!-- end artist profile main section -->
   <!-- start footer -->
