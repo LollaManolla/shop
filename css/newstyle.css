@@ -2595,6 +2595,10 @@ table.data-myProducts {
     position: absolute;
     right: 2em; }
 
+.my-cart .bbkfq {
+  margin-left: 0;
+  text-align: left; }
+
 .page__sales-orders {
   padding-bottom: 1rem; }
   .page__sales-orders .page-title {
