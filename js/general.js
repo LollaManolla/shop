@@ -5,6 +5,11 @@ $(window)
     masonryCatOgArtWorks();
     printDimensions();
     productDimensions();
+
+    $.when(productDimensions()).done(function() {
+      $('.ldr-main').fadeOut(1000);
+    });
+
   });
 
 /******* Run functions when document is ready ********/
@@ -2282,9 +2287,10 @@ var productDimensions = function() {
             });
         }
         if ($(this)
-          .attr("id") !== "print-main-small") {
+        .attr("id") !== "print-main-small") {
           $(this)
-            .css("display", "inline-block");
+          .css("display", "inline-block");
+          $('.ldr-main').fadeOut(1000);
         }
       });
   }
