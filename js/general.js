@@ -2271,19 +2271,19 @@ var productDimensions = function() {
           $(this)
             .css({
               "width": "auto",
-              "height": "65%"
+              "height": "95%"
             });
         } else if (this.width > this.height) {
           $(this)
             .css({
-              "width": "65%",
+              "width": "95%",
               "height": "auto"
             });
         } else if (this.width === this.height) {
           $(this)
             .css({
               "width": "auto",
-              "height": "65%"
+              "height": "95%"
             });
         }
         if ($(this)
