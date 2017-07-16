@@ -281,7 +281,7 @@
                 </li>
                 <li>
                   <img class="userprofile-info-icon" src="images/icons/artist.png">
-                  <span>Author</span>
+                  <span>Artist</span>
                 </li>
                 <li>
                   <img class="userprofile-info-icon" src="images/icons/country.png">
@@ -309,68 +309,26 @@
       <!-- author side menu -->
       <div class="artist_menu">
         <ul>
-          <li triggerLink="profileLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/profile.png">
-                </a>
-            <div class="userprofile-menu-popup myProfileLink" popLink="profileLink">
-              <a href="javascript:;" class="userprofile-menu-link"> My profile
-                  </a>
-            </div>
+          <li triggerLink="profileLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/profile.png"></a>
+            <div class="userprofile-menu-popup myProfileLink" popLink="profileLink"> <a href="javascript:;" class="userprofile-menu-link">My profile</a> </div>
           </li>
-          <li triggerLink="addPLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/add_products.png">
-                </a>
-            <div class="userprofile-menu-popup addProductLink" popLink="addPLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Add book
-                  </a>
-            </div>
+          <li triggerLink="addPLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/add_products.png"></a>
+            <div class="userprofile-menu-popup addProductLink" popLink="addPLink"> <a href="javascript:;" class="userprofile-menu-link">Add book</a> </div>
           </li>
-          <li triggerLink="suppLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/supporters.png">
-                </a>
-            <div class="userprofile-menu-popup supportersLink" popLink="suppLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Supporters
-                  </a>
-            </div>
+          <li triggerLink="suppLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/supporters.png"></a>
+            <div class="userprofile-menu-popup supportersLink" popLink="suppLink"> <a href="javascript:;" class="userprofile-menu-link">Supporters</a> </div>
           </li>
-          <li triggerLink="eventLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/events.png">
-                </a>
-            <div class="userprofile-menu-popup eventsLink" popLink="eventLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Events
-                  </a>
-            </div>
+          <li triggerLink="salesordersLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/Sales-Orders.png"></a>
+            <div class="userprofile-menu-popup soLink" popLink="salesordersLink"> <a href="javascript:;" class="userprofile-menu-link">Sales / Orders</a> </div>
           </li>
-          <li triggerLink="salesordersLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/Sales-Orders.png">
-                </a>
-            <div class="userprofile-menu-popup soLink" popLink="salesordersLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Sales / Orders
-                  </a>
-            </div>
+          <li triggerLink="payLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/payments.png"></a>
+            <div class="userprofile-menu-popup paymentLink" popLink="payLink"> <a href="javascript:;" class="userprofile-menu-link">Payments</a> </div>
           </li>
-          <li triggerLink="payLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/payments.png">
-                </a>
-            <div class="userprofile-menu-popup paymentLink" popLink="payLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Payments
-                  </a>
-            </div>
+          <li triggerLink="eventLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/events.png"></a>
+            <div class="userprofile-menu-popup eventsLink" popLink="eventLink"> <a href="javascript:;" class="userprofile-menu-link">Events</a> </div>
           </li>
-          <li triggerLink="referLink">
-            <a href="javascript:;">
-                  <img class="userprofile-menu-icon" src="images/icons/referrals.png">
-                </a>
-            <div class="userprofile-menu-popup refersLink" popLink="referLink">
-              <a href="javascript:;" class="userprofile-menu-link"> Referrals
-                  </a>
-            </div>
+          <li triggerLink="referLink"> <a href="javascript:;"><img class="userprofile-menu-icon" src="images/icons/referrals.png"></a>
+            <div class="userprofile-menu-popup refersLink" popLink="referLink"> <a href="javascript:;" class="userprofile-menu-link">Referrals</a> </div>
           </li>
         </ul>
       </div>
@@ -553,12 +511,31 @@
 
             </table>
             <div class="btn dark"><button>Save</button></div>
+
             <div class="notification payment--no">
               <div class="notification-wrapper">
                 <p class="big">We can’t pay you yet. </p>
                 <p class="small">You haven’t reached your minimum balance.Read more: <a href="javascript:void(0)">FAQ</a></p>
               </div>
             </div>
+
+
+            <!--other text options-->
+            <!-- <div class="notification payment--no">
+              <div class="notification-wrapper">
+                <p class="big">We can’t pay you yet. </p>
+                <p class="small">You haven’t made any sales this quarter.</p>
+              </div>
+            </div> -->
+
+            <!-- <div class="notification payment--no">
+              <div class="notification-wrapper">
+                <p class="big">We can’t pay you yet. </p>
+                <p class="small">Update your payout settings</p>
+              </div>
+            </div> -->
+            <!--end other text options-->
+
 
 
           </div>
@@ -660,12 +637,21 @@
                     </div>
                     <div class="b-billing b-billing--banks">
                       <h3>Bank details</h3>
-                      <div class="form-group form-group--double  ">
+
+                      <div class="form-group ">
+                        <span>Account Holder Name*</span>
                         <label>
-                          <span>Account Holder Name*</span>
-                          <input class="form-input" type="text" placeholder="First name">
-                          <input class="form-input" type="text" placeholder="Last name">
-                        </label>
+                    <input id="displayAccountFirstName" class="form-input" name="displaAccountFirstName" type="text" placeholder="First Name">
+                  </label>
+                        <div class="errorMsg">
+                          <div class="errorIcon"></div>
+                          Please fill this field appropriately.
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <label>Last Name*
+                    <input id="displayAccountLastName" class="form-input" name="displayAccountLastName" type="text" placeholder="Last Name">
+                  </label>
                         <div class="errorMsg">
                           <div class="errorIcon"></div>
                           Please fill this field appropriately.
@@ -674,7 +660,7 @@
                       <div class="form-group ">
                         <label>
                           Bank Name*
-                          <input class="form-input" type="text" placeholder="First name">
+                          <input class="form-input" type="text">
                         </label>
                         <div class="errorMsg">
                           <div class="errorIcon"></div>
@@ -684,24 +670,37 @@
                       <div class="form-group ">
                         <label>
                           Bank Address*
-                          <input class="form-input" type="text" placeholder="Last name">
+                          <input class="form-input" type="text">
                         </label>
                         <div class="errorMsg">
                           <div class="errorIcon"></div>
                           Please fill this field appropriately.
                         </div>
                       </div>
-                      <div class="form-group form-group--double  ">
+
+                      <div class="form-group ">
+                        <span>  Account Number IBAN*</span>
                         <label>
-                          <span>  Account Number*</span>
-                          <input class="form-input" type="text" placeholder="IBAN">
-                          <input class="form-input" type="text" placeholder="SWIFT">
+                        <input class="form-input" type="text" placeholder="IBAN">
                         </label>
                         <div class="errorMsg">
                           <div class="errorIcon"></div>
                           Please fill this field appropriately.
                         </div>
                       </div>
+
+                      <div class="form-group ">
+                        <span>  Account Number SWIFT*</span>
+                        <label>
+                        <input class="form-input" type="text" placeholder="SWIFT">
+                        </label>
+                        <div class="errorMsg">
+                          <div class="errorIcon"></div>
+                          Please fill this field appropriately.
+                        </div>
+                      </div>
+
+
                       <div class="form-group ">
                         <label>Country*</label>
                         <select id="profileCountry" name="profileCountry" class="form-input">

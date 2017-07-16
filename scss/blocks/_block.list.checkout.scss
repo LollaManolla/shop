@@ -1,18 +1,19 @@
 //block list checkout
 
 .b-list__checkout {
+  border-bottom: solid 1px #d0cfcf;
+  padding-bottom: 2em;
   li {
     display: inline-block;
     white-space: nowrap;
     font-weight: bold;
-    @media only screen and(min-width: 510px) and (max-width: 999px) {
+    @media only screen and (min-width: 510px) and (max-width: 999px) {
       margin-right: 0.5em;
     }
     @media only screen and (max-width: 509px) {
       display: block;
       line-height: 1.8;
     }
-
     &:before {
       background: url("../images/check1.png") center center no-repeat;
       content: "";
@@ -21,7 +22,7 @@
       vertical-align: middle;
       width: 1.5em;
       margin-right: 0.5em;
-      @media only screen and(min-width: 510px) and (max-width: 999px) {
+      @media only screen and (min-width: 510px) and (max-width: 999px) {
         background-size: cover;
         height: 1.15em;
         width: 1.15em;
@@ -32,7 +33,6 @@
         height: 1.01em;
       }
     }
-
     &:after {
       background-color: #e74c3c;
       content: "";
@@ -48,7 +48,6 @@
         margin: 0;
       }
     }
-
     &.last {
       &:after {
         background-color: transparent;
@@ -56,7 +55,6 @@
         margin-right: 0;
       }
     }
-
     &.unchecked {
       &:before {
         background: none;
@@ -82,6 +80,7 @@
         //   width: 1.01em;
         //   height: 1.01em;
         // }
+
       }
     }
   }

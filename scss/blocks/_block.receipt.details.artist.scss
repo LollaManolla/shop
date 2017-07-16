@@ -1,471 +1,357 @@
-//block receipt detials on sales and orders page
-
-.b-receipt__details--artist {
-  border-top: solid 1px #d0cfcf;
-  margin: 1.6em 0;
-  padding: 0.4em 0;
-
-  .col-left {
+.b-receipt {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .b-sales-cart {
+    border-bottom: solid 1px #d0cfcf;
     float: left;
-    width: 67%;
-    @media only screen and (max-width: 999px) {
-      padding-right: 0;
-      width: 100%;
+    width: 100%;
+    @media only screen and (max-width: 509px) {
       float: none;
     }
-
-    .top {
+    &:after, &:before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .col-left {
       float: left;
-      width: 100%;
+      width: 65%;
+      margin-right: 3.6rem;
       @media only screen and (max-width: 999px) {
         width: 100%;
-        padding-bottom: 2em;
-      }
-    }
-
-    .bottom {
-      float: left;
-      border-top: solid 1px #d0cfcf;
-      width: 100%;
-      padding-top: 1.2em;
-    }
-
-    .col__item {
-      &.details {
-        width: 59%;
-        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
-          width: 70%;
-        }
-        @media only screen and (max-width: 999px) {
-          width: 100%;
-        }
-
-        ul {
-          color: #acadad;
-          font-size: 15px;
-          display: block;
-          @media only screen and (min-width: 1000px) and (max-width: 1599px) {
-            font-size: 13px;
-          }
-          @media only screen and (max-width: 999px) {
-            font-size: 14px;
-          }
-
-          li {
-            width: 100%;
-            line-height: 2;
-            @media only screen and (max-width: 999px) {
-              line-height: 1.8;
-              margin-bottom: 1em;
-            }
-
-            .title {
-              min-width: 34%;
-              display: inline-block;
-              @media only screen and (max-width: 999px) {
-                display: block;
-                min-width: initial;
-                width: 100%;
-              }
-            }
-
-            .info {
-              color: #2d2d2d;
-              display: inline-block;
-              @media only screen and (max-width: 999px) {
-                display: block;
-                min-width: initial;
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-
-      &.product {
-        width: 58%;
         margin-right: 0;
-        @media only screen and (max-width: 999px) {
-          width: 100%;
-        }
-
-        .product-title {
-          text-transform: uppercase;
-          font-size: 0.9em;
-          font-weight: bold;
-          margin-bottom: 1em;
-          border: none;
-          padding-bottom: 0;
-        }
-
-        .product-image {
-          border: 1px solid #d0cfcf;
-          display: inline-block;
-          margin: 0 auto 1em;
-          text-align: center;
-          vertical-align: middle;
-          width: 26%;
-          position: relative;
-          height: 0;
-          padding-bottom: 26%;
-
-          div {
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            // background-size: 77%;
-            // background-repeat: no-repeat;
-            // background-position: center center;
-          }
-          @media only screen and (min-width: 510px) and (max-width: 999px) {
-            width: 100%;
-            padding-bottom: 90%;
-          }
-          @media only screen and (max-width: 509px) {
-            width: 100%;
-            padding-bottom: 90%;
-          }
-
-          img {
-            display: inline-block;
-            height: 94px;
-            margin: 0 auto;
-            text-align: center;
-            vertical-align: middle;
-            width: 100%;
-          }
-        }
-
-        .product-info {
-          display: inline-block;
-          vertical-align: top;
-          margin-left: 0.8em;
-          margin-top: 0.5em;
-          line-height: 1.3;
-          @media only screen and (max-width: 999px) {
-            margin-left: 0;
-          }
-
-          p {
-            margin: 0;
-            line-height: 1.3em;
-          }
-
-          .title {
-            text-transform: uppercase;
-            font-weight: bold;
-            border: none;
-            padding-bottom: 0;
-            font-size: 1em;
-            margin-bottom: 0;
-            @media only screen and (min-width: 510px) and (max-width: 999px) {
-              font-size: 1.20em;
-            }
-            @media only screen and (max-width: 509px) {
-              font-size: 1.15em;
-            }
-          }
-
-          .author {
-            font-style: italic;
-            border: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-            font-size: 0.9em;
-            @media only screen and (min-width: 510px) and (max-width: 999px) {
-              font-size: 1.20em;
-            }
-            @media only screen and (max-width: 509px) {
-              font-size: 1.15em;
-            }
-          }
-
-          .product {
-            font-weight: bold;
-            border: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-            font-size: 0.9em;
-            @media only screen and (min-width: 510px) and (max-width: 999px) {
-              font-size: 1.20em;
-            }
-            @media only screen and (max-width: 509px) {
-              font-size: 1.15em;
-            }
-          }
-        }
+        float: none;
       }
-    }
-
-    .col__item {
-      float: left;
-
-      &.data {
-        width: 30%;
-        @media only screen and (max-width: 999px) {
-          width: 100%;
+      &-bottom,
+      &-top {
+        float: left;
+        width: 100%;
+        @media only screen and (max-width: 509px) {
           float: none;
         }
       }
-
-      &.price,
-      &.qty,
-      &.total {
-        width: 5.3em;
-        font-size: 0.9em;
-        font-weight: bold;
-        @media only screen and (max-width: 1599px) {
-          width: 32%;
-        }
-        @media only screen and (min-width: 510px) and (max-width: 999px) {
-          font-size: 1.1em;
-        }
-        @media only screen and (max-width: 509px) {
-          font-size: 1.15em;
-        }
-      }
-
-      &.sum {
-        width: 29%;
-        clear: none;
-        border-top: none;
-        margin: 0;
-        padding: 0;
-        @media only screen and (max-width: 999px) {
-          width: 100%;
-        }
-
-        ul li {
-          text-transform: uppercase;
-          font-size: 0.9em;
-          color: #acadad;
-          font-weight: bold;
-          line-height: 1.85;
+      &-top {
+        padding-bottom: 0.2rem;
+        padding-top: 1.5rem;
+        .col__item {
           float: left;
-          display: block;
-          width: 100%;
-          @media only screen and (max-width: 999px) {
-            width: 100%;
-          }
+          width: 70%;
           @media only screen and (min-width: 510px) and (max-width: 999px) {
-            font-size: 1.20em;
+            width: 60%;
           }
           @media only screen and (max-width: 509px) {
-            font-size: 1.10em;
+            width: 100%;
+            float: none;
           }
-
-          span {
-            display: block;
-            float: right;
-            text-align: right;
+          &-title {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+            border: none;
+            padding-bottom: 0;
+            color: #acadad;
           }
-
-          &.last {
-            color: #e74c3c;
-            font-size: 1em;
-            @media only screen and (min-width: 510px) and (max-width: 999px) {
-              font-size: 1.20em;
+          &-image {
+            border: solid 1px #acacac;
+            display: inline-block;
+            height: 0;
+            padding-bottom: 33.333%;
+            width: 33.333%;
+            margin: 0 auto 2em auto;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            @media only screen and (max-width: 509px) {
+              width: 40%;
+            }
+            span {
+              display: block;
+              height: 183px;
+              margin: 0 auto;
+              position: relative;
+              text-align: center;
+              vertical-align: middle;
+              padding: 1rem;
+              @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+                height: 127px;
+              }
+              @media only screen and (min-width: 510px) and (max-width: 999px) {
+                height: 92px;
+                padding: 0.5em;
+              }
+              @media only screen and (max-width: 509px) {
+                height: 82px;
+                padding: 0.5em;
+              }
+              div {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          &-info {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 0.8rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: normal;
+            > p {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+            .title {
+              text-transform: uppercase;
+              font-weight: bold;
+              border: none;
+              padding-bottom: 0;
+              font-size: 16px;
+              color: #2d2d2d;
+              @media only screen and (max-width: 999px) {
+                font-size: 15px;
+              }
+            }
+            .author {
+              font-style: italic;
+              border: none;
+              padding-bottom: 0;
+              font-size: 14px;
+              color: #2d2d2d;
+              @media only screen and (max-width: 999px) {
+                font-size: 13px;
+              }
+            }
+            .product {
+              font-weight: bold;
+              border: none;
+              padding-bottom: 0;
+              font-size: 16px;
+              color: #2d2d2d;
+              @media only screen and (max-width: 999px) {
+                font-size: 15px;
+              }
+            }
+          }
+          &.price,
+          &.qty,
+          &.total {
+            width: 10%;
+            font-size: 14px;
+            font-weight: bold;
+            @media only screen and (max-width: 999px) {
+              font-size: 13px;
             }
             @media only screen and (max-width: 509px) {
-              font-size: 1.10em;
+              width: 32%;
+              display: inline-block;
             }
           }
-        }
-      }
-
-      &.price {
-        text-align: left;
-      }
-
-      &.qty {
-        text-align: center;
-      }
-
-      &.total {
-        text-align: right;
-      }
-
-      .type {
-        text-transform: uppercase;
-        margin-bottom: 1.6em;
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-
-      .value {
-        color: #2d2d2d;
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        @media only screen and (min-width: 510px) and (max-width: 999px) {
-          font-size: 1.1em;
-        }
-        @media only screen and (max-width: 509px) {
-          font-size: 1.15em;
+          &.price {
+            text-align: left;
+          }
+          &.qty {
+            text-align: center;
+          }
+          &.total {
+            text-align: right;
+          }
+          .type {
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+          .value {
+            color: #2d2d2d;
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
         }
       }
     }
-  }
-
-  .col-right {
-    float: right;
-    width: 23.333%;
-    border: solid 3px #e74c3c;
-    margin-top: 1em;
-    height: 0;
-    min-height: initial;
-    padding-bottom: 30%;
-    position: relative;
-    @media only screen and (min-width: 1000px) and (max-width: 1599px) {
-      padding-bottom: 37%;
-      width: 30%;
+    .col-right {
+      float: right;
+      width: 25%;
+      position: relative;
+      top: 2em;
+      @media only screen and (max-width: 999px) {
+        float: none;
+        clear: both;
+        position: initial;
+        top: auto;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        width: 100%;
+      }
     }
-    @media only screen and (max-width: 999px) {
-      margin-top: 3em;
-      min-height: initial;
-      padding-bottom: 63%;
-      width: 100%;
-    }
-    @media only screen and (max-width: 510px) {
-      margin-top: 3em;
-      min-height: initial;
-      padding-bottom: 117%;
-      width: 100%;
-    }
-
     .tracking-form {
-      height: 100%;
-      padding: 1.5em 1em;
-      position: absolute;
-      width: 100%;
-
+      border: solid 2px #e74c3c;
+      padding: 1rem;
       .form-group {
-        margin-bottom: 0.45em;
-
-        label {
-          font-weight: normal;
-          @media only screen and (max-width: 999px) {
-            width: 100%;
-          }
-        }
-
-        input {
-          @media only screen and (max-width: 999px) {
-            width: 100%;
-          }
-        }
+        margin-bottom: 0.2rem;
       }
-
-      .btns {
-        margin-top: 2.5em;
+      .form-group label {
+        font-size: 14px;
+        color: #2d2d2d;
+        font-weight: normal;
+      }
+      .form-group .form-control {
+        border-radius: 5px;
+        border: solid 1px #acadad;
+        line-height: 1.6;
+        width: 100%;
+      }
+      .btn-wrapper {
         text-align: center;
+        margin-top: 1rem;
       }
     }
   }
-
-  .col-bottom {
-    border-top: 1px solid #d0cfcf;
+  .b-list {
+    float: left;
+    width: 100%;
+    @media only screen and (max-width: 509px) {
+      float: none;
+    }
+    &__title {
+      font-size: 16px;
+      font-weight: normal;
+      padding-bottom: 0.5em;
+      font-style: italic;
+      a {
+        color: #e74c3c !important;
+      }
+    }
+    .blockInfo {
+      border-top: 1px solid #d0cfcf;
+      &.no-top {
+        padding-top: 2em;
+      }
+      &--top {
+        padding: 1em 0;
+        float: left;
+        width: 100%;
+        font-size: 14px;
+        @media only screen and (max-width: 509px) {
+          float: none;
+          font-size: 13px;
+        }
+        .btn-edit {
+          border: 1px solid #d0cfcf;
+          border-radius: 5px;
+          padding: 5px 5px 0px 2px;
+          display: inline-block;
+          margin-left: 5px;
+          img {
+            width: 84%;
+          }
+          @media only screen and (max-width: 509px) {
+            display: none;
+          }
+        }
+        &-left {
+          width: 50%;
+          float: left;
+          @media only screen and (max-width: 509px) {
+            float: none;
+            width: 100%;
+          }
+        }
+        &-right {
+          width: 50%;
+          float: left;
+          text-align: right;
+          @media only screen and (max-width: 509px) {
+            float: none;
+            width: 100%;
+            text-align: left;
+          }
+        }
+      }
+      &--full {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        font-size: 14px;
+        padding-bottom: 2em;
+        @media only screen and (max-width: 999px) {
+          margin-bottom: 1.5em;
+          line-height: 1.5;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        .title {
+          font-weight: bold;
+        }
+        .status {
+          font-weight: bold;
+          &.delivered {
+            color: #2db504;
+          }
+          &.processing {
+            color: #f48f22;
+          }
+          &.received {
+            color: #c00005;
+          }
+        }
+      }
+    }
+    .list {
+      display: inline-block;
+      > li {
+        display: block;
+        line-height: 2;
+        span {
+          display: inline-block;
+        }
+        .object {
+          width: 129px;
+          font-size: 12px;
+        }
+        .value {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .b-sales-cart-total {
+    margin-top: 2em;
     clear: both;
     float: left;
-    margin-top: 1.8em;
     width: 100%;
-    padding-top: 3em;
-
-    a,
-    h3 {
+    font-size: 14px;
+    .col-left,
+    .col-right {
       display: inline-block;
-    }
-
-    h3 {
-      font-size: 1.56em;
-      margin-right: 5em;
+      width: 48%;
+      vertical-align: middle;
       @media only screen and (max-width: 999px) {
-        margin: 0;
+        width: 100%;
+        line-height: 1.5;
+      }
+      .title {
+        font-weight: bold;
+      }
+      .status {
+        font-weight: bold;
+      }
+      .last {
+        color: #e74c3c;
+        font-size: 15px;
       }
     }
-
-    a {
+    .col-right {
+      text-transform: uppercase;
       font-weight: bold;
-      font-style: italic;
-    }
-
-    .col-full {
-      margin-top: 1.8em;
-
-      .delivered {
-        color: #2db504;
-        font-weight: bold;
-      }
-
-      .processing {
-        color: #f48f22;
-        font-weight: bold;
-      }
-
-      .received {
-        color: #c00005;
-        font-weight: bold;
-      }
-
-      &--left {
-        display: inline-block;
-        position: relative;
-        width: 36%;
-        @media only screen and (min-width: 1000px) and (max-width: 1599px) {
-          width: 46%;
-        }
-        @media only screen and (max-width: 999px) {
-          width: 100%;
-          display: block;
-        }
-
-        &:after {
-          border-right: 1px solid #d0cfcf;
-          content: "";
-          display: inline;
-          height: 100%;
-          position: absolute;
-          right: 0;
-          top: 0;
-          @media only screen and (max-width: 999px) {
-            border: none;
-          }
-        }
-      }
-
-      &--right {
-        display: inline-block;
-        width: 40%;
-        padding-left: 5.6em;
-        @media only screen and (max-width: 999px) {
-          width: 100%;
-          padding: 0;
-        }
-      }
-
-      ul {
-        li {
-          line-height: 1.8;
-          @media only screen and (max-width: 999px) {
-            font-size: 1.15em;
-          }
-
-          .title {
-            font-weight: bold;
-            font-size: 1em;
-          }
-
-          span {
-            @media only screen and (max-width: 510px) {
-              width: 100%;
-              display: block;
-            }
-          }
-        }
+      @media only screen and (max-width: 999px) {
+        margin-top: 1.5em;
       }
     }
   }

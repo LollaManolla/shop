@@ -74,6 +74,7 @@ $(document)
     showCodes();
     toggleQuarters();
     togglePayment();
+    toggleShipmentInfo();
   });
 
 /******* Run functions when document resize **********/
@@ -4256,5 +4257,19 @@ var togglePayment = function() {
   });
 
   $('.pay-toggle ').trigger('change');
+
+};
+
+// show shipment info on sales and orders receipt artist, gallerie etc..
+var toggleShipmentInfo = function() {
+
+$(".blockInfo").hide();
+$(".openInfo").click(function()
+{
+
+    $(this).parent().next('.blockInfo').toggle();
+
+});
+
 
 };

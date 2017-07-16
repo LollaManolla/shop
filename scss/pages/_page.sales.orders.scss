@@ -2,24 +2,20 @@
 
 .page__sales-orders {
   padding-bottom: 1rem;
-
   .page-title {
     text-align: left;
     font-size: 2.2em;
     padding-top: 2.1em;
     margin-bottom: 2em;
   }
-
   .content-wrapper.white {
     margin: 0 auto 40px;
     padding: 3em;
     text-align: left;
   }
-
   .form-group {
     &-wrapper {
       margin-bottom: 3em;
-
       .form-group {
         display: inline-block;
         margin-right: 1.3em;
@@ -28,24 +24,20 @@
         @media only screen and (max-width: 999px) {
           width: 100%;
         }
-
         input {
           position: relative;
           @media only screen and (max-width: 999px) {
             width: 100%;
           }
         }
-
         select {
           @media only screen and (max-width: 999px) {
             width: 100%;
           }
         }
-
         label {
           display: block;
         }
-
         button {
           bottom: 0.2em;
           position: absolute;
@@ -62,7 +54,6 @@
       }
     }
   }
-
   .b-table {
     width: 100%;
     text-align: left;
@@ -70,32 +61,26 @@
     border-top: solid 1px #acadad;
     border-left: solid 1px #acadad;
     border-bottom: solid 1px #acadad;
-
     thead {
       font-weight: bold;
     }
-
     tr {
       border-bottom: solid 1px #acadad;
     }
-
     td,
     th {
       border-right: solid 1px #acadad;
       padding: 0 1.7em;
       line-height: 3;
     }
-
     .delivered {
       color: #2db504;
       font-weight: bold;
     }
-
     .processing {
       color: #f48f22;
       font-weight: bold;
     }
-
     .received {
       color: #c00005;
       font-weight: bold;
@@ -111,14 +96,12 @@
     .b-table tr {
       display: block;
     }
-
     .b-table,
     .b-table td,
     .b-table th,
     .b-table tr {
       border: none;
     }
-
     .b-table tbody {
       border: solid 1px #acadad;
     }
@@ -128,7 +111,6 @@
       top: -9999px;
       left: -9999px;
     }
-
     .b-table tr {
       // border-top: solid 1px #acadad;
       // border-left: solid 1px #acadad;
@@ -136,7 +118,6 @@
       line-height: 2;
       vertical-align: middle;
     }
-
     .b-table td {
       /* Behave  like a "row" */
       border: none;
@@ -145,7 +126,6 @@
       padding-left: 50%;
       vertical-align: middle;
     }
-
     td:before {
       /* Now like a table header */
       position: absolute;
@@ -162,17 +142,17 @@
     .b-table td:nth-of-type(1):before {
       content: "Order ID ";
     }
-
     .b-table td:nth-of-type(2):before {
-      content: "Order total";
+      content: "Date/Time";
     }
-
     .b-table td:nth-of-type(3):before {
-      content: "Date";
+      content: "Sale Amounte";
     }
-
     .b-table td:nth-of-type(4):before {
-      content: " Status";
+      content: "Income";
+    }
+    .b-table td:nth-of-type(5):before {
+      content: "Status";
     }
   }
 }
