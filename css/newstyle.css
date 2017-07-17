@@ -1201,6 +1201,11 @@
   clear: both;
   padding: 4em 0; }
 
+.block-products__pages--category {
+  float: left;
+  width: 75%;
+  margin-left: 1em; }
+
 .popup-inner {
   width: 100%;
   margin: auto;
