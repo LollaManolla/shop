@@ -2395,18 +2395,18 @@ var quantitySpinner = function() {
 };
 var previewBackProductIndividual = function(e) {
   var imgsrc = $(e)
-    .find(".cat-product-img")
+    .find(".individual-main-img-small")
     .attr("src");
   var imgsrc2 = $(".individual-main-img")
-    .find(".cat-product-img")
+    .find(".individual-main-img-small")
     .attr("src");
   $(e)
-    .find(".cat-product-img")
+    .find(".individual-main-img-small")
     .attr("src", imgsrc2);
   $('#bgPreviewImgVal')
     .val(imgsrc);
   $(".individual-main-img")
-    .find(".cat-product-img")
+    .find(".individual-main-img-small")
     .attr("src", imgsrc);
   productDimensions();
 };
@@ -2416,33 +2416,33 @@ var previewBackGreetingIndividual = function(e) {
   var portrait2 = false;
   // check orientation of thumbnail pic
   if ($(e)
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .width() < $(e)
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .height()) {
     portrait = true;
   }
   // check orientation of main pic
   if ($("#greeting")
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .width() < $("#greeting")
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .height()) {
     portrait2 = true;
   }
   var imgsrc = $(e)
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .attr("src");
   var imgsrc2 = $("#greeting")
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .attr("src");
   $(e)
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .attr("src", imgsrc2);
   $('#bgPreviewImgVal')
     .val(imgsrc);
   $("#greeting")
-    .find(".cat-product-img")
+    .find(".card-view-img")
     .attr("src", imgsrc);
 
   // adjust bg of main pic

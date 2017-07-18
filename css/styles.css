@@ -226,7 +226,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
     -webkit-overflow-scrolling: touch;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 [data-drop-close] {
@@ -2442,31 +2442,14 @@ ripple.ripple::after {
 }
 
 .profile_top.addProd {
-    height: 170px;
+  height: 170px;
+  position: relative;
+  width: 100%;
 }
 
 .profile_top.right {
     float: right;
     margin-top: 40px;
-}
-
-.userprofile_img {
-    top: -70px;
-    left: 35px;
-    height: 220px;
-    width: 220px;
-    border-radius: 100%;
-    display: block;
-    position: absolute;
-    background-image: url("../images/kanye1.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1100;
-}
-
-.userprofile_img_wrapper {
-    position: relative;
 }
 
 .camera_icon_wrapper>input {
@@ -2943,54 +2926,7 @@ ripple.ripple::after {
 
 /*--------- add product specific styles----------*/
 
-.userprofile-info {
-    margin-left: 300px;
-    text-align: left;
-    margin-top: 20px;
-    position: relative;
-}
 
-.userprofile-info ul {
-    width: 1050px;
-}
-
-.userprofile-info li {
-    display: block;
-    width: 100%;
-    height: 20px;
-    margin-bottom: 3px;
-}
-
-.userprofile-info li:nth-of-type(1) {
-    margin-bottom: 15px;
-}
-
-.userprofile-info span {
-    font-size: 0.9em;
-    margin-top: 0;
-    margin-left: 10px;
-    color: #acacac;
-    max-width: 1000px;
-    width: 1000px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.userprofile-info h5 {
-    font-size: 1.1em;
-    width: 1000px;
-    max-width: 1000px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2em;
-}
-
-.userprofile-info-icon {
-    height: 18px;
-    width: 18px;
-}
 
 .myProducts {
     margin-top: 20px;
@@ -4379,6 +4315,8 @@ button#addBtn {
   margin-top: 10px;
   margin-bottom: 30px;
   text-align: left;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
 }
 .filter_follows .form-label {
   display: block;

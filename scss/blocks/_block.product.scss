@@ -1,6 +1,12 @@
 //block product on my indelibl page
 
 .block-products {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .b-product {
     position: relative;
     width: 25%;
@@ -8,6 +14,12 @@
     padding-right: .9375rem;
     padding-left: .9375rem;
     margin-bottom: 2em;
+    &:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 5px rgba(0, 0, 0, 0.1);
+      .my-product-cat-buttons-wrapper {
+        display: block;
+      }
+    }
     @media only screen and (min-width: 1001px) and (max-width: 1600px) {
       width: 33.33333%;
     }
@@ -22,6 +34,9 @@
       display: table;
       content: "";
     }
+    &__content {
+      padding: 0 0.5em;
+    }
     &__link {
       display: table-cell;
       background: linear-gradient(#eeebeb, #f9f9f9);
@@ -31,17 +46,6 @@
       //  width: 25%;
       padding: 1em;
       vertical-align: middle;
-      @media only screen and (min-width: 1001px) and (max-width: 1600px) {
-        //  height: 242px;
-        //  width: 33.33333%;
-      }
-      @media only screen and (min-width: 510px) and (max-width: 1000px) {
-        //width: 50%;
-        //  height: 215px;
-      }
-      @media only screen and (max-width: 509px) {
-        // width: 100%;
-      }
       .new-cart-msg {
         position: absolute;
         width: 13em;
@@ -81,8 +85,12 @@
       font-weight: bold;
       float: right;
     }
+    .b-product-descript__top {
+      margin: 0.5em 0 0 0;
+    }
     .b-product-descript__bottom {
       font-size: 14px;
+      margin: 0;
       span {
         display: inline-block;
         vertical-align: middle;
@@ -98,7 +106,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 20em;
-        width: 14em;
+        width: 13em;
       }
     }
     .new-zoom-btn {
@@ -129,4 +137,31 @@
   float: left;
   width: 75%;
   margin-left: 1em;
+  @media only screen and (max-width: 999px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .block-products {
+    @media only screen and (max-width: 999px) {
+      clear: both;
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem;
+    }
+  }
+}
+
+.block-products__col-3 .block-products .b-product {
+  width: 33.33333%;
+  .b-product__link {
+    display: block;
+  }
+  @media only screen and (min-width: 510px) and (max-width: 999px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 509px) {
+    width: 100%;
+  }
+  .b-product__link img {
+    width: 100%;
+  }
 }

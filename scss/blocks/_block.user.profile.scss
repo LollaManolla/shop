@@ -1,0 +1,94 @@
+//user profile in pages
+
+.userprofile_img_wrapper {
+  position: relative;
+  width: 16.333%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4em;
+  margin-right: 2em;
+  @media only screen and (max-width: 999px) {
+    width: 21%;
+    margin-right: 1em;
+  }
+  @media only screen and (max-width: 509px) {
+    width: 26%;
+  }
+  .userprofile_img {
+    left: 50%;
+    transform: translate(-50%);
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    background-image: url("../images/kanye1.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.userprofile-info {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  @media only screen and (max-width: 999px) {
+    padding-top: 1em;
+  }
+  @media only screen and (max-width: 509px) {
+    width: 100%;
+  }
+  ul {
+    float: left;
+    li {
+      display: block;
+      @media only screen and (max-width: 999px) {
+        line-height: 1.4;
+      }
+      h5 {
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      span {
+        font-size: 0.9em;
+        margin: 0;
+        vertical-align: middle;
+        color: #acacac;
+        @media only screen and (max-width: 509px) {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  &-icon {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    @media only screen and (max-width: 999px) {
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+.btn__profile--salesOrders {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.profile_top.addProd,
+.profile_top.profileHome.left {
+  height: initial;
+  max-height: 180px;
+  padding-bottom: 1em;
+  text-align: left;
+  float: none;
+}

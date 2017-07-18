@@ -16,11 +16,14 @@
   .form-group {
     &-wrapper {
       margin-bottom: 3em;
+      float: left;
+      width: 100%;
       .form-group {
         display: inline-block;
         margin-right: 1.3em;
         width: 16.555%;
         position: relative;
+        float: left;
         @media only screen and (max-width: 999px) {
           width: 100%;
         }
@@ -101,6 +104,7 @@
     .b-table th,
     .b-table tr {
       border: none;
+      clear: both;
     }
     .b-table tbody {
       border: solid 1px #acadad;
@@ -154,5 +158,46 @@
     .b-table td:nth-of-type(5):before {
       content: "Status";
     }
+  }
+  .form-group-calendar {
+    display: inline-block;
+    position: relative;
+    margin-right: 1.2rem;
+    width: 43%;
+    float: left;
+    @media only screen and (max-width: 999px) {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+    .form-group {
+      width: 42%;
+      @media only screen and (max-width: 999px) {
+        margin-right: 1.2rem;
+        width: 44%;
+      }
+      @media only screen and (max-width: 509px) {
+        width: 38%;
+      }
+    }
+  }
+  .form-group-calendar .btn-go {
+    background-color: #313b46;
+    border: solid 1px #313b46;
+    border-radius: 100%;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    margin-left: -0.5em;
+  }
+  .form-group-calendar .btn-go span {
+    display: block;
+  }
+  .form-group-calendar .btn-go:hover {
+    background-color: #000;
+    border: solid 1px #000;
   }
 }

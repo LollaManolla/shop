@@ -203,12 +203,19 @@
       .form-group .form-control {
         border-radius: 5px;
         border: solid 1px #acadad;
-        line-height: 1.6;
+        line-height: 1.8;
         width: 100%;
+        padding: 0 0.5em;
+        font-size: 14px;
       }
       .btn-wrapper {
         text-align: center;
         margin-top: 1rem;
+      }
+      .notification {
+        text-align: center;
+        font-size: 14px;
+        display: none;
       }
     }
   }
