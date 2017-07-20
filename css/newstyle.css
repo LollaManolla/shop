@@ -2877,10 +2877,6 @@ table.data-myProducts {
       .page__sales-orders .b-table td:nth-of-type(2):before {
         content: "Date/Time"; }
       .page__sales-orders .b-table td:nth-of-type(3):before {
-        content: "Sale Amounte"; }
-      .page__sales-orders .b-table td:nth-of-type(4):before {
-        content: "Income"; }
-      .page__sales-orders .b-table td:nth-of-type(5):before {
         content: "Status"; } }
   .page__sales-orders .form-group-calendar {
     display: inline-block;
