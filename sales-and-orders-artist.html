@@ -376,9 +376,9 @@
 
             <div class="form">
               <div class="form-group-wrapper">
-                <div class="form-group">
+                <div class="form-group form-group-l search-group">
                   <label>Enter Order ID</label>
-                  <input class="form-input" type="text">
+                  <input class="form-input" type="text" id="filter-order-id">
                   <button type="submit">
                     <i class="icon-search1"></i>
                   </button>
@@ -402,16 +402,31 @@
 
                 <div class="form-group">
                   <label class="form-label">Filter by Status</label>
-                  <select class="form-input">
-                    <option value="1">Order Proccesing</option>
-                    <option value="2">Order Recevied</option>
-                    <option value="3">Delivered</option>
-                    <option value="4">Shipped</option>
+                  <select class="form-input" id="filter-order-status">
+                    <option value="" selected="selected">Select Status</option>
+                    <option value="order-processing" class="pending">Order Proccesing</option>
+                    <option value="order-received" class="warning">Order Recevied</option>
+                    <option value="delivered" class="success">Delivered</option>
+                    <option value="shipped">Shipped</option>
                   </select>
                 </div>
-
               </div>
-              <table class="b-table">
+              
+              <button class="btn dark" id="filter-order-reset">Reset</a>
+                
+              <script>
+                // Clear selected values used for filtering status table
+                $("#filter-order-reset").click(function(){
+                  $('#filter-order-id, #filter-order-status, #start-date, #end-date').val("")
+                });
+              </script>
+              <style>
+                #filter-order-reset { /* get button inline with text inputs */
+                  margin-top: 30px;
+                }
+              </style>
+              
+              <table class="b-table sales-and-orders" data-filter>
                 <thead>
                   <tr>
                     <th>Order ID</th>
@@ -429,7 +444,14 @@
                     <td>11th December, 12:00 am</td>
                     <td>£103</td>
                     <td>£43</td>
-                    <td class="delivered">Delivered</td>
+                    <td class="success" data-status="delivered">
+                      <select class="form-input selectable-status">
+                        <option value="order-processing" class="pending">Order Proccesing</option>
+                        <option value="order-received" class="warning">Order Recevied</option>
+                        <option value="delivered" class="success" selected="selected">Delivered</option>
+                        <option value="shipped" class="default">Shipped</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
                     <td class="sales-orders">
@@ -438,8 +460,14 @@
                     <td>05th January, 04:22 am</td>
                     <td>£12</td>
                     <td>£145</td>
-                    <td class="processing">Order Processing</td>
-                  </tr>
+                    <td class="pending" data-status="order-processing">
+                      <select class="form-input selectable-status">
+                        <option value="order-processing" class="pending" selected="selected">Order Proccesing</option>
+                        <option value="order-received" class="warning">Order Recevied</option>
+                        <option value="delivered" class="success">Delivered</option>
+                        <option value="shipped" class="default">Shipped</option>
+                      </select>
+                    </td>
                   <tr>
                     <td class="sales-orders">
                       <a href="javascript:void(0)">854684178546841</a>
@@ -447,7 +475,14 @@
                     <td>28th December, 12:00 pm</td>
                     <td>£55</td>
                     <td>£585</td>
-                    <td class="received">Order Received</td>
+                    <td class="received" data-status="order-received">
+                      <select class="form-input selectable-status">
+                        <option value="order-processing" class="pending">Order Proccesing</option>
+                        <option value="order-received" class="warning" selected="selected">Order Recevied</option>
+                        <option value="delivered" class="success">Delivered</option>
+                        <option value="shipped" class="default">Shipped</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
                     <td class="sales-orders">
@@ -456,8 +491,13 @@
                     <td>02th Septemeber, 12:00 am</td>
                     <td>£103</td>
                     <td>£43</td>
-                    <td>
-                      <b>Shipped</b>
+                    <td class="default" data-status="shipped">
+                      <select class="form-input selectable-status">
+                        <option value="order-processing" class="pending">Order Proccesing</option>
+                        <option value="order-received" class="warning">Order Recevied</option>
+                        <option value="delivered" class="success">Delivered</option>
+                        <option value="shipped" class="default" selected="selected">Shipped</option>
+                      </select>
                     </td>
                   </tr>
                 </tbody>
