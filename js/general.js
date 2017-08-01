@@ -74,7 +74,7 @@ $(document).ready(function() {
   toggleQuarters();
   togglePayment();
   toggleShipmentInfo();
-  // setFixedHeaderToTable();
+
   changeColorStartup();
 });
 
@@ -3872,8 +3872,7 @@ var changeSupportersView = function(e) {
     $('#world-map')
       .vectorMap('get', 'mapObject')
       .updateSize();
-
-    setFixedHeaderToTable();
+
   }
 
 };

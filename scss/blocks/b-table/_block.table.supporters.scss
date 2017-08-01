@@ -1,0 +1,145 @@
+//-------------------------
+//-------------------BLOCK TABLE SUPPORTERS
+//-------------------------
+
+.b-table--supporters-outerwrapper {
+  position: relative;
+}
+
+.b-table--supporters-innerwrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 256px;
+}
+
+.b-table--supporters {
+  .visitor-data {
+    display: block;
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      line-height: 2;
+    }
+  }
+  .v-middle {
+    &.image {
+      display: inline-block;
+      margin-right: 5px;
+      // @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      //   line-height: 1;
+      // }
+
+    }
+    &.title {
+      font-size: 15px;
+      display: inline-block;
+      line-height: 1.2;
+      max-width: 198px;
+      padding: 0.8em 0;
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        line-height: 1.2;
+        font-size: 13px;
+        max-width: 135px;
+        padding: 0.8em 0;
+      }
+    }
+  }
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  border-top: solid 1px #acadad;
+  border-left: solid 1px #acadad;
+  border-bottom: solid 1px #acadad;
+  thead {
+    font-weight: bold;
+  }
+  tr {
+    border-bottom: solid 1px #acadad;
+  }
+  td,
+  th {
+    border-right: solid 1px #acadad;
+    padding: 0.8em 0.7em;
+    line-height: 2;
+    max-width: 198px;
+    vertical-align: middle;
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      font-size: 13px;
+      max-width: 135px;
+      line-height: normal;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 760px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  .b-table--supporters,
+  .b-table--supporters tbody,
+  .b-table--supporters td,
+  .b-table--supporters th,
+  .b-table--supporters thead,
+  .b-table--supporters tr {
+    display: block;
+    max-width: none;
+  }
+  .b-table--supporters,
+  .b-table--supporters td,
+  .b-table--supporters th,
+  .b-table--supporters tr {
+    border: none;
+  }
+  .b-table--supporters tbody {
+    border: solid 1px #acadad;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .b-table--supporters thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .b-table--supporters tr {
+    line-height: 2;
+    vertical-align: middle;
+  }
+  .b-table--supporters td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #acadad;
+    position: relative;
+    padding-left: 50%;
+    vertical-align: middle;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+  Label the data
+  */
+  .b-table--supporters .visitor-data {
+    text-align: left;
+  }
+  .b-table--supporters .v-middle.title {
+    font-size: 13px;
+  }
+  .b-table--supporters td:nth-of-type(1):before {
+    content: "Visitor";
+  }
+  .b-table--supporters td:nth-of-type(2):before {
+    content: "Country";
+  }
+  .b-table--supporters td:nth-of-type(3):before {
+    content: "First Visit";
+  }
+  .b-table--supporters td:nth-of-type(4):before {
+    content: "Last Visit";
+  }
+  .b-table--supporters td:nth-of-type(5):before {
+    content: "Total Visits";
+  }
+}
