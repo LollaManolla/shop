@@ -9603,3 +9603,83 @@ li.ui-timepicker-selected .ui-timepicker-duration,
         opacity: 1;
     }
 }
+
+/*move where it belongs*/
+.success {
+    color: #2db504;
+}
+.warning {
+    color: #c00005;
+}
+.pending {
+    color: #f48f22;
+}
+.default {
+    color: #000;
+}
+.selectable-status {
+    width: auto;
+    display: inline-block;
+    font-weight: bold;
+    border: 0;
+}
+
+.selectable-status:focus {
+    outline: none;
+}
+
+.table.table-default {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+}
+.table {
+    margin-bottom: 20px;
+}
+.table.table-default td,
+.table.table-default th {
+    border: solid 1px #acadad;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+}
+.table.table-default th {
+    font-weight: bold;
+    height: 50px;
+    vertical-align: middle;
+}
+.v-middle {
+    vertical-align: middle;
+}
+.visitor-data span {
+    font-style: italic;
+}
+@media only screen and (max-width: 999px) and (min-width: 510px) {
+    .visitor-data {
+        text-align: center;
+        display: block;
+    }
+
+    .visitor-data span,
+    .visitor-data a {
+        display: inline-block;
+    }
+}
+.page__sales-orders .form-group-wrapper .form-group.form-group-l {
+    width: 20%;
+}
+
+.search-group input {
+    padding-right: 22px;
+}
+.page__sales-orders .form-group-wrapper .form-group.btn-reset {
+    width: auto;
+}
+.page__sales-orders .form-group-wrapper .form-group.btn-reset button {
+    position: initial;
+}
+@media (max-width: 1000px) {
+  .selectable-status {
+        font-size: 10px;
+        padding: 0;
+    }
+}

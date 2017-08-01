@@ -39,6 +39,7 @@
 	<script src="js/vendor.touch-punch.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/imagesloaded.js"></script>
+	<script src="js/jquery.scrollTableBody-1.0.0.js"></script>
 </head>
 
 <body>
@@ -1519,159 +1520,140 @@
 							</b>
 						</h3>
 
-						<div class="form-row">
-							<div class="form-item form-item_half">
-								<div class="form-item form-item_full">
-									<label for="suppViewsYear" class="form-label">
-										Year
-									</label>
-								</div>
-								<div class="form-item form-item_full">
-									<select id="suppViewsYear" name="suppViewsYear" class="form-input">
-										<option value="2017">2017</option>
-										<option value="2016">2016</option>
-										<option value="2015">2015</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-item form-item_half">
-								<div class="form-item form-item_full">
-									<label for="suppViewsQ" class="form-label">
-										Quarter
-									</label>
-								</div>
-								<div class="form-item form-item_full">
-									<select id="suppViewsQ" name="suppViewsQ" class="form-input" onchange="changeSuppViewQuarter()">
-										<option value="Q1">Q1</option>
-										<option value="Q2">Q2</option>
-										<option value="Q3">Q3</option>
-										<option value="Q4">Q4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- supporters over time -->
-					<div style="width: 100%; display: block; overflow: hidden;" id="qv1">
-						<ul class="qboxwrap">
-							<li class="year-quarter-box quarter-head">
-								January
-							</li>
-							<li class="year-quarter-box quarter-head">
-								February
-							</li>
-							<li class="year-quarter-box quarter-head">
-								March
-							</li>
-							<li class="year-quarter-box quarter-head">
-								Total
-							</li>
-						</ul>
-						<ul class="qboxwrap">
-							<li class="year-quarter-box">
-								<p class="qnum">56</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">42</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">89</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">156</p>
-							</li>
-						</ul>
-					</div>
-					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv2">
-						<ul class="qboxwrap">
-							<li class="year-quarter-box quarter-head">
-								April
-							</li>
-							<li class="year-quarter-box quarter-head">
-								May
-							</li>
-							<li class="year-quarter-box quarter-head">
-								June
-							</li>
-							<li class="year-quarter-box quarter-head">
-								Total
-							</li>
-						</ul>
-						<ul class="qboxwrap">
-							<li class="year-quarter-box">
-								<p class="qnum">56</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">42</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">89</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">156</p>
-							</li>
-						</ul>
-					</div>
-					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv3">
-						<ul class="qboxwrap">
-							<li class="year-quarter-box quarter-head">
-								July
-							</li>
-							<li class="year-quarter-box quarter-head">
-								August
-							</li>
-							<li class="year-quarter-box quarter-head">
-								September
-							</li>
-							<li class="year-quarter-box quarter-head">
-								Total
-							</li>
-						</ul>
-						<ul class="qboxwrap">
-							<li class="year-quarter-box">
-								<p class="qnum">56</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">42</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">89</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">156</p>
-							</li>
-						</ul>
-					</div>
-					<div style="width: 100%; display: block; overflow: hidden; display: none;" id="qv4">
-						<ul class="qboxwrap">
-							<li class="year-quarter-box quarter-head">
-								October
-							</li>
-							<li class="year-quarter-box quarter-head">
-								November
-							</li>
-							<li class="year-quarter-box quarter-head">
-								December
-							</li>
-							<li class="year-quarter-box quarter-head">
-								Total
-							</li>
-						</ul>
-						<ul class="qboxwrap">
-							<li class="year-quarter-box">
-								<p class="qnum">56</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">42</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">89</p>
-							</li>
-							<li class="year-quarter-box">
-								<p class="qnum">156</p>
-							</li>
-						</ul>
-					</div>
+						
+						<table class="table table-default" data-fixed-header>
+              <thead>
+                <tr>
+                  <th>Visitor</th>
+                  <th>Country</th>
+                  <th>First Visit</th>
+                  <th>Last Visit</th>
+                  <th>Total Visits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+               	<tr>
+                  <td>
+                  	<a href="javascript:;" class="visitor-data">
+                  		<img class="v-middle" src="images/avatar-xs.png" />
+                  		<span class="v-middle">FirstName LastName</span>
+                  	</a>
+                  </td>
+                  <td>Ghana</td>
+                  <td>December 11, 2017.</td>
+                  <td>December 12, 2017.</td>
+                  <td>1235</td>
+               	</tr>
+              </tbody>
+            </table>
 					<hr class="separator">
 
 					<div class="profile-form supp-g-form" style="margin-left: 0; float: none;">
