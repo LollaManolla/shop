@@ -1341,7 +1341,8 @@
         line-height: 2; } }
   .b-table--supporters .v-middle.image {
     display: inline-block;
-    margin-right: 5px; }
+    margin-right: 5px;
+    max-width: 35px; }
   .b-table--supporters .v-middle.title {
     font-size: 15px;
     display: inline-block;
