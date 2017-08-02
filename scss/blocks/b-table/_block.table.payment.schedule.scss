@@ -1,0 +1,118 @@
+//-------------------------
+//-------------------BLOCK TABLE SUPPORTERS
+//-------------------------
+
+.b-table--paymentSchedule-outerwrapper {
+  position: relative;
+  margin-bottom: 4em;
+}
+
+.b-table--paymentSchedule-innerwrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 256px;
+}
+
+.b-table--paymentSchedule {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  border-top: solid 1px #acadad;
+  border-left: solid 1px #acadad;
+  border-bottom: solid 1px #acadad;
+  thead {
+    font-weight: bold;
+  }
+  tr {
+    border-bottom: solid 1px #acadad;
+  }
+  td,
+  th {
+    border-right: solid 1px #acadad;
+    padding: 0.8em 0.7em;
+    line-height: 2;
+    vertical-align: middle;
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      font-size: 13px;
+      line-height: normal;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 760px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  .b-table--paymentSchedule,
+  .b-table--paymentSchedule tbody,
+  .b-table--paymentSchedule td,
+  .b-table--paymentSchedule th,
+  .b-table--paymentSchedule thead,
+  .b-table--paymentSchedule tr {
+    display: block;
+    max-width: none;
+  }
+  .b-table--paymentSchedule,
+  .b-table--paymentSchedule td,
+  .b-table--paymentSchedule th,
+  .b-table--paymentSchedule tr {
+    border: none;
+  }
+  .b-table--paymentSchedule tbody {
+    border: solid 1px #acadad;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .b-table--paymentSchedule thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .b-table--paymentSchedule tr {
+    line-height: 2;
+    vertical-align: middle;
+  }
+  .b-table--paymentSchedule td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #acadad;
+    position: relative;
+    padding-left: 50%;
+    vertical-align: middle;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+  Label the data
+  */
+  .b-table--paymentSchedule td:nth-of-type(1):before {
+    content: "Payment ID";
+    font-weight: bold;
+  }
+  .b-table--paymentSchedule td:nth-of-type(2):before {
+    content: "Income";
+    font-weight: bold;
+  }
+  .b-table--paymentSchedule td:nth-of-type(3):before {
+    content: "Description";
+    font-weight: bold;
+  }
+  .b-table--paymentSchedule td:nth-of-type(4):before {
+    content: "Due Date";
+    font-weight: bold;
+  }
+  .b-table--paymentSchedule td:nth-of-type(5):before {
+    content: "Status";
+    font-weight: bold;
+  }
+  .b-table--paymentSchedule td:nth-of-type(6):before {
+    content: "Collect/Store";
+    font-weight: bold;
+  }
+}
