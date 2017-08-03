@@ -9499,7 +9499,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
 .loader-mask {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -9683,3 +9683,231 @@ li.ui-timepicker-selected .ui-timepicker-duration,
         padding: 0;
     }
 }
+
+/**
+ * ZORAN START
+ */
+/* Animate search icon */
+.msb i {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.submit_status-b {
+    height: 8px;
+    width: 100%;
+    margin-top: -8px;
+    border-top: solid 1px #acacac;
+    background-repeat: repeat-y;
+}
+
+.dis-bttn {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.price-input-w {
+  width: 80%;
+}
+
+.your-price-w {
+  background-color: #fff;
+}
+
+.box-product .product-img {
+    background-color: #ffffff !important;
+}
+
+#instafeed>a>img {
+    padding: 5px;
+}
+
+
+.ldr-main {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 10000;
+}
+
+.ldr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 16px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    border-top: 16px solid rgba(255, 255, 255, 1);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    -ms-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page__sales-orders .form-group-wrapper .form-group-status {
+    display: inline-block;
+    margin-right: 1.3em;
+    width: 16.555%;
+    position: relative;
+    float: left;
+}
+
+.page__sales-orders .form-group-status .btn-go {
+    background-color: #313b46;
+    border: solid 1px #313b46;
+    border-radius: 7px;
+    padding: 0.3em;
+    color: #fff;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    margin-left: 13.5em;
+    width: 100px;
+    text-align: center;
+}
+
+.page__sales-orders .form-group-status .btn-go:hover {
+    background-color: #000;
+    border: solid 1px #000;
+}
+
+@media only screen and (min-width: 1600px) {
+  .page__sales-orders .form-group-status .btn-go {
+      margin-left: 18.5em;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .b-payment-card .form-group.country select {
+    width: 100%;
+   }
+    .page__sales-orders .form-group-wrapper .form-group-status select {
+        width: 70%;
+    }
+    .page__sales-orders .form-group-wrapper .form-group-status {
+    width: 63%;
+}
+.page__sales-orders .form-group-status .btn-go {
+    margin-left: 3em;
+    width: 40px;
+}
+
+.page__sales-orders .form-group-wrapper .form-group.form-group-l {
+    width: 92%;
+}
+  }
+
+  @media only screen and (max-width: 509px) and (min-width: 320px){
+    .page__sales-orders .form-group-wrapper .form-group-status {
+      width: 100%;
+  }
+  .page__sales-orders .form-group-wrapper .form-group.form-group-l {
+      width: 83%;
+  }
+  }
+  /**
+   * ZORAN END
+   */
